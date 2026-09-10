@@ -1,0 +1,146 @@
+
+[image]
+build_timeout = 1200
+http_image = http://git.openstack.org/static/openstack.png
+images_manifest_file = /opt/stack/os-test-images/images/manifest.yaml
+
+[image-feature-enabled]
+os_glance_reserved = True
+import_image = False
+image_format_enforcement = True
+
+[network]
+default_network = 10.1.0.0/20
+public_router_id = 
+public_network_id = 7a7c3510-53f4-4d78-84a3-4c0961583444
+project_networks_reachable = false
+project_network_cidr = 10.1.0.0/20
+
+[DEFAULT]
+debug = True
+log_file = tempest.log
+use_stderr = False
+use_syslog = False
+
+[oslo_concurrency]
+lock_path = /opt/stack/data/tempest
+
+[compute]
+build_interval = 1
+max_microversion = latest
+flavor_ref_alt = 84
+flavor_ref = 42
+image_ref_alt = 995a865d-9ac2-404b-9d9c-ab079036c802
+image_ref = 995a865d-9ac2-404b-9d9c-ab079036c802
+build_timeout = 1800
+
+[volume]
+storage_protocol = iSCSI
+vendor_name = Hitachi
+build_interval = 1
+manage_volume_ref = source-name,%s
+volume_type_multiattach = multiattach
+max_microversion = latest
+backup_driver = swift
+build_timeout = 600
+
+[identity]
+auth_version = v3
+user_unique_last_password_count = 2
+user_lockout_duration = 10
+user_lockout_failure_attempts = 2
+uri_v3 = http://172.25.92.210/identity/v3
+
+[auth]
+use_dynamic_credentials = True
+admin_domain_name = Default
+admin_project_name = admin
+admin_password = Hitachino1
+admin_username = admin
+
+[identity-feature-enabled]
+access_rules = True
+application_credentials = True
+project_tags = True
+security_compliance = True
+
+[validation]
+image_ssh_password = gocubsgo
+image_alt_ssh_password = gocubsgo
+ping_timeout = 300
+network_for_ssh = private
+image_alt_ssh_user = cirros
+image_ssh_user = cirros
+ssh_timeout = 300
+ip_version_for_ssh = 4
+run_validation = True
+connect_method = floating
+
+[compute-feature-enabled]
+interface_attach = False
+swap_volume = True
+stable_rescue = True
+shelve_migrate = True
+nova_policy_roles = admin,manager,member,reader,service
+vnc_console = True
+volume_multiattach = True
+scheduler_enabled_filters = ComputeFilter,ComputeCapabilitiesFilter,ImagePropertiesFilter,ServerGroupAntiAffinityFilter,ServerGroupAffinityFilter,SameHostFilter,DifferentHostFilter
+hostname_fqdn_sanitization = True
+attach_encrypted_volume = False
+live_migrate_back_and_forth = False
+block_migration_for_live_migration = False
+change_password = False
+live_migration = False
+resize = True
+personality = False
+
+[network-feature-enabled]
+api_extensions = all
+port_security = True
+ipv6_subnet_attributes = True
+ipv6 = True
+
+[enforce_scope]
+cinder = true
+glance = true
+placement = true
+nova = true
+keystone = true
+neutron = True
+
+[scenario]
+img_container_format = bare
+img_disk_format = raw
+dhcp_client = dhcpcd
+img_file = /root/hitachi-ci/image/cirros/cirros-0.6.1-x86_64-disk.raw
+
+[volume-feature-enabled]
+backup = False
+api_v1 = False
+snapshot_manage = False
+volume_manage = True
+consistency_group = True
+api_extensions = all
+extend_attached_encrypted_volume = False
+volume_revert = True
+extend_attached_volume = True
+manage_volume = True
+manage_snapshot = False
+
+[placement]
+max_microversion = latest
+
+[service_available]
+horizon = True
+swift = True
+cinder = True
+neutron = True
+nova = True
+glance = True
+key = True
+
+[object-storage-feature-enabled]
+discoverable_apis = all
+
+[service-clients]
+http_timeout = 1800
