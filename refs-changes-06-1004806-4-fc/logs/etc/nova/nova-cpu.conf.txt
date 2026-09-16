@@ -1,0 +1,166 @@
+
+[DEFAULT]
+reimage_timeout_per_gb = 180
+block_device_allocate_retries = 240
+block_device_allocate_retries_interval = 20
+rpc_response_timeout = 3600
+log_dir = /var/log/nova
+cpu_allocation_ratio = 100
+ram_allocation_ratio = 100
+disk_allocation_ratio = 100
+vif_plugging_timeout = 300
+vif_plugging_is_fatal = True
+compute_driver = libvirt.LibvirtDriver
+default_ephemeral_format = ext4
+pointer_model = ps2mouse
+graceful_shutdown_timeout = 5
+metadata_workers = 4
+osapi_compute_workers = 4
+transport_url = rabbit://stackrabbit:Hitachino1@172.25.92.210:5672/nova_cell1
+log_color = False
+logging_exception_prefix = ERROR %(name)s [01;35m%(instance)s[00m
+logging_default_format_string = %(asctime)s.%(msecs)03d %(process)d %(levelname)s %(name)s [-] %(instance)s%(message)s
+logging_context_format_string = %(asctime)s.%(msecs)03d %(process)d %(levelname)s %(name)s [%(request_id)s %(user_identity)s] %(instance)s%(message)s
+logging_debug_format_suffix = [00;33m{{(pid=%(process)d) %(funcName)s %(pathname)s:%(lineno)d}}[00m
+instances_path = /opt/stack/data/nova/instances
+state_path = /opt/stack/data/nova
+enabled_apis = osapi_compute
+service_down_time = 720
+report_interval = 120
+shutdown_timeout = 0
+metadata_listen = 0.0.0.0
+osapi_compute_listen = 0.0.0.0
+instance_name_template = instance-%08x
+my_ip = 172.25.92.210
+rootwrap_config = /etc/nova/rootwrap.conf
+allow_resize_to_same_host = True
+debug = True
+
+[wsgi]
+api_paste_config = /etc/nova/api-paste.ini
+
+[filter_scheduler]
+track_instance_changes = False
+enabled_filters = ComputeFilter,ComputeCapabilitiesFilter,ImagePropertiesFilter,ServerGroupAntiAffinityFilter,ServerGroupAffinityFilter,SameHostFilter,DifferentHostFilter
+
+[scheduler]
+workers = 4
+
+[neutron]
+service_metadata_proxy = True
+region_name = RegionOne
+project_domain_name = Default
+project_name = service
+user_domain_name = Default
+password = Hitachino1
+username = nova
+auth_url = http://172.25.92.210/identity
+interface = public
+auth_type = password
+default_floating_pool = public
+
+[api]
+response_validation = error
+
+[key_manager]
+fixed_key = bae3516cc1c0eb18b05440eba8012a4a880a2ee04d584a9c1579445e675b12defdc716ec
+backend = nova.keymgr.conf_key_mgr.ConfKeyManager
+
+[database]
+
+[api_database]
+
+[cache]
+memcache_servers = localhost:11211
+backend = dogpile.cache.memcached
+enabled = True
+
+[oslo_policy]
+enforce_new_defaults = True
+
+[keystone_authtoken]
+memcached_servers = localhost:11211
+cafile = /opt/stack/data/ca-bundle.pem
+www_authenticate_uri = http://172.25.92.210/identity
+project_domain_name = Default
+project_name = service
+user_domain_name = Default
+password = Hitachino1
+username = nova
+auth_url = http://172.25.92.210/identity
+interface = public
+auth_type = password
+
+[cinder]
+project_domain_name = Default
+project_name = service
+user_domain_name = Default
+password = Hitachino1
+username = nova
+auth_url = http://172.25.92.210/identity
+interface = public
+auth_type = password
+os_region_name = RegionOne
+
+[oslo_concurrency]
+lock_path = /opt/stack/data/nova
+
+[upgrade_levels]
+compute = auto
+
+[oslo_messaging_notifications]
+transport_url = rabbit://stackrabbit:Hitachino1@172.25.92.210:5672/
+driver = messagingv2
+
+[notifications]
+notification_format = unversioned
+
+[conductor]
+workers = 4
+
+[service_user]
+project_domain_name = Default
+project_name = service
+user_domain_name = Default
+password = Hitachino1
+username = nova
+auth_url = http://172.25.92.210/identity
+interface = public
+auth_type = password
+send_service_user_token = True
+
+[libvirt]
+num_volume_scan_tries = 100
+volume_use_multipath = False
+live_migration_uri = qemu+ssh://stack@%s/system
+cpu_models = Nehalem
+cpu_mode = custom
+virt_type = qemu
+
+[placement]
+project_domain_name = Default
+project_name = service
+user_domain_name = Default
+password = Hitachino1
+username = nova
+auth_url = http://172.25.92.210/identity
+interface = public
+auth_type = password
+
+[os_brick]
+lock_path = /opt/stack/data/os_brick
+
+[os_vif_ovs]
+isolate_vif = False
+
+[workarounds]
+libvirt_disable_apic = True
+disable_group_policy_check_upcall = True
+
+[vnc]
+server_proxyclient_address = 172.25.92.210
+server_listen = 0.0.0.0
+novncproxy_base_url = http://172.25.92.210:6080/vnc_auto.html
+
+[spice]
+html5proxy_base_url = http://172.25.92.210:6081/spice_auto.html
