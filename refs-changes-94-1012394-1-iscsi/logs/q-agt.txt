@@ -1,0 +1,16 @@
+Oct 26 22:39:34.335631 devstack-92-210 systemd[1]: Started devstack@q-agt.service - Devstack devstack@q-agt.service.
+Oct 26 22:39:34.561893 devstack-92-210 neutron-openvswitch-agent[3880471]: /opt/stack/data/venv/lib/python3.12/site-packages/futurist/_utils.py:34: EventletDeprecationWarning:
+Oct 26 22:39:34.561893 devstack-92-210 neutron-openvswitch-agent[3880471]: Eventlet is deprecated. It is currently being maintained in bugfix mode, and
+Oct 26 22:39:34.561893 devstack-92-210 neutron-openvswitch-agent[3880471]: we strongly recommend against using it for new projects.
+Oct 26 22:39:34.561893 devstack-92-210 neutron-openvswitch-agent[3880471]: If you are already using Eventlet, we recommend migrating to a different
+Oct 26 22:39:34.561893 devstack-92-210 neutron-openvswitch-agent[3880471]: framework.  For more detail see
+Oct 26 22:39:34.561893 devstack-92-210 neutron-openvswitch-agent[3880471]: https://eventlet.readthedocs.io/en/latest/asyncio/migration.html
+Oct 26 22:39:34.561893 devstack-92-210 neutron-openvswitch-agent[3880471]:   import eventlet as _eventlet  # noqa
+Oct 26 22:39:35.933222 devstack-92-210 sudo[3881127]:    stack : PWD=/ ; USER=root ; COMMAND=/opt/stack/data/venv/bin/neutron-rootwrap /etc/neutron/rootwrap.conf privsep-helper --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/plugins/ml2/ml2_conf.ini --privsep_context neutron.privileged.default --privsep_sock_path /tmp/tmp78nmzzku/privsep.sock
+Oct 26 22:39:35.933599 devstack-92-210 sudo[3881127]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1001)
+Oct 26 22:39:36.385259 devstack-92-210 sudo[3881127]: pam_unix(sudo:session): session closed for user root
+Oct 26 22:39:41.934783 devstack-92-210 sudo[3883460]:    stack : PWD=/ ; USER=root ; COMMAND=/opt/stack/data/venv/bin/neutron-rootwrap /etc/neutron/rootwrap.conf privsep-helper --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/plugins/ml2/ml2_conf.ini --privsep_context neutron.privileged.ovs_vsctl_cmd --privsep_sock_path /tmp/tmp4kxjhel6/privsep.sock
+Oct 26 22:39:41.935190 devstack-92-210 sudo[3883460]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1001)
+Oct 26 22:39:42.394535 devstack-92-210 sudo[3883460]: pam_unix(sudo:session): session closed for user root
+Oct 26 22:39:42.600895 devstack-92-210 ovs-vsctl[3883513]: ovs|00001|vsctl|INFO|Called as ovs-vsctl --timeout=10 --id=@manager -- create Manager "target=\"ptcp:6640:127.0.0.1\"" -- add Open_vSwitch . manager_options @manager -- set Manager ptcp:6640:127.0.0.1 inactivity_probe=10000
+Oct 26 22:39:42.603474 devstack-92-210 ovs-vsctl[3883513]: ovs|00002|db_ctl_base|ERR|multiple rows in Manager match "ptcp:6640:127.0.0.1"
