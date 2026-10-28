@@ -1,0 +1,1367 @@
+Oct 28 12:16:05.798860 devstack-92-210 systemd[1]: Started devstack@q-dhcp.service - Devstack devstack@q-dhcp.service.
+Oct 28 12:16:06.025218 devstack-92-210 neutron-dhcp-agent[926628]: /opt/stack/data/venv/lib/python3.12/site-packages/futurist/_utils.py:34: EventletDeprecationWarning:
+Oct 28 12:16:06.025218 devstack-92-210 neutron-dhcp-agent[926628]: Eventlet is deprecated. It is currently being maintained in bugfix mode, and
+Oct 28 12:16:06.025218 devstack-92-210 neutron-dhcp-agent[926628]: we strongly recommend against using it for new projects.
+Oct 28 12:16:06.025218 devstack-92-210 neutron-dhcp-agent[926628]: If you are already using Eventlet, we recommend migrating to a different
+Oct 28 12:16:06.025218 devstack-92-210 neutron-dhcp-agent[926628]: framework.  For more detail see
+Oct 28 12:16:06.025218 devstack-92-210 neutron-dhcp-agent[926628]: https://eventlet.readthedocs.io/en/latest/asyncio/migration.html
+Oct 28 12:16:06.025218 devstack-92-210 neutron-dhcp-agent[926628]:   import eventlet as _eventlet  # noqa
+Oct 28 12:16:20.775016 devstack-92-210 sudo[929205]:    stack : PWD=/ ; USER=root ; COMMAND=/opt/stack/data/venv/bin/neutron-rootwrap /etc/neutron/rootwrap.conf privsep-helper --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/dhcp_agent.ini --privsep_context neutron.privileged.default --privsep_sock_path /tmp/tmp__cni0hf/privsep.sock
+Oct 28 12:16:20.775427 devstack-92-210 sudo[929205]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1001)
+Oct 28 12:16:21.235459 devstack-92-210 sudo[929205]: pam_unix(sudo:session): session closed for user root
+Oct 28 12:16:21.999089 devstack-92-210 sudo[929249]:    stack : PWD=/ ; USER=root ; COMMAND=/opt/stack/data/venv/bin/neutron-rootwrap /etc/neutron/rootwrap.conf privsep-helper --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/dhcp_agent.ini --privsep_context neutron.privileged.namespace_cmd --privsep_sock_path /tmp/tmpss02vg4j/privsep.sock
+Oct 28 12:16:21.999496 devstack-92-210 sudo[929249]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1001)
+Oct 28 12:16:22.454897 devstack-92-210 sudo[929249]: pam_unix(sudo:session): session closed for user root
+Oct 28 12:16:23.290634 devstack-92-210 sudo[929294]:    stack : PWD=/ ; USER=root ; COMMAND=/opt/stack/data/venv/bin/neutron-rootwrap /etc/neutron/rootwrap.conf privsep-helper --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/dhcp_agent.ini --privsep_context neutron.privileged.link_cmd --privsep_sock_path /tmp/tmpdgtcpy3y/privsep.sock
+Oct 28 12:16:23.291048 devstack-92-210 sudo[929294]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1001)
+Oct 28 12:16:23.749304 devstack-92-210 sudo[929294]: pam_unix(sudo:session): session closed for user root
+Oct 28 12:16:25.108439 devstack-92-210 sudo[929406]:    stack : PWD=/ ; USER=root ; COMMAND=/opt/stack/data/venv/bin/neutron-rootwrap-daemon /etc/neutron/rootwrap.conf
+Oct 28 12:16:25.108860 devstack-92-210 sudo[929406]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1001)
+Oct 28 12:16:25.202128 devstack-92-210 dnsmasq[929418]: started, version 2.91 cachesize 150
+Oct 28 12:16:25.202149 devstack-92-210 dnsmasq[929418]: DNS service limited to local subnets
+Oct 28 12:16:25.202161 devstack-92-210 dnsmasq[929418]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+Oct 28 12:16:25.202191 devstack-92-210 dnsmasq-dhcp[929418]: DHCP, static leases only on 10.1.0.0, lease time 1d
+Oct 28 12:16:25.202317 devstack-92-210 dnsmasq[929418]: reading /etc/resolv.conf
+Oct 28 12:16:25.202330 devstack-92-210 dnsmasq[929418]: using nameserver 127.0.0.53#53
+Oct 28 12:16:25.202399 devstack-92-210 dnsmasq[929418]: read /opt/stack/data/neutron/dhcp/22a7ebac-116f-4b97-8701-6114a37a5825/addn_hosts - 0 names
+Oct 28 12:16:25.202436 devstack-92-210 dnsmasq-dhcp[929418]: read /opt/stack/data/neutron/dhcp/22a7ebac-116f-4b97-8701-6114a37a5825/host
+Oct 28 12:16:25.202476 devstack-92-210 dnsmasq-dhcp[929418]: read /opt/stack/data/neutron/dhcp/22a7ebac-116f-4b97-8701-6114a37a5825/opts
+Oct 28 12:16:27.157530 devstack-92-210 dnsmasq[929418]: exiting on receipt of SIGTERM
+Oct 28 12:16:48.633557 devstack-92-210 dnsmasq[936206]: started, version 2.91 cachesize 150
+Oct 28 12:16:48.633578 devstack-92-210 dnsmasq[936206]: DNS service limited to local subnets
+Oct 28 12:16:48.633590 devstack-92-210 dnsmasq[936206]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+Oct 28 12:16:48.633620 devstack-92-210 dnsmasq-dhcp[936206]: DHCP, static leases only on 10.1.0.0, lease time 1d
+Oct 28 12:16:48.633748 devstack-92-210 dnsmasq[936206]: reading /etc/resolv.conf
+Oct 28 12:16:48.633762 devstack-92-210 dnsmasq[936206]: using nameserver 127.0.0.53#53
+Oct 28 12:16:48.633869 devstack-92-210 dnsmasq[936206]: read /opt/stack/data/neutron/dhcp/22a7ebac-116f-4b97-8701-6114a37a5825/addn_hosts - 2 names
+Oct 28 12:16:48.633917 devstack-92-210 dnsmasq-dhcp[936206]: read /opt/stack/data/neutron/dhcp/22a7ebac-116f-4b97-8701-6114a37a5825/host
+Oct 28 12:16:48.633982 devstack-92-210 dnsmasq-dhcp[936206]: read /opt/stack/data/neutron/dhcp/22a7ebac-116f-4b97-8701-6114a37a5825/opts
+Oct 28 12:17:51.332408 devstack-92-210 dnsmasq[945078]: started, version 2.91 cachesize 150
+Oct 28 12:17:51.332434 devstack-92-210 dnsmasq[945078]: DNS service limited to local subnets
+Oct 28 12:17:51.332446 devstack-92-210 dnsmasq[945078]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+Oct 28 12:17:51.332478 devstack-92-210 dnsmasq-dhcp[945078]: DHCP, static leases only on 192.168.233.0, lease time 1d
+Oct 28 12:17:51.332609 devstack-92-210 dnsmasq[945078]: reading /etc/resolv.conf
+Oct 28 12:17:51.332622 devstack-92-210 dnsmasq[945078]: using nameserver 127.0.0.53#53
+Oct 28 12:17:51.332695 devstack-92-210 dnsmasq[945078]: read /opt/stack/data/neutron/dhcp/59abbdf4-ebf2-4d18-9f99-4d41076b6223/addn_hosts - 0 names
+Oct 28 12:17:51.332731 devstack-92-210 dnsmasq-dhcp[945078]: read /opt/stack/data/neutron/dhcp/59abbdf4-ebf2-4d18-9f99-4d41076b6223/host
+Oct 28 12:17:51.332774 devstack-92-210 dnsmasq-dhcp[945078]: read /opt/stack/data/neutron/dhcp/59abbdf4-ebf2-4d18-9f99-4d41076b6223/opts
+Oct 28 12:17:51.568016 devstack-92-210 dnsmasq[945078]: read /opt/stack/data/neutron/dhcp/59abbdf4-ebf2-4d18-9f99-4d41076b6223/addn_hosts - 0 names
+Oct 28 12:17:51.568068 devstack-92-210 dnsmasq-dhcp[945078]: read /opt/stack/data/neutron/dhcp/59abbdf4-ebf2-4d18-9f99-4d41076b6223/host
+Oct 28 12:17:51.568109 devstack-92-210 dnsmasq-dhcp[945078]: read /opt/stack/data/neutron/dhcp/59abbdf4-ebf2-4d18-9f99-4d41076b6223/opts
+Oct 28 12:24:05.003283 devstack-92-210 dnsmasq[952252]: started, version 2.91 cachesize 150
+Oct 28 12:24:05.003300 devstack-92-210 dnsmasq[952252]: DNS service limited to local subnets
+Oct 28 12:24:05.003305 devstack-92-210 dnsmasq[952252]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+Oct 28 12:24:05.003327 devstack-92-210 dnsmasq-dhcp[952252]: DHCP, static leases only on 10.1.0.0, lease time 1d
+Oct 28 12:24:05.003397 devstack-92-210 dnsmasq[952252]: reading /etc/resolv.conf
+Oct 28 12:24:05.003405 devstack-92-210 dnsmasq[952252]: using nameserver 127.0.0.53#53
+Oct 28 12:24:05.003444 devstack-92-210 dnsmasq[952252]: read /opt/stack/data/neutron/dhcp/2b7a7662-cf68-4129-bb84-be0a21653f4e/addn_hosts - 0 names
+Oct 28 12:24:05.003465 devstack-92-210 dnsmasq-dhcp[952252]: read /opt/stack/data/neutron/dhcp/2b7a7662-cf68-4129-bb84-be0a21653f4e/host
+Oct 28 12:24:05.003488 devstack-92-210 dnsmasq-dhcp[952252]: read /opt/stack/data/neutron/dhcp/2b7a7662-cf68-4129-bb84-be0a21653f4e/opts
+Oct 28 12:24:06.789868 devstack-92-210 dnsmasq[952751]: started, version 2.91 cachesize 150
+Oct 28 12:24:06.789886 devstack-92-210 dnsmasq[952751]: DNS service limited to local subnets
+Oct 28 12:24:06.789897 devstack-92-210 dnsmasq[952751]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+Oct 28 12:24:06.789941 devstack-92-210 dnsmasq-dhcp[952751]: DHCP, static leases only on 10.1.0.0, lease time 1d
+Oct 28 12:24:06.790068 devstack-92-210 dnsmasq[952751]: reading /etc/resolv.conf
+Oct 28 12:24:06.790082 devstack-92-210 dnsmasq[952751]: using nameserver 127.0.0.53#53
+Oct 28 12:24:06.790180 devstack-92-210 dnsmasq[952751]: read /opt/stack/data/neutron/dhcp/c8bba90c-9e59-47fd-a1c7-19743f5fb67f/addn_hosts - 2 names
+Oct 28 12:24:06.790225 devstack-92-210 dnsmasq-dhcp[952751]: read /opt/stack/data/neutron/dhcp/c8bba90c-9e59-47fd-a1c7-19743f5fb67f/host
+Oct 28 12:24:06.790278 devstack-92-210 dnsmasq-dhcp[952751]: read /opt/stack/data/neutron/dhcp/c8bba90c-9e59-47fd-a1c7-19743f5fb67f/opts
+Oct 28 12:24:08.242282 devstack-92-210 dnsmasq[953114]: started, version 2.91 cachesize 150
+Oct 28 12:24:08.242305 devstack-92-210 dnsmasq[953114]: DNS service limited to local subnets
+Oct 28 12:24:08.242316 devstack-92-210 dnsmasq[953114]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+Oct 28 12:24:08.242348 devstack-92-210 dnsmasq-dhcp[953114]: DHCP, static leases only on 10.1.0.0, lease time 1d
+Oct 28 12:24:08.242486 devstack-92-210 dnsmasq[953114]: reading /etc/resolv.conf
+Oct 28 12:24:08.242499 devstack-92-210 dnsmasq[953114]: using nameserver 127.0.0.53#53
+Oct 28 12:24:08.242608 devstack-92-210 dnsmasq[953114]: read /opt/stack/data/neutron/dhcp/e1887b4c-60d5-49e5-8ef4-89007796b9dc/addn_hosts - 4 names
+Oct 28 12:24:08.242662 devstack-92-210 dnsmasq-dhcp[953114]: read /opt/stack/data/neutron/dhcp/e1887b4c-60d5-49e5-8ef4-89007796b9dc/host
+Oct 28 12:24:08.242712 devstack-92-210 dnsmasq-dhcp[953114]: read /opt/stack/data/neutron/dhcp/e1887b4c-60d5-49e5-8ef4-89007796b9dc/opts
+Oct 28 12:24:09.879781 devstack-92-210 dnsmasq[953599]: started, version 2.91 cachesize 150
+Oct 28 12:24:09.879809 devstack-92-210 dnsmasq[953599]: DNS service limited to local subnets
+Oct 28 12:24:09.879821 devstack-92-210 dnsmasq[953599]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+Oct 28 12:24:09.879853 devstack-92-210 dnsmasq-dhcp[953599]: DHCP, static leases only on 10.1.0.0, lease time 1d
+Oct 28 12:24:09.880016 devstack-92-210 dnsmasq[953599]: reading /etc/resolv.conf
+Oct 28 12:24:09.880030 devstack-92-210 dnsmasq[953599]: using nameserver 127.0.0.53#53
+Oct 28 12:24:09.880166 devstack-92-210 dnsmasq[953599]: read /opt/stack/data/neutron/dhcp/f82324ec-1309-4b85-9b84-596b7fd3fdb5/addn_hosts - 2 names
+Oct 28 12:24:09.880215 devstack-92-210 dnsmasq-dhcp[953599]: read /opt/stack/data/neutron/dhcp/f82324ec-1309-4b85-9b84-596b7fd3fdb5/host
+Oct 28 12:24:09.880267 devstack-92-210 dnsmasq-dhcp[953599]: read /opt/stack/data/neutron/dhcp/f82324ec-1309-4b85-9b84-596b7fd3fdb5/opts
+Oct 28 12:24:11.480895 devstack-92-210 dnsmasq[954012]: started, version 2.91 cachesize 150
+Oct 28 12:24:11.480922 devstack-92-210 dnsmasq[954012]: DNS service limited to local subnets
+Oct 28 12:24:11.480958 devstack-92-210 dnsmasq[954012]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+Oct 28 12:24:11.480988 devstack-92-210 dnsmasq-dhcp[954012]: DHCP, static leases only on 10.1.0.0, lease time 1d
+Oct 28 12:24:11.481122 devstack-92-210 dnsmasq[954012]: reading /etc/resolv.conf
+Oct 28 12:24:11.481136 devstack-92-210 dnsmasq[954012]: using nameserver 127.0.0.53#53
+Oct 28 12:24:11.481238 devstack-92-210 dnsmasq[954012]: read /opt/stack/data/neutron/dhcp/1aa4bc0e-d99e-4f93-9f7d-cac1d2989d47/addn_hosts - 2 names
+Oct 28 12:24:11.481285 devstack-92-210 dnsmasq-dhcp[954012]: read /opt/stack/data/neutron/dhcp/1aa4bc0e-d99e-4f93-9f7d-cac1d2989d47/host
+Oct 28 12:24:11.481338 devstack-92-210 dnsmasq-dhcp[954012]: read /opt/stack/data/neutron/dhcp/1aa4bc0e-d99e-4f93-9f7d-cac1d2989d47/opts
+Oct 28 12:24:13.299514 devstack-92-210 dnsmasq[954278]: started, version 2.91 cachesize 150
+Oct 28 12:24:13.299539 devstack-92-210 dnsmasq[954278]: DNS service limited to local subnets
+Oct 28 12:24:13.299551 devstack-92-210 dnsmasq[954278]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+Oct 28 12:24:13.299581 devstack-92-210 dnsmasq-dhcp[954278]: DHCP, static leases only on 10.1.0.0, lease time 1d
+Oct 28 12:24:13.299710 devstack-92-210 dnsmasq[954278]: reading /etc/resolv.conf
+Oct 28 12:24:13.299723 devstack-92-210 dnsmasq[954278]: using nameserver 127.0.0.53#53
+Oct 28 12:24:13.299827 devstack-92-210 dnsmasq[954278]: read /opt/stack/data/neutron/dhcp/c3258382-fe0e-4442-938b-d666bf928231/addn_hosts - 2 names
+Oct 28 12:24:13.299875 devstack-92-210 dnsmasq-dhcp[954278]: read /opt/stack/data/neutron/dhcp/c3258382-fe0e-4442-938b-d666bf928231/host
+Oct 28 12:24:13.299944 devstack-92-210 dnsmasq-dhcp[954278]: read /opt/stack/data/neutron/dhcp/c3258382-fe0e-4442-938b-d666bf928231/opts
+Oct 28 12:24:13.513062 devstack-92-210 dnsmasq[952751]: read /opt/stack/data/neutron/dhcp/c8bba90c-9e59-47fd-a1c7-19743f5fb67f/addn_hosts - 4 names
+Oct 28 12:24:13.513118 devstack-92-210 dnsmasq-dhcp[952751]: read /opt/stack/data/neutron/dhcp/c8bba90c-9e59-47fd-a1c7-19743f5fb67f/host
+Oct 28 12:24:13.513187 devstack-92-210 dnsmasq-dhcp[952751]: read /opt/stack/data/neutron/dhcp/c8bba90c-9e59-47fd-a1c7-19743f5fb67f/opts
+Oct 28 12:24:13.724886 devstack-92-210 dnsmasq[953114]: read /opt/stack/data/neutron/dhcp/e1887b4c-60d5-49e5-8ef4-89007796b9dc/addn_hosts - 4 names
+Oct 28 12:24:13.724986 devstack-92-210 dnsmasq-dhcp[953114]: read /opt/stack/data/neutron/dhcp/e1887b4c-60d5-49e5-8ef4-89007796b9dc/host
+Oct 28 12:24:13.725042 devstack-92-210 dnsmasq-dhcp[953114]: read /opt/stack/data/neutron/dhcp/e1887b4c-60d5-49e5-8ef4-89007796b9dc/opts
+Oct 28 12:24:14.888678 devstack-92-210 dnsmasq[954524]: started, version 2.91 cachesize 150
+Oct 28 12:24:14.888702 devstack-92-210 dnsmasq[954524]: DNS service limited to local subnets
+Oct 28 12:24:14.888714 devstack-92-210 dnsmasq[954524]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+Oct 28 12:24:14.888745 devstack-92-210 dnsmasq-dhcp[954524]: DHCP, static leases only on 10.1.0.0, lease time 1d
+Oct 28 12:24:14.888879 devstack-92-210 dnsmasq[954524]: reading /etc/resolv.conf
+Oct 28 12:24:14.888893 devstack-92-210 dnsmasq[954524]: using nameserver 127.0.0.53#53
+Oct 28 12:24:14.889033 devstack-92-210 dnsmasq[954524]: read /opt/stack/data/neutron/dhcp/9bb634e1-046d-42de-8a42-5dc9278e0199/addn_hosts - 2 names
+Oct 28 12:24:14.889081 devstack-92-210 dnsmasq-dhcp[954524]: read /opt/stack/data/neutron/dhcp/9bb634e1-046d-42de-8a42-5dc9278e0199/host
+Oct 28 12:24:14.889132 devstack-92-210 dnsmasq-dhcp[954524]: read /opt/stack/data/neutron/dhcp/9bb634e1-046d-42de-8a42-5dc9278e0199/opts
+Oct 28 12:24:15.043901 devstack-92-210 dnsmasq[954278]: read /opt/stack/data/neutron/dhcp/c3258382-fe0e-4442-938b-d666bf928231/addn_hosts - 2 names
+Oct 28 12:24:15.044000 devstack-92-210 dnsmasq-dhcp[954278]: read /opt/stack/data/neutron/dhcp/c3258382-fe0e-4442-938b-d666bf928231/host
+Oct 28 12:24:15.044055 devstack-92-210 dnsmasq-dhcp[954278]: read /opt/stack/data/neutron/dhcp/c3258382-fe0e-4442-938b-d666bf928231/opts
+Oct 28 12:24:15.198777 devstack-92-210 dnsmasq[952252]: exiting on receipt of SIGTERM
+Oct 28 12:24:15.296410 devstack-92-210 dnsmasq[952751]: read /opt/stack/data/neutron/dhcp/c8bba90c-9e59-47fd-a1c7-19743f5fb67f/addn_hosts - 4 names
+Oct 28 12:24:15.296460 devstack-92-210 dnsmasq-dhcp[952751]: read /opt/stack/data/neutron/dhcp/c8bba90c-9e59-47fd-a1c7-19743f5fb67f/host
+Oct 28 12:24:15.296486 devstack-92-210 dnsmasq-dhcp[952751]: read /opt/stack/data/neutron/dhcp/c8bba90c-9e59-47fd-a1c7-19743f5fb67f/opts
+Oct 28 12:24:15.441017 devstack-92-210 dnsmasq[953114]: read /opt/stack/data/neutron/dhcp/e1887b4c-60d5-49e5-8ef4-89007796b9dc/addn_hosts - 4 names
+Oct 28 12:24:15.441060 devstack-92-210 dnsmasq-dhcp[953114]: read /opt/stack/data/neutron/dhcp/e1887b4c-60d5-49e5-8ef4-89007796b9dc/host
+Oct 28 12:24:15.441077 devstack-92-210 dnsmasq-dhcp[953114]: read /opt/stack/data/neutron/dhcp/e1887b4c-60d5-49e5-8ef4-89007796b9dc/opts
+Oct 28 12:24:15.576730 devstack-92-210 dnsmasq[953599]: exiting on receipt of SIGTERM
+Oct 28 12:24:15.640230 devstack-92-210 dnsmasq[954012]: exiting on receipt of SIGTERM
+Oct 28 12:24:16.834585 devstack-92-210 dnsmasq[954898]: started, version 2.91 cachesize 150
+Oct 28 12:24:16.834612 devstack-92-210 dnsmasq[954898]: DNS service limited to local subnets
+Oct 28 12:24:16.834624 devstack-92-210 dnsmasq[954898]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+Oct 28 12:24:16.834655 devstack-92-210 dnsmasq-dhcp[954898]: DHCP, static leases only on 10.1.0.0, lease time 1d
+Oct 28 12:24:16.834793 devstack-92-210 dnsmasq[954898]: reading /etc/resolv.conf
+Oct 28 12:24:16.834806 devstack-92-210 dnsmasq[954898]: using nameserver 127.0.0.53#53
+Oct 28 12:24:16.834899 devstack-92-210 dnsmasq[954898]: read /opt/stack/data/neutron/dhcp/70299700-984c-4c87-9694-996b322ae982/addn_hosts - 2 names
+Oct 28 12:24:16.834963 devstack-92-210 dnsmasq-dhcp[954898]: read /opt/stack/data/neutron/dhcp/70299700-984c-4c87-9694-996b322ae982/host
+Oct 28 12:24:16.835015 devstack-92-210 dnsmasq-dhcp[954898]: read /opt/stack/data/neutron/dhcp/70299700-984c-4c87-9694-996b322ae982/opts
+Oct 28 12:24:17.943654 devstack-92-210 dnsmasq[955152]: started, version 2.91 cachesize 150
+Oct 28 12:24:17.943676 devstack-92-210 dnsmasq[955152]: DNS service limited to local subnets
+Oct 28 12:24:17.943688 devstack-92-210 dnsmasq[955152]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+Oct 28 12:24:17.943720 devstack-92-210 dnsmasq-dhcp[955152]: DHCP, static leases only on 10.1.0.0, lease time 1d
+Oct 28 12:24:17.943861 devstack-92-210 dnsmasq[955152]: reading /etc/resolv.conf
+Oct 28 12:24:17.943875 devstack-92-210 dnsmasq[955152]: using nameserver 127.0.0.53#53
+Oct 28 12:24:17.943999 devstack-92-210 dnsmasq[955152]: read /opt/stack/data/neutron/dhcp/cc80ea40-ee87-4227-b0ff-0f4542e8b9ff/addn_hosts - 2 names
+Oct 28 12:24:17.944054 devstack-92-210 dnsmasq-dhcp[955152]: read /opt/stack/data/neutron/dhcp/cc80ea40-ee87-4227-b0ff-0f4542e8b9ff/host
+Oct 28 12:24:17.944104 devstack-92-210 dnsmasq-dhcp[955152]: read /opt/stack/data/neutron/dhcp/cc80ea40-ee87-4227-b0ff-0f4542e8b9ff/opts
+Oct 28 12:24:18.106465 devstack-92-210 sudo[955182]:    stack : PWD=/ ; USER=root ; COMMAND=/opt/stack/data/venv/bin/neutron-rootwrap /etc/neutron/rootwrap.conf privsep-helper --config-file /etc/neutron/neutron.conf --config-file /etc/neutron/dhcp_agent.ini --privsep_context neutron.privileged.dhcp_release_cmd --privsep_sock_path /tmp/tmp7y2o2rld/privsep.sock
+Oct 28 12:24:18.106857 devstack-92-210 sudo[955182]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1001)
+Oct 28 12:24:18.582972 devstack-92-210 sudo[955182]: pam_unix(sudo:session): session closed for user root
+Oct 28 12:24:18.728233 devstack-92-210 dnsmasq-dhcp[954524]: DHCPRELEASE(tapd0cf11a6-01) 10.1.0.1 fa:16:3e:0b:cc:47
+Oct 28 12:24:19.067815 devstack-92-210 dnsmasq[954524]: read /opt/stack/data/neutron/dhcp/9bb634e1-046d-42de-8a42-5dc9278e0199/addn_hosts - 0 names
+Oct 28 12:24:19.067867 devstack-92-210 dnsmasq-dhcp[954524]: read /opt/stack/data/neutron/dhcp/9bb634e1-046d-42de-8a42-5dc9278e0199/host
+Oct 28 12:24:19.067973 devstack-92-210 dnsmasq-dhcp[954524]: read /opt/stack/data/neutron/dhcp/9bb634e1-046d-42de-8a42-5dc9278e0199/opts
+Oct 28 12:24:19.218528 devstack-92-210 dnsmasq[954278]: read /opt/stack/data/neutron/dhcp/c3258382-fe0e-4442-938b-d666bf928231/addn_hosts - 2 names
+Oct 28 12:24:19.218607 devstack-92-210 dnsmasq-dhcp[954278]: read /opt/stack/data/neutron/dhcp/c3258382-fe0e-4442-938b-d666bf928231/host
+Oct 28 12:24:19.218663 devstack-92-210 dnsmasq-dhcp[954278]: read /opt/stack/data/neutron/dhcp/c3258382-fe0e-4442-938b-d666bf928231/opts
+Oct 28 12:24:19.410801 devstack-92-210 dnsmasq[952751]: read /opt/stack/data/neutron/dhcp/c8bba90c-9e59-47fd-a1c7-19743f5fb67f/addn_hosts - 4 names
+Oct 28 12:24:19.410849 devstack-92-210 dnsmasq-dhcp[952751]: read /opt/stack/data/neutron/dhcp/c8bba90c-9e59-47fd-a1c7-19743f5fb67f/host
+Oct 28 12:24:19.410876 devstack-92-210 dnsmasq-dhcp[952751]: read /opt/stack/data/neutron/dhcp/c8bba90c-9e59-47fd-a1c7-19743f5fb67f/opts
+Oct 28 12:24:19.553138 devstack-92-210 dnsmasq[953114]: read /opt/stack/data/neutron/dhcp/e1887b4c-60d5-49e5-8ef4-89007796b9dc/addn_hosts - 4 names
+Oct 28 12:24:19.553218 devstack-92-210 dnsmasq-dhcp[953114]: read /opt/stack/data/neutron/dhcp/e1887b4c-60d5-49e5-8ef4-89007796b9dc/host
+Oct 28 12:24:19.553273 devstack-92-210 dnsmasq-dhcp[953114]: read /opt/stack/data/neutron/dhcp/e1887b4c-60d5-49e5-8ef4-89007796b9dc/opts
+Oct 28 12:24:19.787867 devstack-92-210 dnsmasq[954898]: read /opt/stack/data/neutron/dhcp/70299700-984c-4c87-9694-996b322ae982/addn_hosts - 4 names
+Oct 28 12:24:19.788004 devstack-92-210 dnsmasq-dhcp[954898]: read /opt/stack/data/neutron/dhcp/70299700-984c-4c87-9694-996b322ae982/host
+Oct 28 12:24:19.788069 devstack-92-210 dnsmasq-dhcp[954898]: read /opt/stack/data/neutron/dhcp/70299700-984c-4c87-9694-996b322ae982/opts
+Oct 28 12:24:19.937584 devstack-92-210 dnsmasq[954524]: exiting on receipt of SIGTERM
+Oct 28 12:24:20.028774 devstack-92-210 dnsmasq[954278]: read /opt/stack/data/neutron/dhcp/c3258382-fe0e-4442-938b-d666bf928231/addn_hosts - 2 names
+Oct 28 12:24:20.028817 devstack-92-210 dnsmasq-dhcp[954278]: read /opt/stack/data/neutron/dhcp/c3258382-fe0e-4442-938b-d666bf928231/host
+Oct 28 12:24:20.028852 devstack-92-210 dnsmasq-dhcp[954278]: read /opt/stack/data/neutron/dhcp/c3258382-fe0e-4442-938b-d666bf928231/opts
+Oct 28 12:24:20.173091 devstack-92-210 dnsmasq[952751]: read /opt/stack/data/neutron/dhcp/c8bba90c-9e59-47fd-a1c7-19743f5fb67f/addn_hosts - 4 names
+Oct 28 12:24:20.173169 devstack-92-210 dnsmasq-dhcp[952751]: read /opt/stack/data/neutron/dhcp/c8bba90c-9e59-47fd-a1c7-19743f5fb67f/host
+Oct 28 12:24:20.173210 devstack-92-210 dnsmasq-dhcp[952751]: read /opt/stack/data/neutron/dhcp/c8bba90c-9e59-47fd-a1c7-19743f5fb67f/opts
+Oct 28 12:24:20.325524 devstack-92-210 dnsmasq[953114]: read /opt/stack/data/neutron/dhcp/e1887b4c-60d5-49e5-8ef4-89007796b9dc/addn_hosts - 4 names
+Oct 28 12:24:20.325603 devstack-92-210 dnsmasq-dhcp[953114]: read /opt/stack/data/neutron/dhcp/e1887b4c-60d5-49e5-8ef4-89007796b9dc/host
+Oct 28 12:24:20.325760 devstack-92-210 dnsmasq-dhcp[953114]: read /opt/stack/data/neutron/dhcp/e1887b4c-60d5-49e5-8ef4-89007796b9dc/opts
+Oct 28 12:24:20.519237 devstack-92-210 dnsmasq[954898]: read /opt/stack/data/neutron/dhcp/70299700-984c-4c87-9694-996b322ae982/addn_hosts - 4 names
+Oct 28 12:24:20.519282 devstack-92-210 dnsmasq-dhcp[954898]: read /opt/stack/data/neutron/dhcp/70299700-984c-4c87-9694-996b322ae982/host
+Oct 28 12:24:20.519301 devstack-92-210 dnsmasq-dhcp[954898]: read /opt/stack/data/neutron/dhcp/70299700-984c-4c87-9694-996b322ae982/opts
+Oct 28 12:24:20.656141 devstack-92-210 dnsmasq[955152]: exiting on receipt of SIGTERM
+Oct 28 12:24:20.745806 devstack-92-210 dnsmasq[953114]: read /opt/stack/data/neutron/dhcp/e1887b4c-60d5-49e5-8ef4-89007796b9dc/addn_hosts - 6 names
+Oct 28 12:24:20.745891 devstack-92-210 dnsmasq-dhcp[953114]: read /opt/stack/data/neutron/dhcp/e1887b4c-60d5-49e5-8ef4-89007796b9dc/host
+Oct 28 12:24:20.746025 devstack-92-210 dnsmasq-dhcp[953114]: read /opt/stack/data/neutron/dhcp/e1887b4c-60d5-49e5-8ef4-89007796b9dc/opts
+Oct 28 12:24:20.897379 devstack-92-210 dnsmasq[954898]: read /opt/stack/data/neutron/dhcp/70299700-984c-4c87-9694-996b322ae982/addn_hosts - 4 names
+Oct 28 12:24:20.897531 devstack-92-210 dnsmasq-dhcp[954898]: read /opt/stack/data/neutron/dhcp/70299700-984c-4c87-9694-996b322ae982/host
+Oct 28 12:24:20.897587 devstack-92-210 dnsmasq-dhcp[954898]: read /opt/stack/data/neutron/dhcp/70299700-984c-4c87-9694-996b322ae982/opts
+Oct 28 12:24:21.053090 devstack-92-210 dnsmasq[953114]: read /opt/stack/data/neutron/dhcp/e1887b4c-60d5-49e5-8ef4-89007796b9dc/addn_hosts - 8 names
+Oct 28 12:24:21.053128 devstack-92-210 dnsmasq-dhcp[953114]: read /opt/stack/data/neutron/dhcp/e1887b4c-60d5-49e5-8ef4-89007796b9dc/host
+Oct 28 12:24:21.053146 devstack-92-210 dnsmasq-dhcp[953114]: read /opt/stack/data/neutron/dhcp/e1887b4c-60d5-49e5-8ef4-89007796b9dc/opts
+Oct 28 12:24:21.219765 devstack-92-210 dnsmasq[954898]: read /opt/stack/data/neutron/dhcp/70299700-984c-4c87-9694-996b322ae982/addn_hosts - 4 names
+Oct 28 12:24:21.219843 devstack-92-210 dnsmasq-dhcp[954898]: read /opt/stack/data/neutron/dhcp/70299700-984c-4c87-9694-996b322ae982/host
+Oct 28 12:24:21.219981 devstack-92-210 dnsmasq-dhcp[954898]: read /opt/stack/data/neutron/dhcp/70299700-984c-4c87-9694-996b322ae982/opts
+Oct 28 12:24:21.831469 devstack-92-210 dnsmasq-dhcp[953114]: DHCPDISCOVER(tape123ef5c-80) fa:16:3e:1f:5b:80
+Oct 28 12:24:21.831492 devstack-92-210 dnsmasq-dhcp[953114]: DHCPOFFER(tape123ef5c-80) 10.1.0.3 fa:16:3e:1f:5b:80
+Oct 28 12:24:21.843017 devstack-92-210 dnsmasq-dhcp[953114]: DHCPREQUEST(tape123ef5c-80) 10.1.0.3 fa:16:3e:1f:5b:80
+Oct 28 12:24:21.843049 devstack-92-210 dnsmasq-dhcp[953114]: DHCPACK(tape123ef5c-80) 10.1.0.3 fa:16:3e:1f:5b:80 host-10-1-0-3
+Oct 28 12:24:22.300303 devstack-92-210 dnsmasq[955784]: started, version 2.91 cachesize 150
+Oct 28 12:24:22.300325 devstack-92-210 dnsmasq[955784]: DNS service limited to local subnets
+Oct 28 12:24:22.300337 devstack-92-210 dnsmasq[955784]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+Oct 28 12:24:22.300365 devstack-92-210 dnsmasq-dhcp[955784]: DHCP, static leases only on 10.1.0.0, lease time 1d
+Oct 28 12:24:22.300502 devstack-92-210 dnsmasq[955784]: reading /etc/resolv.conf
+Oct 28 12:24:22.300516 devstack-92-210 dnsmasq[955784]: using nameserver 127.0.0.53#53
+Oct 28 12:24:22.300584 devstack-92-210 dnsmasq[955784]: read /opt/stack/data/neutron/dhcp/c39f7d14-0860-437b-8856-65db5bd1633e/addn_hosts - 0 names
+Oct 28 12:24:22.300628 devstack-92-210 dnsmasq-dhcp[955784]: read /opt/stack/data/neutron/dhcp/c39f7d14-0860-437b-8856-65db5bd1633e/host
+Oct 28 12:24:22.300677 devstack-92-210 dnsmasq-dhcp[955784]: read /opt/stack/data/neutron/dhcp/c39f7d14-0860-437b-8856-65db5bd1633e/opts
+Oct 28 12:24:22.389458 devstack-92-210 dnsmasq[953114]: read /opt/stack/data/neutron/dhcp/e1887b4c-60d5-49e5-8ef4-89007796b9dc/addn_hosts - 6 names
+Oct 28 12:24:22.389542 devstack-92-210 dnsmasq-dhcp[953114]: read /opt/stack/data/neutron/dhcp/e1887b4c-60d5-49e5-8ef4-89007796b9dc/host
+Oct 28 12:24:22.389650 devstack-92-210 dnsmasq-dhcp[953114]: read /opt/stack/data/neutron/dhcp/e1887b4c-60d5-49e5-8ef4-89007796b9dc/opts
+Oct 28 12:24:22.587192 devstack-92-210 dnsmasq[954898]: read /opt/stack/data/neutron/dhcp/70299700-984c-4c87-9694-996b322ae982/addn_hosts - 2 names
+Oct 28 12:24:22.587260 devstack-92-210 dnsmasq-dhcp[954898]: read /opt/stack/data/neutron/dhcp/70299700-984c-4c87-9694-996b322ae982/host
+Oct 28 12:24:22.587373 devstack-92-210 dnsmasq-dhcp[954898]: read /opt/stack/data/neutron/dhcp/70299700-984c-4c87-9694-996b322ae982/opts
+Oct 28 12:24:22.778308 devstack-92-210 dnsmasq[955784]: exiting on receipt of SIGTERM
+Oct 28 12:24:23.154466 devstack-92-210 dnsmasq[955926]: started, version 2.91 cachesize 150
+Oct 28 12:24:23.154488 devstack-92-210 dnsmasq[955926]: DNS service limited to local subnets
+Oct 28 12:24:23.154500 devstack-92-210 dnsmasq[955926]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+Oct 28 12:24:23.154533 devstack-92-210 dnsmasq-dhcp[955926]: DHCP, static leases only on 10.1.0.0, lease time 1d
+Oct 28 12:24:23.154675 devstack-92-210 dnsmasq[955926]: reading /etc/resolv.conf
+Oct 28 12:24:23.154688 devstack-92-210 dnsmasq[955926]: using nameserver 127.0.0.53#53
+Oct 28 12:24:23.154786 devstack-92-210 dnsmasq[955926]: read /opt/stack/data/neutron/dhcp/c39f7d14-0860-437b-8856-65db5bd1633e/addn_hosts - 2 names
+Oct 28 12:24:23.154834 devstack-92-210 dnsmasq-dhcp[955926]: read /opt/stack/data/neutron/dhcp/c39f7d14-0860-437b-8856-65db5bd1633e/host
+Oct 28 12:24:23.154885 devstack-92-210 dnsmasq-dhcp[955926]: read /opt/stack/data/neutron/dhcp/c39f7d14-0860-437b-8856-65db5bd1633e/opts
+Oct 28 12:24:23.251184 devstack-92-210 dnsmasq-dhcp[954898]: DHCPRELEASE(tap668a668a-38) 10.1.0.1 fa:16:3e:dd:00:29
+Oct 28 12:24:23.588825 devstack-92-210 dnsmasq[954898]: read /opt/stack/data/neutron/dhcp/70299700-984c-4c87-9694-996b322ae982/addn_hosts - 0 names
+Oct 28 12:24:23.588877 devstack-92-210 dnsmasq-dhcp[954898]: read /opt/stack/data/neutron/dhcp/70299700-984c-4c87-9694-996b322ae982/host
+Oct 28 12:24:23.588919 devstack-92-210 dnsmasq-dhcp[954898]: read /opt/stack/data/neutron/dhcp/70299700-984c-4c87-9694-996b322ae982/opts
+Oct 28 12:24:23.739006 devstack-92-210 dnsmasq[955926]: read /opt/stack/data/neutron/dhcp/c39f7d14-0860-437b-8856-65db5bd1633e/addn_hosts - 2 names
+Oct 28 12:24:23.739111 devstack-92-210 dnsmasq-dhcp[955926]: read /opt/stack/data/neutron/dhcp/c39f7d14-0860-437b-8856-65db5bd1633e/host
+Oct 28 12:24:23.739168 devstack-92-210 dnsmasq-dhcp[955926]: read /opt/stack/data/neutron/dhcp/c39f7d14-0860-437b-8856-65db5bd1633e/opts
+Oct 28 12:24:23.892310 devstack-92-210 dnsmasq[954898]: exiting on receipt of SIGTERM
+Oct 28 12:24:23.967812 devstack-92-210 dnsmasq[955926]: read /opt/stack/data/neutron/dhcp/c39f7d14-0860-437b-8856-65db5bd1633e/addn_hosts - 2 names
+Oct 28 12:24:23.967891 devstack-92-210 dnsmasq-dhcp[955926]: read /opt/stack/data/neutron/dhcp/c39f7d14-0860-437b-8856-65db5bd1633e/host
+Oct 28 12:24:23.967967 devstack-92-210 dnsmasq-dhcp[955926]: read /opt/stack/data/neutron/dhcp/c39f7d14-0860-437b-8856-65db5bd1633e/opts
+Oct 28 12:24:24.479981 devstack-92-210 dnsmasq[955926]: read /opt/stack/data/neutron/dhcp/c39f7d14-0860-437b-8856-65db5bd1633e/addn_hosts - 4 names
+Oct 28 12:24:24.480190 devstack-92-210 dnsmasq-dhcp[955926]: read /opt/stack/data/neutron/dhcp/c39f7d14-0860-437b-8856-65db5bd1633e/host
+Oct 28 12:24:24.480246 devstack-92-210 dnsmasq-dhcp[955926]: read /opt/stack/data/neutron/dhcp/c39f7d14-0860-437b-8856-65db5bd1633e/opts
+Oct 28 12:24:26.054166 devstack-92-210 dnsmasq[956314]: started, version 2.91 cachesize 150
+Oct 28 12:24:26.054188 devstack-92-210 dnsmasq[956314]: DNS service limited to local subnets
+Oct 28 12:24:26.054200 devstack-92-210 dnsmasq[956314]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+Oct 28 12:24:26.054233 devstack-92-210 dnsmasq-dhcp[956314]: DHCP, static leases only on 10.1.0.0, lease time 1d
+Oct 28 12:24:26.054379 devstack-92-210 dnsmasq[956314]: reading /etc/resolv.conf
+Oct 28 12:24:26.054392 devstack-92-210 dnsmasq[956314]: using nameserver 127.0.0.53#53
+Oct 28 12:24:26.054458 devstack-92-210 dnsmasq[956314]: read /opt/stack/data/neutron/dhcp/dae76e1f-d8d6-4b58-a151-043c8f890ccd/addn_hosts - 0 names
+Oct 28 12:24:26.054481 devstack-92-210 dnsmasq-dhcp[956314]: read /opt/stack/data/neutron/dhcp/dae76e1f-d8d6-4b58-a151-043c8f890ccd/host
+Oct 28 12:24:26.054503 devstack-92-210 dnsmasq-dhcp[956314]: read /opt/stack/data/neutron/dhcp/dae76e1f-d8d6-4b58-a151-043c8f890ccd/opts
+Oct 28 12:24:26.198424 devstack-92-210 dnsmasq[956314]: read /opt/stack/data/neutron/dhcp/dae76e1f-d8d6-4b58-a151-043c8f890ccd/addn_hosts - 2 names
+Oct 28 12:24:26.198579 devstack-92-210 dnsmasq-dhcp[956314]: read /opt/stack/data/neutron/dhcp/dae76e1f-d8d6-4b58-a151-043c8f890ccd/host
+Oct 28 12:24:26.198633 devstack-92-210 dnsmasq-dhcp[956314]: read /opt/stack/data/neutron/dhcp/dae76e1f-d8d6-4b58-a151-043c8f890ccd/opts
+Oct 28 12:24:26.335304 devstack-92-210 dnsmasq[956314]: read /opt/stack/data/neutron/dhcp/dae76e1f-d8d6-4b58-a151-043c8f890ccd/addn_hosts - 2 names
+Oct 28 12:24:26.335373 devstack-92-210 dnsmasq-dhcp[956314]: read /opt/stack/data/neutron/dhcp/dae76e1f-d8d6-4b58-a151-043c8f890ccd/host
+Oct 28 12:24:26.335523 devstack-92-210 dnsmasq-dhcp[956314]: read /opt/stack/data/neutron/dhcp/dae76e1f-d8d6-4b58-a151-043c8f890ccd/opts
+Oct 28 12:24:27.960331 devstack-92-210 dnsmasq[956553]: started, version 2.91 cachesize 150
+Oct 28 12:24:27.960357 devstack-92-210 dnsmasq[956553]: DNS service limited to local subnets
+Oct 28 12:24:27.960368 devstack-92-210 dnsmasq[956553]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+Oct 28 12:24:27.960409 devstack-92-210 dnsmasq-dhcp[956553]: DHCP, static leases only on 10.1.0.0, lease time 1d
+Oct 28 12:24:27.960547 devstack-92-210 dnsmasq[956553]: reading /etc/resolv.conf
+Oct 28 12:24:27.960560 devstack-92-210 dnsmasq[956553]: using nameserver 127.0.0.53#53
+Oct 28 12:24:27.960606 devstack-92-210 dnsmasq[956553]: read /opt/stack/data/neutron/dhcp/44b990b6-24d7-47aa-915d-70ce1dbc0756/addn_hosts - 0 names
+Oct 28 12:24:27.960624 devstack-92-210 dnsmasq-dhcp[956553]: read /opt/stack/data/neutron/dhcp/44b990b6-24d7-47aa-915d-70ce1dbc0756/host
+Oct 28 12:24:27.960648 devstack-92-210 dnsmasq-dhcp[956553]: read /opt/stack/data/neutron/dhcp/44b990b6-24d7-47aa-915d-70ce1dbc0756/opts
+Oct 28 12:24:27.981152 devstack-92-210 dnsmasq-dhcp[952751]: DHCPDISCOVER(tap408d6935-40) fa:16:3e:a0:c9:7c
+Oct 28 12:24:27.981163 devstack-92-210 dnsmasq-dhcp[952751]: DHCPOFFER(tap408d6935-40) 10.1.0.5 fa:16:3e:a0:c9:7c
+Oct 28 12:24:27.991445 devstack-92-210 dnsmasq-dhcp[952751]: DHCPREQUEST(tap408d6935-40) 10.1.0.5 fa:16:3e:a0:c9:7c
+Oct 28 12:24:27.991461 devstack-92-210 dnsmasq-dhcp[952751]: DHCPACK(tap408d6935-40) 10.1.0.5 fa:16:3e:a0:c9:7c host-10-1-0-5
+Oct 28 12:24:28.046177 devstack-92-210 dnsmasq[956314]: read /opt/stack/data/neutron/dhcp/dae76e1f-d8d6-4b58-a151-043c8f890ccd/addn_hosts - 2 names
+Oct 28 12:24:28.046252 devstack-92-210 dnsmasq-dhcp[956314]: read /opt/stack/data/neutron/dhcp/dae76e1f-d8d6-4b58-a151-043c8f890ccd/host
+Oct 28 12:24:28.046307 devstack-92-210 dnsmasq-dhcp[956314]: read /opt/stack/data/neutron/dhcp/dae76e1f-d8d6-4b58-a151-043c8f890ccd/opts
+Oct 28 12:24:28.220945 devstack-92-210 dnsmasq[953114]: read /opt/stack/data/neutron/dhcp/e1887b4c-60d5-49e5-8ef4-89007796b9dc/addn_hosts - 8 names
+Oct 28 12:24:28.221081 devstack-92-210 dnsmasq-dhcp[953114]: read /opt/stack/data/neutron/dhcp/e1887b4c-60d5-49e5-8ef4-89007796b9dc/host
+Oct 28 12:24:28.221163 devstack-92-210 dnsmasq-dhcp[953114]: read /opt/stack/data/neutron/dhcp/e1887b4c-60d5-49e5-8ef4-89007796b9dc/opts
+Oct 28 12:24:28.488727 devstack-92-210 dnsmasq[956553]: read /opt/stack/data/neutron/dhcp/44b990b6-24d7-47aa-915d-70ce1dbc0756/addn_hosts - 2 names
+Oct 28 12:24:28.488804 devstack-92-210 dnsmasq-dhcp[956553]: read /opt/stack/data/neutron/dhcp/44b990b6-24d7-47aa-915d-70ce1dbc0756/host
+Oct 28 12:24:28.488910 devstack-92-210 dnsmasq-dhcp[956553]: read /opt/stack/data/neutron/dhcp/44b990b6-24d7-47aa-915d-70ce1dbc0756/opts
+Oct 28 12:24:28.655301 devstack-92-210 dnsmasq[956553]: read /opt/stack/data/neutron/dhcp/44b990b6-24d7-47aa-915d-70ce1dbc0756/addn_hosts - 2 names
+Oct 28 12:24:28.655347 devstack-92-210 dnsmasq-dhcp[956553]: read /opt/stack/data/neutron/dhcp/44b990b6-24d7-47aa-915d-70ce1dbc0756/host
+Oct 28 12:24:28.655381 devstack-92-210 dnsmasq-dhcp[956553]: read /opt/stack/data/neutron/dhcp/44b990b6-24d7-47aa-915d-70ce1dbc0756/opts
+Oct 28 12:24:28.833160 devstack-92-210 dnsmasq[956553]: read /opt/stack/data/neutron/dhcp/44b990b6-24d7-47aa-915d-70ce1dbc0756/addn_hosts - 2 names
+Oct 28 12:24:28.833220 devstack-92-210 dnsmasq-dhcp[956553]: read /opt/stack/data/neutron/dhcp/44b990b6-24d7-47aa-915d-70ce1dbc0756/host
+Oct 28 12:24:28.833265 devstack-92-210 dnsmasq-dhcp[956553]: read /opt/stack/data/neutron/dhcp/44b990b6-24d7-47aa-915d-70ce1dbc0756/opts
+Oct 28 12:24:29.679833 devstack-92-210 dnsmasq[956314]: read /opt/stack/data/neutron/dhcp/dae76e1f-d8d6-4b58-a151-043c8f890ccd/addn_hosts - 0 names
+Oct 28 12:24:29.679857 devstack-92-210 dnsmasq-dhcp[956314]: read /opt/stack/data/neutron/dhcp/dae76e1f-d8d6-4b58-a151-043c8f890ccd/host
+Oct 28 12:24:29.679874 devstack-92-210 dnsmasq-dhcp[956314]: read /opt/stack/data/neutron/dhcp/dae76e1f-d8d6-4b58-a151-043c8f890ccd/opts
+Oct 28 12:24:30.303304 devstack-92-210 dnsmasq[956314]: exiting on receipt of SIGTERM
+Oct 28 12:24:31.422771 devstack-92-210 dnsmasq[956553]: read /opt/stack/data/neutron/dhcp/44b990b6-24d7-47aa-915d-70ce1dbc0756/addn_hosts - 0 names
+Oct 28 12:24:31.422834 devstack-92-210 dnsmasq-dhcp[956553]: read /opt/stack/data/neutron/dhcp/44b990b6-24d7-47aa-915d-70ce1dbc0756/host
+Oct 28 12:24:31.422878 devstack-92-210 dnsmasq-dhcp[956553]: read /opt/stack/data/neutron/dhcp/44b990b6-24d7-47aa-915d-70ce1dbc0756/opts
+Oct 28 12:24:32.009703 devstack-92-210 dnsmasq[956553]: exiting on receipt of SIGTERM
+Oct 28 12:24:34.111842 devstack-92-210 dnsmasq-dhcp[953114]: DHCPDISCOVER(tape123ef5c-80) fa:16:3e:c1:a6:a6
+Oct 28 12:24:34.111864 devstack-92-210 dnsmasq-dhcp[953114]: DHCPOFFER(tape123ef5c-80) 10.1.0.10 fa:16:3e:c1:a6:a6
+Oct 28 12:24:34.119362 devstack-92-210 dnsmasq-dhcp[953114]: DHCPREQUEST(tape123ef5c-80) 10.1.0.10 fa:16:3e:c1:a6:a6
+Oct 28 12:24:34.119393 devstack-92-210 dnsmasq-dhcp[953114]: DHCPACK(tape123ef5c-80) 10.1.0.10 fa:16:3e:c1:a6:a6 host-10-1-0-10
+Oct 28 12:24:34.299279 devstack-92-210 dnsmasq[957117]: started, version 2.91 cachesize 150
+Oct 28 12:24:34.299306 devstack-92-210 dnsmasq[957117]: DNS service limited to local subnets
+Oct 28 12:24:34.299319 devstack-92-210 dnsmasq[957117]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+Oct 28 12:24:34.299356 devstack-92-210 dnsmasq-dhcp[957117]: DHCP, static leases only on 10.1.0.0, lease time 1d
+Oct 28 12:24:34.299483 devstack-92-210 dnsmasq[957117]: reading /etc/resolv.conf
+Oct 28 12:24:34.299497 devstack-92-210 dnsmasq[957117]: using nameserver 127.0.0.53#53
+Oct 28 12:24:34.299560 devstack-92-210 dnsmasq[957117]: read /opt/stack/data/neutron/dhcp/7b87a4c5-f6d8-4fb6-bcce-20b338754f12/addn_hosts - 0 names
+Oct 28 12:24:34.299598 devstack-92-210 dnsmasq-dhcp[957117]: read /opt/stack/data/neutron/dhcp/7b87a4c5-f6d8-4fb6-bcce-20b338754f12/host
+Oct 28 12:24:34.299642 devstack-92-210 dnsmasq-dhcp[957117]: read /opt/stack/data/neutron/dhcp/7b87a4c5-f6d8-4fb6-bcce-20b338754f12/opts
+Oct 28 12:24:34.459378 devstack-92-210 dnsmasq[957117]: read /opt/stack/data/neutron/dhcp/7b87a4c5-f6d8-4fb6-bcce-20b338754f12/addn_hosts - 2 names
+Oct 28 12:24:34.459448 devstack-92-210 dnsmasq-dhcp[957117]: read /opt/stack/data/neutron/dhcp/7b87a4c5-f6d8-4fb6-bcce-20b338754f12/host
+Oct 28 12:24:34.459585 devstack-92-210 dnsmasq-dhcp[957117]: read /opt/stack/data/neutron/dhcp/7b87a4c5-f6d8-4fb6-bcce-20b338754f12/opts
+Oct 28 12:24:34.617185 devstack-92-210 dnsmasq[957117]: read /opt/stack/data/neutron/dhcp/7b87a4c5-f6d8-4fb6-bcce-20b338754f12/addn_hosts - 2 names
+Oct 28 12:24:34.617254 devstack-92-210 dnsmasq-dhcp[957117]: read /opt/stack/data/neutron/dhcp/7b87a4c5-f6d8-4fb6-bcce-20b338754f12/host
+Oct 28 12:24:34.617320 devstack-92-210 dnsmasq-dhcp[957117]: read /opt/stack/data/neutron/dhcp/7b87a4c5-f6d8-4fb6-bcce-20b338754f12/opts
+Oct 28 12:24:34.768819 devstack-92-210 dnsmasq[957117]: read /opt/stack/data/neutron/dhcp/7b87a4c5-f6d8-4fb6-bcce-20b338754f12/addn_hosts - 2 names
+Oct 28 12:24:34.768887 devstack-92-210 dnsmasq-dhcp[957117]: read /opt/stack/data/neutron/dhcp/7b87a4c5-f6d8-4fb6-bcce-20b338754f12/host
+Oct 28 12:24:34.769016 devstack-92-210 dnsmasq-dhcp[957117]: read /opt/stack/data/neutron/dhcp/7b87a4c5-f6d8-4fb6-bcce-20b338754f12/opts
+Oct 28 12:24:36.454591 devstack-92-210 dnsmasq[957117]: read /opt/stack/data/neutron/dhcp/7b87a4c5-f6d8-4fb6-bcce-20b338754f12/addn_hosts - 4 names
+Oct 28 12:24:36.454756 devstack-92-210 dnsmasq-dhcp[957117]: read /opt/stack/data/neutron/dhcp/7b87a4c5-f6d8-4fb6-bcce-20b338754f12/host
+Oct 28 12:24:36.454812 devstack-92-210 dnsmasq-dhcp[957117]: read /opt/stack/data/neutron/dhcp/7b87a4c5-f6d8-4fb6-bcce-20b338754f12/opts
+Oct 28 12:24:38.023191 devstack-92-210 dnsmasq-dhcp[952751]: DHCPRELEASE(tap408d6935-40) 10.1.0.5 fa:16:3e:a0:c9:7c
+Oct 28 12:24:38.034956 devstack-92-210 dnsmasq-dhcp[952751]: DHCPRELEASE(tap408d6935-40) 10.1.0.5 fa:16:3e:a0:c9:7c unknown lease
+Oct 28 12:24:38.362984 devstack-92-210 dnsmasq[952751]: read /opt/stack/data/neutron/dhcp/c8bba90c-9e59-47fd-a1c7-19743f5fb67f/addn_hosts - 2 names
+Oct 28 12:24:38.363127 devstack-92-210 dnsmasq-dhcp[952751]: read /opt/stack/data/neutron/dhcp/c8bba90c-9e59-47fd-a1c7-19743f5fb67f/host
+Oct 28 12:24:38.363185 devstack-92-210 dnsmasq-dhcp[952751]: read /opt/stack/data/neutron/dhcp/c8bba90c-9e59-47fd-a1c7-19743f5fb67f/opts
+Oct 28 12:24:40.112250 devstack-92-210 dnsmasq-dhcp[955926]: DHCPDISCOVER(tapf91722c5-28) fa:16:3e:5c:ad:d6
+Oct 28 12:24:40.112277 devstack-92-210 dnsmasq-dhcp[955926]: DHCPOFFER(tapf91722c5-28) 10.1.0.4 fa:16:3e:5c:ad:d6
+Oct 28 12:24:40.120821 devstack-92-210 dnsmasq-dhcp[955926]: DHCPREQUEST(tapf91722c5-28) 10.1.0.4 fa:16:3e:5c:ad:d6
+Oct 28 12:24:40.120855 devstack-92-210 dnsmasq-dhcp[955926]: DHCPACK(tapf91722c5-28) 10.1.0.4 fa:16:3e:5c:ad:d6 host-10-1-0-4
+Oct 28 12:24:40.217059 devstack-92-210 dnsmasq-dhcp[952751]: DHCPRELEASE(tap408d6935-40) 10.1.0.1 fa:16:3e:65:95:4e
+Oct 28 12:24:40.543924 devstack-92-210 dnsmasq[952751]: read /opt/stack/data/neutron/dhcp/c8bba90c-9e59-47fd-a1c7-19743f5fb67f/addn_hosts - 0 names
+Oct 28 12:24:40.543966 devstack-92-210 dnsmasq-dhcp[952751]: read /opt/stack/data/neutron/dhcp/c8bba90c-9e59-47fd-a1c7-19743f5fb67f/host
+Oct 28 12:24:40.543985 devstack-92-210 dnsmasq-dhcp[952751]: read /opt/stack/data/neutron/dhcp/c8bba90c-9e59-47fd-a1c7-19743f5fb67f/opts
+Oct 28 12:24:40.843831 devstack-92-210 dnsmasq[952751]: exiting on receipt of SIGTERM
+Oct 28 12:24:41.506504 devstack-92-210 dnsmasq-dhcp[954278]: DHCPRELEASE(tap7fceb542-d3) 10.1.0.1 fa:16:3e:df:bf:af
+Oct 28 12:24:41.833257 devstack-92-210 dnsmasq[954278]: read /opt/stack/data/neutron/dhcp/c3258382-fe0e-4442-938b-d666bf928231/addn_hosts - 0 names
+Oct 28 12:24:41.833312 devstack-92-210 dnsmasq-dhcp[954278]: read /opt/stack/data/neutron/dhcp/c3258382-fe0e-4442-938b-d666bf928231/host
+Oct 28 12:24:41.833354 devstack-92-210 dnsmasq-dhcp[954278]: read /opt/stack/data/neutron/dhcp/c3258382-fe0e-4442-938b-d666bf928231/opts
+Oct 28 12:24:42.067454 devstack-92-210 dnsmasq[954278]: exiting on receipt of SIGTERM
+Oct 28 12:24:44.606369 devstack-92-210 dnsmasq[958038]: started, version 2.91 cachesize 150
+Oct 28 12:24:44.606394 devstack-92-210 dnsmasq[958038]: DNS service limited to local subnets
+Oct 28 12:24:44.606406 devstack-92-210 dnsmasq[958038]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+Oct 28 12:24:44.606438 devstack-92-210 dnsmasq-dhcp[958038]: DHCP, static leases only on 10.1.0.0, lease time 1d
+Oct 28 12:24:44.606579 devstack-92-210 dnsmasq[958038]: reading /etc/resolv.conf
+Oct 28 12:24:44.606594 devstack-92-210 dnsmasq[958038]: using nameserver 127.0.0.53#53
+Oct 28 12:24:44.606668 devstack-92-210 dnsmasq[958038]: read /opt/stack/data/neutron/dhcp/65a798d0-90ab-40ae-bdf4-40213cadfe6f/addn_hosts - 0 names
+Oct 28 12:24:44.606712 devstack-92-210 dnsmasq-dhcp[958038]: read /opt/stack/data/neutron/dhcp/65a798d0-90ab-40ae-bdf4-40213cadfe6f/host
+Oct 28 12:24:44.606760 devstack-92-210 dnsmasq-dhcp[958038]: read /opt/stack/data/neutron/dhcp/65a798d0-90ab-40ae-bdf4-40213cadfe6f/opts
+Oct 28 12:24:44.757528 devstack-92-210 dnsmasq[958038]: read /opt/stack/data/neutron/dhcp/65a798d0-90ab-40ae-bdf4-40213cadfe6f/addn_hosts - 2 names
+Oct 28 12:24:44.757587 devstack-92-210 dnsmasq-dhcp[958038]: read /opt/stack/data/neutron/dhcp/65a798d0-90ab-40ae-bdf4-40213cadfe6f/host
+Oct 28 12:24:44.757634 devstack-92-210 dnsmasq-dhcp[958038]: read /opt/stack/data/neutron/dhcp/65a798d0-90ab-40ae-bdf4-40213cadfe6f/opts
+Oct 28 12:24:44.894792 devstack-92-210 dnsmasq[958038]: read /opt/stack/data/neutron/dhcp/65a798d0-90ab-40ae-bdf4-40213cadfe6f/addn_hosts - 2 names
+Oct 28 12:24:44.894821 devstack-92-210 dnsmasq-dhcp[958038]: read /opt/stack/data/neutron/dhcp/65a798d0-90ab-40ae-bdf4-40213cadfe6f/host
+Oct 28 12:24:44.894844 devstack-92-210 dnsmasq-dhcp[958038]: read /opt/stack/data/neutron/dhcp/65a798d0-90ab-40ae-bdf4-40213cadfe6f/opts
+Oct 28 12:24:45.045153 devstack-92-210 dnsmasq[958038]: read /opt/stack/data/neutron/dhcp/65a798d0-90ab-40ae-bdf4-40213cadfe6f/addn_hosts - 2 names
+Oct 28 12:24:45.045225 devstack-92-210 dnsmasq-dhcp[958038]: read /opt/stack/data/neutron/dhcp/65a798d0-90ab-40ae-bdf4-40213cadfe6f/host
+Oct 28 12:24:45.045283 devstack-92-210 dnsmasq-dhcp[958038]: read /opt/stack/data/neutron/dhcp/65a798d0-90ab-40ae-bdf4-40213cadfe6f/opts
+Oct 28 12:24:46.062020 devstack-92-210 dnsmasq[958238]: started, version 2.91 cachesize 150
+Oct 28 12:24:46.062045 devstack-92-210 dnsmasq[958238]: DNS service limited to local subnets
+Oct 28 12:24:46.062056 devstack-92-210 dnsmasq[958238]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+Oct 28 12:24:46.062091 devstack-92-210 dnsmasq-dhcp[958238]: DHCP, static leases only on 10.1.0.0, lease time 1d
+Oct 28 12:24:46.062219 devstack-92-210 dnsmasq[958238]: reading /etc/resolv.conf
+Oct 28 12:24:46.062232 devstack-92-210 dnsmasq[958238]: using nameserver 127.0.0.53#53
+Oct 28 12:24:46.062303 devstack-92-210 dnsmasq[958238]: read /opt/stack/data/neutron/dhcp/5d7aa350-01ad-4e30-9f80-bc61fbbaa79d/addn_hosts - 0 names
+Oct 28 12:24:46.062342 devstack-92-210 dnsmasq-dhcp[958238]: read /opt/stack/data/neutron/dhcp/5d7aa350-01ad-4e30-9f80-bc61fbbaa79d/host
+Oct 28 12:24:46.062389 devstack-92-210 dnsmasq-dhcp[958238]: read /opt/stack/data/neutron/dhcp/5d7aa350-01ad-4e30-9f80-bc61fbbaa79d/opts
+Oct 28 12:24:46.214585 devstack-92-210 dnsmasq[958238]: read /opt/stack/data/neutron/dhcp/5d7aa350-01ad-4e30-9f80-bc61fbbaa79d/addn_hosts - 2 names
+Oct 28 12:24:46.214651 devstack-92-210 dnsmasq-dhcp[958238]: read /opt/stack/data/neutron/dhcp/5d7aa350-01ad-4e30-9f80-bc61fbbaa79d/host
+Oct 28 12:24:46.214731 devstack-92-210 dnsmasq-dhcp[958238]: read /opt/stack/data/neutron/dhcp/5d7aa350-01ad-4e30-9f80-bc61fbbaa79d/opts
+Oct 28 12:24:46.347653 devstack-92-210 dnsmasq[958238]: read /opt/stack/data/neutron/dhcp/5d7aa350-01ad-4e30-9f80-bc61fbbaa79d/addn_hosts - 2 names
+Oct 28 12:24:46.347722 devstack-92-210 dnsmasq-dhcp[958238]: read /opt/stack/data/neutron/dhcp/5d7aa350-01ad-4e30-9f80-bc61fbbaa79d/host
+Oct 28 12:24:46.347776 devstack-92-210 dnsmasq-dhcp[958238]: read /opt/stack/data/neutron/dhcp/5d7aa350-01ad-4e30-9f80-bc61fbbaa79d/opts
+Oct 28 12:24:46.486275 devstack-92-210 dnsmasq[958238]: read /opt/stack/data/neutron/dhcp/5d7aa350-01ad-4e30-9f80-bc61fbbaa79d/addn_hosts - 2 names
+Oct 28 12:24:46.486309 devstack-92-210 dnsmasq-dhcp[958238]: read /opt/stack/data/neutron/dhcp/5d7aa350-01ad-4e30-9f80-bc61fbbaa79d/host
+Oct 28 12:24:46.486333 devstack-92-210 dnsmasq-dhcp[958238]: read /opt/stack/data/neutron/dhcp/5d7aa350-01ad-4e30-9f80-bc61fbbaa79d/opts
+Oct 28 12:24:50.375171 devstack-92-210 dnsmasq[958787]: started, version 2.91 cachesize 150
+Oct 28 12:24:50.375194 devstack-92-210 dnsmasq[958787]: DNS service limited to local subnets
+Oct 28 12:24:50.375205 devstack-92-210 dnsmasq[958787]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+Oct 28 12:24:50.375237 devstack-92-210 dnsmasq-dhcp[958787]: DHCP, static leases only on 10.1.0.0, lease time 1d
+Oct 28 12:24:50.375384 devstack-92-210 dnsmasq[958787]: reading /etc/resolv.conf
+Oct 28 12:24:50.375397 devstack-92-210 dnsmasq[958787]: using nameserver 127.0.0.53#53
+Oct 28 12:24:50.375466 devstack-92-210 dnsmasq[958787]: read /opt/stack/data/neutron/dhcp/3358c0a9-2381-4e8d-8d26-70358c35e8ce/addn_hosts - 0 names
+Oct 28 12:24:50.375500 devstack-92-210 dnsmasq-dhcp[958787]: read /opt/stack/data/neutron/dhcp/3358c0a9-2381-4e8d-8d26-70358c35e8ce/host
+Oct 28 12:24:50.375549 devstack-92-210 dnsmasq-dhcp[958787]: read /opt/stack/data/neutron/dhcp/3358c0a9-2381-4e8d-8d26-70358c35e8ce/opts
+Oct 28 12:24:50.476911 devstack-92-210 dnsmasq[953114]: read /opt/stack/data/neutron/dhcp/e1887b4c-60d5-49e5-8ef4-89007796b9dc/addn_hosts - 6 names
+Oct 28 12:24:50.477038 devstack-92-210 dnsmasq-dhcp[953114]: read /opt/stack/data/neutron/dhcp/e1887b4c-60d5-49e5-8ef4-89007796b9dc/host
+Oct 28 12:24:50.477094 devstack-92-210 dnsmasq-dhcp[953114]: read /opt/stack/data/neutron/dhcp/e1887b4c-60d5-49e5-8ef4-89007796b9dc/opts
+Oct 28 12:24:50.638267 devstack-92-210 dnsmasq[958038]: read /opt/stack/data/neutron/dhcp/65a798d0-90ab-40ae-bdf4-40213cadfe6f/addn_hosts - 0 names
+Oct 28 12:24:50.638299 devstack-92-210 dnsmasq-dhcp[958038]: read /opt/stack/data/neutron/dhcp/65a798d0-90ab-40ae-bdf4-40213cadfe6f/host
+Oct 28 12:24:50.638324 devstack-92-210 dnsmasq-dhcp[958038]: read /opt/stack/data/neutron/dhcp/65a798d0-90ab-40ae-bdf4-40213cadfe6f/opts
+Oct 28 12:24:50.803489 devstack-92-210 dnsmasq[958238]: read /opt/stack/data/neutron/dhcp/5d7aa350-01ad-4e30-9f80-bc61fbbaa79d/addn_hosts - 0 names
+Oct 28 12:24:50.803601 devstack-92-210 dnsmasq-dhcp[958238]: read /opt/stack/data/neutron/dhcp/5d7aa350-01ad-4e30-9f80-bc61fbbaa79d/host
+Oct 28 12:24:50.803661 devstack-92-210 dnsmasq-dhcp[958238]: read /opt/stack/data/neutron/dhcp/5d7aa350-01ad-4e30-9f80-bc61fbbaa79d/opts
+Oct 28 12:24:50.983184 devstack-92-210 dnsmasq[958787]: read /opt/stack/data/neutron/dhcp/3358c0a9-2381-4e8d-8d26-70358c35e8ce/addn_hosts - 0 names
+Oct 28 12:24:50.983236 devstack-92-210 dnsmasq-dhcp[958787]: read /opt/stack/data/neutron/dhcp/3358c0a9-2381-4e8d-8d26-70358c35e8ce/host
+Oct 28 12:24:50.983293 devstack-92-210 dnsmasq-dhcp[958787]: read /opt/stack/data/neutron/dhcp/3358c0a9-2381-4e8d-8d26-70358c35e8ce/opts
+Oct 28 12:24:51.006203 devstack-92-210 dnsmasq-dhcp[957117]: DHCPDISCOVER(tap84926b5b-55) fa:16:3e:26:cd:3c
+Oct 28 12:24:51.006231 devstack-92-210 dnsmasq-dhcp[957117]: DHCPOFFER(tap84926b5b-55) 10.1.0.4 fa:16:3e:26:cd:3c
+Oct 28 12:24:51.014538 devstack-92-210 dnsmasq-dhcp[957117]: DHCPREQUEST(tap84926b5b-55) 10.1.0.4 fa:16:3e:26:cd:3c
+Oct 28 12:24:51.014550 devstack-92-210 dnsmasq-dhcp[957117]: DHCPACK(tap84926b5b-55) 10.1.0.4 fa:16:3e:26:cd:3c host-10-1-0-4
+Oct 28 12:24:51.118738 devstack-92-210 dnsmasq-dhcp[953114]: DHCPRELEASE(tape123ef5c-80) 10.1.0.10 fa:16:3e:c1:a6:a6
+Oct 28 12:24:51.130134 devstack-92-210 dnsmasq-dhcp[953114]: DHCPRELEASE(tape123ef5c-80) 10.1.0.10 fa:16:3e:c1:a6:a6 unknown lease
+Oct 28 12:24:51.466347 devstack-92-210 dnsmasq[953114]: read /opt/stack/data/neutron/dhcp/e1887b4c-60d5-49e5-8ef4-89007796b9dc/addn_hosts - 4 names
+Oct 28 12:24:51.466508 devstack-92-210 dnsmasq-dhcp[953114]: read /opt/stack/data/neutron/dhcp/e1887b4c-60d5-49e5-8ef4-89007796b9dc/host
+Oct 28 12:24:51.466566 devstack-92-210 dnsmasq-dhcp[953114]: read /opt/stack/data/neutron/dhcp/e1887b4c-60d5-49e5-8ef4-89007796b9dc/opts
+Oct 28 12:24:51.614167 devstack-92-210 dnsmasq[958038]: exiting on receipt of SIGTERM
+Oct 28 12:24:51.667578 devstack-92-210 dnsmasq[958238]: exiting on receipt of SIGTERM
+Oct 28 12:24:51.758705 devstack-92-210 dnsmasq[958787]: read /opt/stack/data/neutron/dhcp/3358c0a9-2381-4e8d-8d26-70358c35e8ce/addn_hosts - 2 names
+Oct 28 12:24:51.758777 devstack-92-210 dnsmasq-dhcp[958787]: read /opt/stack/data/neutron/dhcp/3358c0a9-2381-4e8d-8d26-70358c35e8ce/host
+Oct 28 12:24:51.758831 devstack-92-210 dnsmasq-dhcp[958787]: read /opt/stack/data/neutron/dhcp/3358c0a9-2381-4e8d-8d26-70358c35e8ce/opts
+Oct 28 12:24:51.888338 devstack-92-210 dnsmasq-dhcp[953114]: DHCPRELEASE(tape123ef5c-80) 10.1.0.3 fa:16:3e:1f:5b:80
+Oct 28 12:24:51.899281 devstack-92-210 dnsmasq-dhcp[953114]: DHCPRELEASE(tape123ef5c-80) 10.1.0.3 fa:16:3e:1f:5b:80 unknown lease
+Oct 28 12:24:52.224801 devstack-92-210 dnsmasq[953114]: read /opt/stack/data/neutron/dhcp/e1887b4c-60d5-49e5-8ef4-89007796b9dc/addn_hosts - 2 names
+Oct 28 12:24:52.224870 devstack-92-210 dnsmasq-dhcp[953114]: read /opt/stack/data/neutron/dhcp/e1887b4c-60d5-49e5-8ef4-89007796b9dc/host
+Oct 28 12:24:52.225057 devstack-92-210 dnsmasq-dhcp[953114]: read /opt/stack/data/neutron/dhcp/e1887b4c-60d5-49e5-8ef4-89007796b9dc/opts
+Oct 28 12:24:52.377514 devstack-92-210 dnsmasq[958787]: exiting on receipt of SIGTERM
+Oct 28 12:24:52.444344 devstack-92-210 dnsmasq-dhcp[953114]: DHCPRELEASE(tape123ef5c-80) 10.1.0.1 fa:16:3e:33:e4:31
+Oct 28 12:24:52.770215 devstack-92-210 dnsmasq[953114]: read /opt/stack/data/neutron/dhcp/e1887b4c-60d5-49e5-8ef4-89007796b9dc/addn_hosts - 0 names
+Oct 28 12:24:52.770253 devstack-92-210 dnsmasq-dhcp[953114]: read /opt/stack/data/neutron/dhcp/e1887b4c-60d5-49e5-8ef4-89007796b9dc/host
+Oct 28 12:24:52.770296 devstack-92-210 dnsmasq-dhcp[953114]: read /opt/stack/data/neutron/dhcp/e1887b4c-60d5-49e5-8ef4-89007796b9dc/opts
+Oct 28 12:24:52.956856 devstack-92-210 dnsmasq[953114]: exiting on receipt of SIGTERM
+Oct 28 12:24:54.108413 devstack-92-210 dnsmasq[959143]: started, version 2.91 cachesize 150
+Oct 28 12:24:54.108434 devstack-92-210 dnsmasq[959143]: DNS service limited to local subnets
+Oct 28 12:24:54.108445 devstack-92-210 dnsmasq[959143]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+Oct 28 12:24:54.108475 devstack-92-210 dnsmasq-dhcp[959143]: DHCP, static leases only on 10.1.0.0, lease time 1d
+Oct 28 12:24:54.108613 devstack-92-210 dnsmasq[959143]: reading /etc/resolv.conf
+Oct 28 12:24:54.108627 devstack-92-210 dnsmasq[959143]: using nameserver 127.0.0.53#53
+Oct 28 12:24:54.108695 devstack-92-210 dnsmasq[959143]: read /opt/stack/data/neutron/dhcp/451da25c-3278-4082-992f-9218cf284932/addn_hosts - 0 names
+Oct 28 12:24:54.108736 devstack-92-210 dnsmasq-dhcp[959143]: read /opt/stack/data/neutron/dhcp/451da25c-3278-4082-992f-9218cf284932/host
+Oct 28 12:24:54.108780 devstack-92-210 dnsmasq-dhcp[959143]: read /opt/stack/data/neutron/dhcp/451da25c-3278-4082-992f-9218cf284932/opts
+Oct 28 12:24:54.254874 devstack-92-210 dnsmasq[959143]: read /opt/stack/data/neutron/dhcp/451da25c-3278-4082-992f-9218cf284932/addn_hosts - 2 names
+Oct 28 12:24:54.254963 devstack-92-210 dnsmasq-dhcp[959143]: read /opt/stack/data/neutron/dhcp/451da25c-3278-4082-992f-9218cf284932/host
+Oct 28 12:24:54.255016 devstack-92-210 dnsmasq-dhcp[959143]: read /opt/stack/data/neutron/dhcp/451da25c-3278-4082-992f-9218cf284932/opts
+Oct 28 12:24:54.393352 devstack-92-210 dnsmasq[959143]: read /opt/stack/data/neutron/dhcp/451da25c-3278-4082-992f-9218cf284932/addn_hosts - 2 names
+Oct 28 12:24:54.393416 devstack-92-210 dnsmasq-dhcp[959143]: read /opt/stack/data/neutron/dhcp/451da25c-3278-4082-992f-9218cf284932/host
+Oct 28 12:24:54.393474 devstack-92-210 dnsmasq-dhcp[959143]: read /opt/stack/data/neutron/dhcp/451da25c-3278-4082-992f-9218cf284932/opts
+Oct 28 12:24:54.854612 devstack-92-210 dnsmasq[959143]: read /opt/stack/data/neutron/dhcp/451da25c-3278-4082-992f-9218cf284932/addn_hosts - 2 names
+Oct 28 12:24:54.854682 devstack-92-210 dnsmasq-dhcp[959143]: read /opt/stack/data/neutron/dhcp/451da25c-3278-4082-992f-9218cf284932/host
+Oct 28 12:24:54.854735 devstack-92-210 dnsmasq-dhcp[959143]: read /opt/stack/data/neutron/dhcp/451da25c-3278-4082-992f-9218cf284932/opts
+Oct 28 12:24:55.902303 devstack-92-210 dnsmasq[959406]: started, version 2.91 cachesize 150
+Oct 28 12:24:55.902329 devstack-92-210 dnsmasq[959406]: DNS service limited to local subnets
+Oct 28 12:24:55.902340 devstack-92-210 dnsmasq[959406]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+Oct 28 12:24:55.902373 devstack-92-210 dnsmasq-dhcp[959406]: DHCP, static leases only on 10.1.0.0, lease time 1d
+Oct 28 12:24:55.902508 devstack-92-210 dnsmasq[959406]: reading /etc/resolv.conf
+Oct 28 12:24:55.902521 devstack-92-210 dnsmasq[959406]: using nameserver 127.0.0.53#53
+Oct 28 12:24:55.902592 devstack-92-210 dnsmasq[959406]: read /opt/stack/data/neutron/dhcp/859513bd-02be-4b96-88df-bbda434c7666/addn_hosts - 0 names
+Oct 28 12:24:55.902629 devstack-92-210 dnsmasq-dhcp[959406]: read /opt/stack/data/neutron/dhcp/859513bd-02be-4b96-88df-bbda434c7666/host
+Oct 28 12:24:55.902675 devstack-92-210 dnsmasq-dhcp[959406]: read /opt/stack/data/neutron/dhcp/859513bd-02be-4b96-88df-bbda434c7666/opts
+Oct 28 12:24:56.022165 devstack-92-210 dnsmasq[959406]: exiting on receipt of SIGTERM
+Oct 28 12:24:56.354712 devstack-92-210 dnsmasq[959474]: started, version 2.91 cachesize 150
+Oct 28 12:24:56.354727 devstack-92-210 dnsmasq[959474]: DNS service limited to local subnets
+Oct 28 12:24:56.354735 devstack-92-210 dnsmasq[959474]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+Oct 28 12:24:56.354756 devstack-92-210 dnsmasq-dhcp[959474]: DHCP, static leases only on 10.1.0.0, lease time 1d
+Oct 28 12:24:56.354857 devstack-92-210 dnsmasq[959474]: reading /etc/resolv.conf
+Oct 28 12:24:56.354866 devstack-92-210 dnsmasq[959474]: using nameserver 127.0.0.53#53
+Oct 28 12:24:56.354965 devstack-92-210 dnsmasq[959474]: read /opt/stack/data/neutron/dhcp/859513bd-02be-4b96-88df-bbda434c7666/addn_hosts - 2 names
+Oct 28 12:24:56.355001 devstack-92-210 dnsmasq-dhcp[959474]: read /opt/stack/data/neutron/dhcp/859513bd-02be-4b96-88df-bbda434c7666/host
+Oct 28 12:24:56.355036 devstack-92-210 dnsmasq-dhcp[959474]: read /opt/stack/data/neutron/dhcp/859513bd-02be-4b96-88df-bbda434c7666/opts
+Oct 28 12:24:56.448820 devstack-92-210 dnsmasq[959474]: read /opt/stack/data/neutron/dhcp/859513bd-02be-4b96-88df-bbda434c7666/addn_hosts - 2 names
+Oct 28 12:24:56.448892 devstack-92-210 dnsmasq-dhcp[959474]: read /opt/stack/data/neutron/dhcp/859513bd-02be-4b96-88df-bbda434c7666/host
+Oct 28 12:24:56.449000 devstack-92-210 dnsmasq-dhcp[959474]: read /opt/stack/data/neutron/dhcp/859513bd-02be-4b96-88df-bbda434c7666/opts
+Oct 28 12:24:56.614733 devstack-92-210 dnsmasq[959474]: read /opt/stack/data/neutron/dhcp/859513bd-02be-4b96-88df-bbda434c7666/addn_hosts - 2 names
+Oct 28 12:24:56.614774 devstack-92-210 dnsmasq-dhcp[959474]: read /opt/stack/data/neutron/dhcp/859513bd-02be-4b96-88df-bbda434c7666/host
+Oct 28 12:24:56.614797 devstack-92-210 dnsmasq-dhcp[959474]: read /opt/stack/data/neutron/dhcp/859513bd-02be-4b96-88df-bbda434c7666/opts
+Oct 28 12:24:58.235038 devstack-92-210 dnsmasq[959720]: started, version 2.91 cachesize 150
+Oct 28 12:24:58.235057 devstack-92-210 dnsmasq[959720]: DNS service limited to local subnets
+Oct 28 12:24:58.235068 devstack-92-210 dnsmasq[959720]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+Oct 28 12:24:58.235099 devstack-92-210 dnsmasq-dhcp[959720]: DHCP, static leases only on 10.1.0.0, lease time 1d
+Oct 28 12:24:58.235232 devstack-92-210 dnsmasq[959720]: reading /etc/resolv.conf
+Oct 28 12:24:58.235247 devstack-92-210 dnsmasq[959720]: using nameserver 127.0.0.53#53
+Oct 28 12:24:58.235315 devstack-92-210 dnsmasq[959720]: read /opt/stack/data/neutron/dhcp/da438742-8d74-4a71-a37d-568650808e9d/addn_hosts - 0 names
+Oct 28 12:24:58.235353 devstack-92-210 dnsmasq-dhcp[959720]: read /opt/stack/data/neutron/dhcp/da438742-8d74-4a71-a37d-568650808e9d/host
+Oct 28 12:24:58.235398 devstack-92-210 dnsmasq-dhcp[959720]: read /opt/stack/data/neutron/dhcp/da438742-8d74-4a71-a37d-568650808e9d/opts
+Oct 28 12:24:58.379008 devstack-92-210 dnsmasq[959720]: read /opt/stack/data/neutron/dhcp/da438742-8d74-4a71-a37d-568650808e9d/addn_hosts - 2 names
+Oct 28 12:24:58.379079 devstack-92-210 dnsmasq-dhcp[959720]: read /opt/stack/data/neutron/dhcp/da438742-8d74-4a71-a37d-568650808e9d/host
+Oct 28 12:24:58.379174 devstack-92-210 dnsmasq-dhcp[959720]: read /opt/stack/data/neutron/dhcp/da438742-8d74-4a71-a37d-568650808e9d/opts
+Oct 28 12:24:58.555809 devstack-92-210 dnsmasq[959720]: read /opt/stack/data/neutron/dhcp/da438742-8d74-4a71-a37d-568650808e9d/addn_hosts - 2 names
+Oct 28 12:24:58.555838 devstack-92-210 dnsmasq-dhcp[959720]: read /opt/stack/data/neutron/dhcp/da438742-8d74-4a71-a37d-568650808e9d/host
+Oct 28 12:24:58.555857 devstack-92-210 dnsmasq-dhcp[959720]: read /opt/stack/data/neutron/dhcp/da438742-8d74-4a71-a37d-568650808e9d/opts
+Oct 28 12:24:58.712651 devstack-92-210 dnsmasq[959720]: read /opt/stack/data/neutron/dhcp/da438742-8d74-4a71-a37d-568650808e9d/addn_hosts - 2 names
+Oct 28 12:24:58.712744 devstack-92-210 dnsmasq-dhcp[959720]: read /opt/stack/data/neutron/dhcp/da438742-8d74-4a71-a37d-568650808e9d/host
+Oct 28 12:24:58.712850 devstack-92-210 dnsmasq-dhcp[959720]: read /opt/stack/data/neutron/dhcp/da438742-8d74-4a71-a37d-568650808e9d/opts
+Oct 28 12:24:59.047301 devstack-92-210 dnsmasq[959143]: read /opt/stack/data/neutron/dhcp/451da25c-3278-4082-992f-9218cf284932/addn_hosts - 4 names
+Oct 28 12:24:59.047405 devstack-92-210 dnsmasq-dhcp[959143]: read /opt/stack/data/neutron/dhcp/451da25c-3278-4082-992f-9218cf284932/host
+Oct 28 12:24:59.047461 devstack-92-210 dnsmasq-dhcp[959143]: read /opt/stack/data/neutron/dhcp/451da25c-3278-4082-992f-9218cf284932/opts
+Oct 28 12:25:01.041090 devstack-92-210 dnsmasq-dhcp[955926]: DHCPRELEASE(tapf91722c5-28) 10.1.0.4 fa:16:3e:5c:ad:d6
+Oct 28 12:25:01.053596 devstack-92-210 dnsmasq-dhcp[955926]: DHCPRELEASE(tapf91722c5-28) 10.1.0.4 fa:16:3e:5c:ad:d6 unknown lease
+Oct 28 12:25:01.380106 devstack-92-210 dnsmasq[955926]: read /opt/stack/data/neutron/dhcp/c39f7d14-0860-437b-8856-65db5bd1633e/addn_hosts - 2 names
+Oct 28 12:25:01.380136 devstack-92-210 dnsmasq-dhcp[955926]: read /opt/stack/data/neutron/dhcp/c39f7d14-0860-437b-8856-65db5bd1633e/host
+Oct 28 12:25:01.380153 devstack-92-210 dnsmasq-dhcp[955926]: read /opt/stack/data/neutron/dhcp/c39f7d14-0860-437b-8856-65db5bd1633e/opts
+Oct 28 12:25:02.446049 devstack-92-210 dnsmasq-dhcp[955926]: DHCPRELEASE(tapf91722c5-28) 10.1.0.1 fa:16:3e:1e:39:82
+Oct 28 12:25:02.771122 devstack-92-210 dnsmasq[955926]: read /opt/stack/data/neutron/dhcp/c39f7d14-0860-437b-8856-65db5bd1633e/addn_hosts - 0 names
+Oct 28 12:25:02.771181 devstack-92-210 dnsmasq-dhcp[955926]: read /opt/stack/data/neutron/dhcp/c39f7d14-0860-437b-8856-65db5bd1633e/host
+Oct 28 12:25:02.771223 devstack-92-210 dnsmasq-dhcp[955926]: read /opt/stack/data/neutron/dhcp/c39f7d14-0860-437b-8856-65db5bd1633e/opts
+Oct 28 12:25:03.008049 devstack-92-210 dnsmasq[955926]: exiting on receipt of SIGTERM
+Oct 28 12:25:03.640900 devstack-92-210 dnsmasq[959143]: read /opt/stack/data/neutron/dhcp/451da25c-3278-4082-992f-9218cf284932/addn_hosts - 2 names
+Oct 28 12:25:03.640973 devstack-92-210 dnsmasq-dhcp[959143]: read /opt/stack/data/neutron/dhcp/451da25c-3278-4082-992f-9218cf284932/host
+Oct 28 12:25:03.641010 devstack-92-210 dnsmasq-dhcp[959143]: read /opt/stack/data/neutron/dhcp/451da25c-3278-4082-992f-9218cf284932/opts
+Oct 28 12:25:04.567113 devstack-92-210 dnsmasq[959143]: read /opt/stack/data/neutron/dhcp/451da25c-3278-4082-992f-9218cf284932/addn_hosts - 0 names
+Oct 28 12:25:04.567169 devstack-92-210 dnsmasq-dhcp[959143]: read /opt/stack/data/neutron/dhcp/451da25c-3278-4082-992f-9218cf284932/host
+Oct 28 12:25:04.567190 devstack-92-210 dnsmasq-dhcp[959143]: read /opt/stack/data/neutron/dhcp/451da25c-3278-4082-992f-9218cf284932/opts
+Oct 28 12:25:05.159282 devstack-92-210 dnsmasq[959143]: exiting on receipt of SIGTERM
+Oct 28 12:25:05.631199 devstack-92-210 dnsmasq-dhcp[959474]: DHCPRELEASE(tap275cb7c4-ea) 10.1.0.1 fa:16:3e:a9:59:30
+Oct 28 12:25:05.965204 devstack-92-210 dnsmasq[959474]: read /opt/stack/data/neutron/dhcp/859513bd-02be-4b96-88df-bbda434c7666/addn_hosts - 0 names
+Oct 28 12:25:05.965263 devstack-92-210 dnsmasq-dhcp[959474]: read /opt/stack/data/neutron/dhcp/859513bd-02be-4b96-88df-bbda434c7666/host
+Oct 28 12:25:05.965307 devstack-92-210 dnsmasq-dhcp[959474]: read /opt/stack/data/neutron/dhcp/859513bd-02be-4b96-88df-bbda434c7666/opts
+Oct 28 12:25:06.661089 devstack-92-210 dnsmasq[959474]: exiting on receipt of SIGTERM
+Oct 28 12:25:07.072819 devstack-92-210 dnsmasq[959720]: read /opt/stack/data/neutron/dhcp/da438742-8d74-4a71-a37d-568650808e9d/addn_hosts - 0 names
+Oct 28 12:25:07.072849 devstack-92-210 dnsmasq-dhcp[959720]: read /opt/stack/data/neutron/dhcp/da438742-8d74-4a71-a37d-568650808e9d/host
+Oct 28 12:25:07.072876 devstack-92-210 dnsmasq-dhcp[959720]: read /opt/stack/data/neutron/dhcp/da438742-8d74-4a71-a37d-568650808e9d/opts
+Oct 28 12:25:07.664166 devstack-92-210 dnsmasq[959720]: exiting on receipt of SIGTERM
+Oct 28 12:25:08.254971 devstack-92-210 dnsmasq-dhcp[957117]: DHCPRELEASE(tap84926b5b-55) 10.1.0.4 fa:16:3e:26:cd:3c
+Oct 28 12:25:08.269171 devstack-92-210 dnsmasq-dhcp[957117]: DHCPRELEASE(tap84926b5b-55) 10.1.0.4 fa:16:3e:26:cd:3c unknown lease
+Oct 28 12:25:08.594978 devstack-92-210 dnsmasq[957117]: read /opt/stack/data/neutron/dhcp/7b87a4c5-f6d8-4fb6-bcce-20b338754f12/addn_hosts - 2 names
+Oct 28 12:25:08.595105 devstack-92-210 dnsmasq-dhcp[957117]: read /opt/stack/data/neutron/dhcp/7b87a4c5-f6d8-4fb6-bcce-20b338754f12/host
+Oct 28 12:25:08.595191 devstack-92-210 dnsmasq-dhcp[957117]: read /opt/stack/data/neutron/dhcp/7b87a4c5-f6d8-4fb6-bcce-20b338754f12/opts
+Oct 28 12:25:09.320886 devstack-92-210 dnsmasq[957117]: read /opt/stack/data/neutron/dhcp/7b87a4c5-f6d8-4fb6-bcce-20b338754f12/addn_hosts - 0 names
+Oct 28 12:25:09.321014 devstack-92-210 dnsmasq-dhcp[957117]: read /opt/stack/data/neutron/dhcp/7b87a4c5-f6d8-4fb6-bcce-20b338754f12/host
+Oct 28 12:25:09.321060 devstack-92-210 dnsmasq-dhcp[957117]: read /opt/stack/data/neutron/dhcp/7b87a4c5-f6d8-4fb6-bcce-20b338754f12/opts
+Oct 28 12:25:10.523541 devstack-92-210 dnsmasq[960624]: started, version 2.91 cachesize 150
+Oct 28 12:25:10.523563 devstack-92-210 dnsmasq[960624]: DNS service limited to local subnets
+Oct 28 12:25:10.523575 devstack-92-210 dnsmasq[960624]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+Oct 28 12:25:10.523604 devstack-92-210 dnsmasq-dhcp[960624]: DHCP, static leases only on 10.1.0.0, lease time 1d
+Oct 28 12:25:10.523736 devstack-92-210 dnsmasq[960624]: reading /etc/resolv.conf
+Oct 28 12:25:10.523750 devstack-92-210 dnsmasq[960624]: using nameserver 127.0.0.53#53
+Oct 28 12:25:10.523824 devstack-92-210 dnsmasq[960624]: read /opt/stack/data/neutron/dhcp/66820780-81da-48be-ab4d-939b7d1a3526/addn_hosts - 0 names
+Oct 28 12:25:10.523862 devstack-92-210 dnsmasq-dhcp[960624]: read /opt/stack/data/neutron/dhcp/66820780-81da-48be-ab4d-939b7d1a3526/host
+Oct 28 12:25:10.523906 devstack-92-210 dnsmasq-dhcp[960624]: read /opt/stack/data/neutron/dhcp/66820780-81da-48be-ab4d-939b7d1a3526/opts
+Oct 28 12:25:10.670716 devstack-92-210 dnsmasq[960624]: read /opt/stack/data/neutron/dhcp/66820780-81da-48be-ab4d-939b7d1a3526/addn_hosts - 2 names
+Oct 28 12:25:10.670799 devstack-92-210 dnsmasq-dhcp[960624]: read /opt/stack/data/neutron/dhcp/66820780-81da-48be-ab4d-939b7d1a3526/host
+Oct 28 12:25:10.670852 devstack-92-210 dnsmasq-dhcp[960624]: read /opt/stack/data/neutron/dhcp/66820780-81da-48be-ab4d-939b7d1a3526/opts
+Oct 28 12:25:10.819597 devstack-92-210 dnsmasq[957117]: exiting on receipt of SIGTERM
+Oct 28 12:25:10.926218 devstack-92-210 dnsmasq[960624]: read /opt/stack/data/neutron/dhcp/66820780-81da-48be-ab4d-939b7d1a3526/addn_hosts - 2 names
+Oct 28 12:25:10.926292 devstack-92-210 dnsmasq-dhcp[960624]: read /opt/stack/data/neutron/dhcp/66820780-81da-48be-ab4d-939b7d1a3526/host
+Oct 28 12:25:10.926345 devstack-92-210 dnsmasq-dhcp[960624]: read /opt/stack/data/neutron/dhcp/66820780-81da-48be-ab4d-939b7d1a3526/opts
+Oct 28 12:25:12.170612 devstack-92-210 dnsmasq[960860]: started, version 2.91 cachesize 150
+Oct 28 12:25:12.170634 devstack-92-210 dnsmasq[960860]: DNS service limited to local subnets
+Oct 28 12:25:12.170646 devstack-92-210 dnsmasq[960860]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+Oct 28 12:25:12.170677 devstack-92-210 dnsmasq-dhcp[960860]: DHCP, static leases only on 10.1.0.0, lease time 1d
+Oct 28 12:25:12.170815 devstack-92-210 dnsmasq[960860]: reading /etc/resolv.conf
+Oct 28 12:25:12.170829 devstack-92-210 dnsmasq[960860]: using nameserver 127.0.0.53#53
+Oct 28 12:25:12.170895 devstack-92-210 dnsmasq[960860]: read /opt/stack/data/neutron/dhcp/44fc802a-2072-4a15-94bc-b38dfe1c90fd/addn_hosts - 0 names
+Oct 28 12:25:12.170941 devstack-92-210 dnsmasq-dhcp[960860]: read /opt/stack/data/neutron/dhcp/44fc802a-2072-4a15-94bc-b38dfe1c90fd/host
+Oct 28 12:25:12.170988 devstack-92-210 dnsmasq-dhcp[960860]: read /opt/stack/data/neutron/dhcp/44fc802a-2072-4a15-94bc-b38dfe1c90fd/opts
+Oct 28 12:25:12.260664 devstack-92-210 dnsmasq[960624]: read /opt/stack/data/neutron/dhcp/66820780-81da-48be-ab4d-939b7d1a3526/addn_hosts - 2 names
+Oct 28 12:25:12.260699 devstack-92-210 dnsmasq-dhcp[960624]: read /opt/stack/data/neutron/dhcp/66820780-81da-48be-ab4d-939b7d1a3526/host
+Oct 28 12:25:12.260722 devstack-92-210 dnsmasq-dhcp[960624]: read /opt/stack/data/neutron/dhcp/66820780-81da-48be-ab4d-939b7d1a3526/opts
+Oct 28 12:25:13.920914 devstack-92-210 dnsmasq[961121]: started, version 2.91 cachesize 150
+Oct 28 12:25:13.920923 devstack-92-210 dnsmasq[961121]: DNS service limited to local subnets
+Oct 28 12:25:13.920936 devstack-92-210 dnsmasq[961121]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+Oct 28 12:25:13.920947 devstack-92-210 dnsmasq-dhcp[961121]: DHCP, static leases only on 10.1.0.0, lease time 1d
+Oct 28 12:25:13.921006 devstack-92-210 dnsmasq[961121]: reading /etc/resolv.conf
+Oct 28 12:25:13.921011 devstack-92-210 dnsmasq[961121]: using nameserver 127.0.0.53#53
+Oct 28 12:25:13.921052 devstack-92-210 dnsmasq[961121]: read /opt/stack/data/neutron/dhcp/53b826dc-54e9-4394-ada5-8803c409b27b/addn_hosts - 2 names
+Oct 28 12:25:13.921069 devstack-92-210 dnsmasq-dhcp[961121]: read /opt/stack/data/neutron/dhcp/53b826dc-54e9-4394-ada5-8803c409b27b/host
+Oct 28 12:25:13.921085 devstack-92-210 dnsmasq-dhcp[961121]: read /opt/stack/data/neutron/dhcp/53b826dc-54e9-4394-ada5-8803c409b27b/opts
+Oct 28 12:25:14.026862 devstack-92-210 dnsmasq[960860]: exiting on receipt of SIGTERM
+Oct 28 12:25:14.388393 devstack-92-210 dnsmasq[961189]: started, version 2.91 cachesize 150
+Oct 28 12:25:14.388419 devstack-92-210 dnsmasq[961189]: DNS service limited to local subnets
+Oct 28 12:25:14.388431 devstack-92-210 dnsmasq[961189]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+Oct 28 12:25:14.388462 devstack-92-210 dnsmasq-dhcp[961189]: DHCP, static leases only on 10.1.0.0, lease time 1d
+Oct 28 12:25:14.388598 devstack-92-210 dnsmasq[961189]: reading /etc/resolv.conf
+Oct 28 12:25:14.388611 devstack-92-210 dnsmasq[961189]: using nameserver 127.0.0.53#53
+Oct 28 12:25:14.388708 devstack-92-210 dnsmasq[961189]: read /opt/stack/data/neutron/dhcp/44fc802a-2072-4a15-94bc-b38dfe1c90fd/addn_hosts - 2 names
+Oct 28 12:25:14.388755 devstack-92-210 dnsmasq-dhcp[961189]: read /opt/stack/data/neutron/dhcp/44fc802a-2072-4a15-94bc-b38dfe1c90fd/host
+Oct 28 12:25:14.388808 devstack-92-210 dnsmasq-dhcp[961189]: read /opt/stack/data/neutron/dhcp/44fc802a-2072-4a15-94bc-b38dfe1c90fd/opts
+Oct 28 12:25:14.803808 devstack-92-210 dnsmasq[961121]: read /opt/stack/data/neutron/dhcp/53b826dc-54e9-4394-ada5-8803c409b27b/addn_hosts - 2 names
+Oct 28 12:25:14.803839 devstack-92-210 dnsmasq-dhcp[961121]: read /opt/stack/data/neutron/dhcp/53b826dc-54e9-4394-ada5-8803c409b27b/host
+Oct 28 12:25:14.803856 devstack-92-210 dnsmasq-dhcp[961121]: read /opt/stack/data/neutron/dhcp/53b826dc-54e9-4394-ada5-8803c409b27b/opts
+Oct 28 12:25:14.938917 devstack-92-210 dnsmasq[961189]: read /opt/stack/data/neutron/dhcp/44fc802a-2072-4a15-94bc-b38dfe1c90fd/addn_hosts - 2 names
+Oct 28 12:25:14.939007 devstack-92-210 dnsmasq-dhcp[961189]: read /opt/stack/data/neutron/dhcp/44fc802a-2072-4a15-94bc-b38dfe1c90fd/host
+Oct 28 12:25:14.939088 devstack-92-210 dnsmasq-dhcp[961189]: read /opt/stack/data/neutron/dhcp/44fc802a-2072-4a15-94bc-b38dfe1c90fd/opts
+Oct 28 12:25:15.081252 devstack-92-210 dnsmasq[960624]: read /opt/stack/data/neutron/dhcp/66820780-81da-48be-ab4d-939b7d1a3526/addn_hosts - 0 names
+Oct 28 12:25:15.081307 devstack-92-210 dnsmasq-dhcp[960624]: read /opt/stack/data/neutron/dhcp/66820780-81da-48be-ab4d-939b7d1a3526/host
+Oct 28 12:25:15.081355 devstack-92-210 dnsmasq-dhcp[960624]: read /opt/stack/data/neutron/dhcp/66820780-81da-48be-ab4d-939b7d1a3526/opts
+Oct 28 12:25:15.254720 devstack-92-210 dnsmasq[961121]: read /opt/stack/data/neutron/dhcp/53b826dc-54e9-4394-ada5-8803c409b27b/addn_hosts - 2 names
+Oct 28 12:25:15.254879 devstack-92-210 dnsmasq-dhcp[961121]: read /opt/stack/data/neutron/dhcp/53b826dc-54e9-4394-ada5-8803c409b27b/host
+Oct 28 12:25:15.254955 devstack-92-210 dnsmasq-dhcp[961121]: read /opt/stack/data/neutron/dhcp/53b826dc-54e9-4394-ada5-8803c409b27b/opts
+Oct 28 12:25:15.422515 devstack-92-210 dnsmasq[961189]: read /opt/stack/data/neutron/dhcp/44fc802a-2072-4a15-94bc-b38dfe1c90fd/addn_hosts - 2 names
+Oct 28 12:25:15.422587 devstack-92-210 dnsmasq-dhcp[961189]: read /opt/stack/data/neutron/dhcp/44fc802a-2072-4a15-94bc-b38dfe1c90fd/host
+Oct 28 12:25:15.422663 devstack-92-210 dnsmasq-dhcp[961189]: read /opt/stack/data/neutron/dhcp/44fc802a-2072-4a15-94bc-b38dfe1c90fd/opts
+Oct 28 12:25:15.592881 devstack-92-210 dnsmasq[961121]: read /opt/stack/data/neutron/dhcp/53b826dc-54e9-4394-ada5-8803c409b27b/addn_hosts - 2 names
+Oct 28 12:25:15.592972 devstack-92-210 dnsmasq-dhcp[961121]: read /opt/stack/data/neutron/dhcp/53b826dc-54e9-4394-ada5-8803c409b27b/host
+Oct 28 12:25:15.593051 devstack-92-210 dnsmasq-dhcp[961121]: read /opt/stack/data/neutron/dhcp/53b826dc-54e9-4394-ada5-8803c409b27b/opts
+Oct 28 12:25:15.734830 devstack-92-210 dnsmasq[960624]: exiting on receipt of SIGTERM
+Oct 28 12:25:15.805514 devstack-92-210 dnsmasq-dhcp[961189]: DHCPRELEASE(tap82da41a3-42) 10.1.0.1 fa:16:3e:ee:35:66
+Oct 28 12:25:16.133079 devstack-92-210 dnsmasq[961189]: read /opt/stack/data/neutron/dhcp/44fc802a-2072-4a15-94bc-b38dfe1c90fd/addn_hosts - 0 names
+Oct 28 12:25:16.133133 devstack-92-210 dnsmasq-dhcp[961189]: read /opt/stack/data/neutron/dhcp/44fc802a-2072-4a15-94bc-b38dfe1c90fd/host
+Oct 28 12:25:16.133178 devstack-92-210 dnsmasq-dhcp[961189]: read /opt/stack/data/neutron/dhcp/44fc802a-2072-4a15-94bc-b38dfe1c90fd/opts
+Oct 28 12:25:16.283183 devstack-92-210 dnsmasq-dhcp[961121]: DHCPRELEASE(tap5884cb83-aa) 10.1.0.1 fa:16:3e:b3:3a:b5
+Oct 28 12:25:16.606059 devstack-92-210 dnsmasq[961121]: read /opt/stack/data/neutron/dhcp/53b826dc-54e9-4394-ada5-8803c409b27b/addn_hosts - 0 names
+Oct 28 12:25:16.606106 devstack-92-210 dnsmasq-dhcp[961121]: read /opt/stack/data/neutron/dhcp/53b826dc-54e9-4394-ada5-8803c409b27b/host
+Oct 28 12:25:16.606145 devstack-92-210 dnsmasq-dhcp[961121]: read /opt/stack/data/neutron/dhcp/53b826dc-54e9-4394-ada5-8803c409b27b/opts
+Oct 28 12:25:16.766626 devstack-92-210 dnsmasq[961121]: exiting on receipt of SIGTERM
+Oct 28 12:25:16.836156 devstack-92-210 dnsmasq[961189]: exiting on receipt of SIGTERM
+Oct 28 12:25:18.405817 devstack-92-210 dnsmasq[961576]: started, version 2.91 cachesize 150
+Oct 28 12:25:18.405832 devstack-92-210 dnsmasq[961576]: DNS service limited to local subnets
+Oct 28 12:25:18.405838 devstack-92-210 dnsmasq[961576]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+Oct 28 12:25:18.405860 devstack-92-210 dnsmasq-dhcp[961576]: DHCP, static leases only on 10.1.0.0, lease time 1d
+Oct 28 12:25:18.405940 devstack-92-210 dnsmasq[961576]: reading /etc/resolv.conf
+Oct 28 12:25:18.405945 devstack-92-210 dnsmasq[961576]: using nameserver 127.0.0.53#53
+Oct 28 12:25:18.405976 devstack-92-210 dnsmasq[961576]: read /opt/stack/data/neutron/dhcp/80972e43-a722-48ac-a7b9-3d385513e5fa/addn_hosts - 0 names
+Oct 28 12:25:18.405992 devstack-92-210 dnsmasq-dhcp[961576]: read /opt/stack/data/neutron/dhcp/80972e43-a722-48ac-a7b9-3d385513e5fa/host
+Oct 28 12:25:18.406011 devstack-92-210 dnsmasq-dhcp[961576]: read /opt/stack/data/neutron/dhcp/80972e43-a722-48ac-a7b9-3d385513e5fa/opts
+Oct 28 12:25:19.419399 devstack-92-210 dnsmasq[961764]: started, version 2.91 cachesize 150
+Oct 28 12:25:19.419423 devstack-92-210 dnsmasq[961764]: DNS service limited to local subnets
+Oct 28 12:25:19.419435 devstack-92-210 dnsmasq[961764]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+Oct 28 12:25:19.419477 devstack-92-210 dnsmasq-dhcp[961764]: DHCP, static leases only on 10.1.0.0, lease time 1d
+Oct 28 12:25:19.419610 devstack-92-210 dnsmasq[961764]: reading /etc/resolv.conf
+Oct 28 12:25:19.419623 devstack-92-210 dnsmasq[961764]: using nameserver 127.0.0.53#53
+Oct 28 12:25:19.419724 devstack-92-210 dnsmasq[961764]: read /opt/stack/data/neutron/dhcp/37cf5dbd-4785-4ed3-bd80-1510d6121668/addn_hosts - 2 names
+Oct 28 12:25:19.419772 devstack-92-210 dnsmasq-dhcp[961764]: read /opt/stack/data/neutron/dhcp/37cf5dbd-4785-4ed3-bd80-1510d6121668/host
+Oct 28 12:25:19.419823 devstack-92-210 dnsmasq-dhcp[961764]: read /opt/stack/data/neutron/dhcp/37cf5dbd-4785-4ed3-bd80-1510d6121668/opts
+Oct 28 12:25:19.825477 devstack-92-210 dnsmasq[961576]: read /opt/stack/data/neutron/dhcp/80972e43-a722-48ac-a7b9-3d385513e5fa/addn_hosts - 2 names
+Oct 28 12:25:19.825523 devstack-92-210 dnsmasq-dhcp[961576]: read /opt/stack/data/neutron/dhcp/80972e43-a722-48ac-a7b9-3d385513e5fa/host
+Oct 28 12:25:19.825559 devstack-92-210 dnsmasq-dhcp[961576]: read /opt/stack/data/neutron/dhcp/80972e43-a722-48ac-a7b9-3d385513e5fa/opts
+Oct 28 12:25:20.046099 devstack-92-210 dnsmasq[961764]: read /opt/stack/data/neutron/dhcp/37cf5dbd-4785-4ed3-bd80-1510d6121668/addn_hosts - 2 names
+Oct 28 12:25:20.046168 devstack-92-210 dnsmasq-dhcp[961764]: read /opt/stack/data/neutron/dhcp/37cf5dbd-4785-4ed3-bd80-1510d6121668/host
+Oct 28 12:25:20.046295 devstack-92-210 dnsmasq-dhcp[961764]: read /opt/stack/data/neutron/dhcp/37cf5dbd-4785-4ed3-bd80-1510d6121668/opts
+Oct 28 12:25:20.215811 devstack-92-210 dnsmasq[961576]: read /opt/stack/data/neutron/dhcp/80972e43-a722-48ac-a7b9-3d385513e5fa/addn_hosts - 2 names
+Oct 28 12:25:20.215961 devstack-92-210 dnsmasq-dhcp[961576]: read /opt/stack/data/neutron/dhcp/80972e43-a722-48ac-a7b9-3d385513e5fa/host
+Oct 28 12:25:20.216017 devstack-92-210 dnsmasq-dhcp[961576]: read /opt/stack/data/neutron/dhcp/80972e43-a722-48ac-a7b9-3d385513e5fa/opts
+Oct 28 12:25:20.353185 devstack-92-210 dnsmasq[961764]: read /opt/stack/data/neutron/dhcp/37cf5dbd-4785-4ed3-bd80-1510d6121668/addn_hosts - 2 names
+Oct 28 12:25:20.353254 devstack-92-210 dnsmasq-dhcp[961764]: read /opt/stack/data/neutron/dhcp/37cf5dbd-4785-4ed3-bd80-1510d6121668/host
+Oct 28 12:25:20.353329 devstack-92-210 dnsmasq-dhcp[961764]: read /opt/stack/data/neutron/dhcp/37cf5dbd-4785-4ed3-bd80-1510d6121668/opts
+Oct 28 12:25:20.472194 devstack-92-210 dnsmasq[961576]: read /opt/stack/data/neutron/dhcp/80972e43-a722-48ac-a7b9-3d385513e5fa/addn_hosts - 2 names
+Oct 28 12:25:20.472222 devstack-92-210 dnsmasq-dhcp[961576]: read /opt/stack/data/neutron/dhcp/80972e43-a722-48ac-a7b9-3d385513e5fa/host
+Oct 28 12:25:20.472239 devstack-92-210 dnsmasq-dhcp[961576]: read /opt/stack/data/neutron/dhcp/80972e43-a722-48ac-a7b9-3d385513e5fa/opts
+Oct 28 12:25:20.650208 devstack-92-210 dnsmasq[961764]: read /opt/stack/data/neutron/dhcp/37cf5dbd-4785-4ed3-bd80-1510d6121668/addn_hosts - 2 names
+Oct 28 12:25:20.650240 devstack-92-210 dnsmasq-dhcp[961764]: read /opt/stack/data/neutron/dhcp/37cf5dbd-4785-4ed3-bd80-1510d6121668/host
+Oct 28 12:25:20.650258 devstack-92-210 dnsmasq-dhcp[961764]: read /opt/stack/data/neutron/dhcp/37cf5dbd-4785-4ed3-bd80-1510d6121668/opts
+Oct 28 12:25:20.803587 devstack-92-210 dnsmasq[961576]: read /opt/stack/data/neutron/dhcp/80972e43-a722-48ac-a7b9-3d385513e5fa/addn_hosts - 4 names
+Oct 28 12:25:20.803647 devstack-92-210 dnsmasq-dhcp[961576]: read /opt/stack/data/neutron/dhcp/80972e43-a722-48ac-a7b9-3d385513e5fa/host
+Oct 28 12:25:20.803672 devstack-92-210 dnsmasq-dhcp[961576]: read /opt/stack/data/neutron/dhcp/80972e43-a722-48ac-a7b9-3d385513e5fa/opts
+Oct 28 12:25:20.962822 devstack-92-210 dnsmasq[961764]: read /opt/stack/data/neutron/dhcp/37cf5dbd-4785-4ed3-bd80-1510d6121668/addn_hosts - 4 names
+Oct 28 12:25:20.962915 devstack-92-210 dnsmasq-dhcp[961764]: read /opt/stack/data/neutron/dhcp/37cf5dbd-4785-4ed3-bd80-1510d6121668/host
+Oct 28 12:25:20.963031 devstack-92-210 dnsmasq-dhcp[961764]: read /opt/stack/data/neutron/dhcp/37cf5dbd-4785-4ed3-bd80-1510d6121668/opts
+Oct 28 12:25:21.102006 devstack-92-210 dnsmasq[961576]: read /opt/stack/data/neutron/dhcp/80972e43-a722-48ac-a7b9-3d385513e5fa/addn_hosts - 6 names
+Oct 28 12:25:21.102142 devstack-92-210 dnsmasq-dhcp[961576]: read /opt/stack/data/neutron/dhcp/80972e43-a722-48ac-a7b9-3d385513e5fa/host
+Oct 28 12:25:21.102205 devstack-92-210 dnsmasq-dhcp[961576]: read /opt/stack/data/neutron/dhcp/80972e43-a722-48ac-a7b9-3d385513e5fa/opts
+Oct 28 12:25:29.011978 devstack-92-210 dnsmasq[962500]: started, version 2.91 cachesize 150
+Oct 28 12:25:29.012003 devstack-92-210 dnsmasq[962500]: DNS service limited to local subnets
+Oct 28 12:25:29.012015 devstack-92-210 dnsmasq[962500]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+Oct 28 12:25:29.012050 devstack-92-210 dnsmasq-dhcp[962500]: DHCP, static leases only on 10.1.0.0, lease time 1d
+Oct 28 12:25:29.012181 devstack-92-210 dnsmasq[962500]: reading /etc/resolv.conf
+Oct 28 12:25:29.012195 devstack-92-210 dnsmasq[962500]: using nameserver 127.0.0.53#53
+Oct 28 12:25:29.012259 devstack-92-210 dnsmasq[962500]: read /opt/stack/data/neutron/dhcp/10bd863e-c6c0-42ce-ad65-ca371f50d599/addn_hosts - 0 names
+Oct 28 12:25:29.012298 devstack-92-210 dnsmasq-dhcp[962500]: read /opt/stack/data/neutron/dhcp/10bd863e-c6c0-42ce-ad65-ca371f50d599/host
+Oct 28 12:25:29.012344 devstack-92-210 dnsmasq-dhcp[962500]: read /opt/stack/data/neutron/dhcp/10bd863e-c6c0-42ce-ad65-ca371f50d599/opts
+Oct 28 12:25:29.144211 devstack-92-210 dnsmasq[962500]: read /opt/stack/data/neutron/dhcp/10bd863e-c6c0-42ce-ad65-ca371f50d599/addn_hosts - 2 names
+Oct 28 12:25:29.144280 devstack-92-210 dnsmasq-dhcp[962500]: read /opt/stack/data/neutron/dhcp/10bd863e-c6c0-42ce-ad65-ca371f50d599/host
+Oct 28 12:25:29.144333 devstack-92-210 dnsmasq-dhcp[962500]: read /opt/stack/data/neutron/dhcp/10bd863e-c6c0-42ce-ad65-ca371f50d599/opts
+Oct 28 12:25:29.291269 devstack-92-210 dnsmasq[962500]: read /opt/stack/data/neutron/dhcp/10bd863e-c6c0-42ce-ad65-ca371f50d599/addn_hosts - 2 names
+Oct 28 12:25:29.291344 devstack-92-210 dnsmasq-dhcp[962500]: read /opt/stack/data/neutron/dhcp/10bd863e-c6c0-42ce-ad65-ca371f50d599/host
+Oct 28 12:25:29.291398 devstack-92-210 dnsmasq-dhcp[962500]: read /opt/stack/data/neutron/dhcp/10bd863e-c6c0-42ce-ad65-ca371f50d599/opts
+Oct 28 12:25:29.444034 devstack-92-210 dnsmasq[962500]: read /opt/stack/data/neutron/dhcp/10bd863e-c6c0-42ce-ad65-ca371f50d599/addn_hosts - 2 names
+Oct 28 12:25:29.444104 devstack-92-210 dnsmasq-dhcp[962500]: read /opt/stack/data/neutron/dhcp/10bd863e-c6c0-42ce-ad65-ca371f50d599/host
+Oct 28 12:25:29.444157 devstack-92-210 dnsmasq-dhcp[962500]: read /opt/stack/data/neutron/dhcp/10bd863e-c6c0-42ce-ad65-ca371f50d599/opts
+Oct 28 12:25:31.400445 devstack-92-210 dnsmasq[962774]: started, version 2.91 cachesize 150
+Oct 28 12:25:31.400471 devstack-92-210 dnsmasq[962774]: DNS service limited to local subnets
+Oct 28 12:25:31.400483 devstack-92-210 dnsmasq[962774]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+Oct 28 12:25:31.400515 devstack-92-210 dnsmasq-dhcp[962774]: DHCP, static leases only on 10.1.0.0, lease time 1d
+Oct 28 12:25:31.400653 devstack-92-210 dnsmasq[962774]: reading /etc/resolv.conf
+Oct 28 12:25:31.400666 devstack-92-210 dnsmasq[962774]: using nameserver 127.0.0.53#53
+Oct 28 12:25:31.400736 devstack-92-210 dnsmasq[962774]: read /opt/stack/data/neutron/dhcp/965fc9f3-23c9-4e23-8f4d-ff3b976e3832/addn_hosts - 0 names
+Oct 28 12:25:31.400776 devstack-92-210 dnsmasq-dhcp[962774]: read /opt/stack/data/neutron/dhcp/965fc9f3-23c9-4e23-8f4d-ff3b976e3832/host
+Oct 28 12:25:31.400822 devstack-92-210 dnsmasq-dhcp[962774]: read /opt/stack/data/neutron/dhcp/965fc9f3-23c9-4e23-8f4d-ff3b976e3832/opts
+Oct 28 12:25:31.528897 devstack-92-210 dnsmasq[962774]: read /opt/stack/data/neutron/dhcp/965fc9f3-23c9-4e23-8f4d-ff3b976e3832/addn_hosts - 2 names
+Oct 28 12:25:31.528985 devstack-92-210 dnsmasq-dhcp[962774]: read /opt/stack/data/neutron/dhcp/965fc9f3-23c9-4e23-8f4d-ff3b976e3832/host
+Oct 28 12:25:31.529037 devstack-92-210 dnsmasq-dhcp[962774]: read /opt/stack/data/neutron/dhcp/965fc9f3-23c9-4e23-8f4d-ff3b976e3832/opts
+Oct 28 12:25:31.714863 devstack-92-210 dnsmasq[962774]: read /opt/stack/data/neutron/dhcp/965fc9f3-23c9-4e23-8f4d-ff3b976e3832/addn_hosts - 2 names
+Oct 28 12:25:31.714891 devstack-92-210 dnsmasq-dhcp[962774]: read /opt/stack/data/neutron/dhcp/965fc9f3-23c9-4e23-8f4d-ff3b976e3832/host
+Oct 28 12:25:31.714908 devstack-92-210 dnsmasq-dhcp[962774]: read /opt/stack/data/neutron/dhcp/965fc9f3-23c9-4e23-8f4d-ff3b976e3832/opts
+Oct 28 12:25:31.864108 devstack-92-210 dnsmasq[962774]: read /opt/stack/data/neutron/dhcp/965fc9f3-23c9-4e23-8f4d-ff3b976e3832/addn_hosts - 2 names
+Oct 28 12:25:31.864178 devstack-92-210 dnsmasq-dhcp[962774]: read /opt/stack/data/neutron/dhcp/965fc9f3-23c9-4e23-8f4d-ff3b976e3832/host
+Oct 28 12:25:31.864232 devstack-92-210 dnsmasq-dhcp[962774]: read /opt/stack/data/neutron/dhcp/965fc9f3-23c9-4e23-8f4d-ff3b976e3832/opts
+Oct 28 12:25:32.174492 devstack-92-210 dnsmasq[961576]: read /opt/stack/data/neutron/dhcp/80972e43-a722-48ac-a7b9-3d385513e5fa/addn_hosts - 4 names
+Oct 28 12:25:32.174613 devstack-92-210 dnsmasq-dhcp[961576]: read /opt/stack/data/neutron/dhcp/80972e43-a722-48ac-a7b9-3d385513e5fa/host
+Oct 28 12:25:32.174669 devstack-92-210 dnsmasq-dhcp[961576]: read /opt/stack/data/neutron/dhcp/80972e43-a722-48ac-a7b9-3d385513e5fa/opts
+Oct 28 12:25:33.078579 devstack-92-210 dnsmasq[962500]: read /opt/stack/data/neutron/dhcp/10bd863e-c6c0-42ce-ad65-ca371f50d599/addn_hosts - 4 names
+Oct 28 12:25:33.078645 devstack-92-210 dnsmasq-dhcp[962500]: read /opt/stack/data/neutron/dhcp/10bd863e-c6c0-42ce-ad65-ca371f50d599/host
+Oct 28 12:25:33.078681 devstack-92-210 dnsmasq-dhcp[962500]: read /opt/stack/data/neutron/dhcp/10bd863e-c6c0-42ce-ad65-ca371f50d599/opts
+Oct 28 12:25:33.371727 devstack-92-210 dnsmasq[961576]: read /opt/stack/data/neutron/dhcp/80972e43-a722-48ac-a7b9-3d385513e5fa/addn_hosts - 2 names
+Oct 28 12:25:33.371762 devstack-92-210 dnsmasq-dhcp[961576]: read /opt/stack/data/neutron/dhcp/80972e43-a722-48ac-a7b9-3d385513e5fa/host
+Oct 28 12:25:33.371778 devstack-92-210 dnsmasq-dhcp[961576]: read /opt/stack/data/neutron/dhcp/80972e43-a722-48ac-a7b9-3d385513e5fa/opts
+Oct 28 12:25:35.442995 devstack-92-210 dnsmasq[963336]: started, version 2.91 cachesize 150
+Oct 28 12:25:35.443018 devstack-92-210 dnsmasq[963336]: DNS service limited to local subnets
+Oct 28 12:25:35.443029 devstack-92-210 dnsmasq[963336]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+Oct 28 12:25:35.443059 devstack-92-210 dnsmasq-dhcp[963336]: DHCP, static leases only on 10.1.0.0, lease time 1d
+Oct 28 12:25:35.443197 devstack-92-210 dnsmasq[963336]: reading /etc/resolv.conf
+Oct 28 12:25:35.443210 devstack-92-210 dnsmasq[963336]: using nameserver 127.0.0.53#53
+Oct 28 12:25:35.443283 devstack-92-210 dnsmasq[963336]: read /opt/stack/data/neutron/dhcp/ea6c1958-f0ec-474a-806f-a00273535eb2/addn_hosts - 0 names
+Oct 28 12:25:35.443321 devstack-92-210 dnsmasq-dhcp[963336]: read /opt/stack/data/neutron/dhcp/ea6c1958-f0ec-474a-806f-a00273535eb2/host
+Oct 28 12:25:35.443367 devstack-92-210 dnsmasq-dhcp[963336]: read /opt/stack/data/neutron/dhcp/ea6c1958-f0ec-474a-806f-a00273535eb2/opts
+Oct 28 12:25:35.536444 devstack-92-210 dnsmasq[961576]: read /opt/stack/data/neutron/dhcp/80972e43-a722-48ac-a7b9-3d385513e5fa/addn_hosts - 0 names
+Oct 28 12:25:35.536471 devstack-92-210 dnsmasq-dhcp[961576]: read /opt/stack/data/neutron/dhcp/80972e43-a722-48ac-a7b9-3d385513e5fa/host
+Oct 28 12:25:35.536492 devstack-92-210 dnsmasq-dhcp[961576]: read /opt/stack/data/neutron/dhcp/80972e43-a722-48ac-a7b9-3d385513e5fa/opts
+Oct 28 12:25:35.692720 devstack-92-210 dnsmasq-dhcp[961764]: DHCPDISCOVER(tap33f2267f-a7) fa:16:3e:e6:14:61
+Oct 28 12:25:35.692746 devstack-92-210 dnsmasq-dhcp[961764]: DHCPOFFER(tap33f2267f-a7) 10.1.0.5 fa:16:3e:e6:14:61
+Oct 28 12:25:35.701441 devstack-92-210 dnsmasq-dhcp[961764]: DHCPREQUEST(tap33f2267f-a7) 10.1.0.5 fa:16:3e:e6:14:61
+Oct 28 12:25:35.701477 devstack-92-210 dnsmasq-dhcp[961764]: DHCPACK(tap33f2267f-a7) 10.1.0.5 fa:16:3e:e6:14:61 host-10-1-0-5
+Oct 28 12:25:35.716834 devstack-92-210 dnsmasq[963336]: read /opt/stack/data/neutron/dhcp/ea6c1958-f0ec-474a-806f-a00273535eb2/addn_hosts - 2 names
+Oct 28 12:25:35.716910 devstack-92-210 dnsmasq-dhcp[963336]: read /opt/stack/data/neutron/dhcp/ea6c1958-f0ec-474a-806f-a00273535eb2/host
+Oct 28 12:25:35.716996 devstack-92-210 dnsmasq-dhcp[963336]: read /opt/stack/data/neutron/dhcp/ea6c1958-f0ec-474a-806f-a00273535eb2/opts
+Oct 28 12:25:35.828976 devstack-92-210 dnsmasq[961576]: exiting on receipt of SIGTERM
+Oct 28 12:25:35.927631 devstack-92-210 dnsmasq[963336]: read /opt/stack/data/neutron/dhcp/ea6c1958-f0ec-474a-806f-a00273535eb2/addn_hosts - 2 names
+Oct 28 12:25:35.927697 devstack-92-210 dnsmasq-dhcp[963336]: read /opt/stack/data/neutron/dhcp/ea6c1958-f0ec-474a-806f-a00273535eb2/host
+Oct 28 12:25:35.927744 devstack-92-210 dnsmasq-dhcp[963336]: read /opt/stack/data/neutron/dhcp/ea6c1958-f0ec-474a-806f-a00273535eb2/opts
+Oct 28 12:25:36.999590 devstack-92-210 dnsmasq[963520]: started, version 2.91 cachesize 150
+Oct 28 12:25:36.999615 devstack-92-210 dnsmasq[963520]: DNS service limited to local subnets
+Oct 28 12:25:36.999627 devstack-92-210 dnsmasq[963520]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+Oct 28 12:25:36.999659 devstack-92-210 dnsmasq-dhcp[963520]: DHCP, static leases only on 10.1.0.0, lease time 1d
+Oct 28 12:25:36.999797 devstack-92-210 dnsmasq[963520]: reading /etc/resolv.conf
+Oct 28 12:25:36.999810 devstack-92-210 dnsmasq[963520]: using nameserver 127.0.0.53#53
+Oct 28 12:25:36.999876 devstack-92-210 dnsmasq[963520]: read /opt/stack/data/neutron/dhcp/f7457df1-b51f-42c9-ab12-329a5e8b36f3/addn_hosts - 0 names
+Oct 28 12:25:36.999911 devstack-92-210 dnsmasq-dhcp[963520]: read /opt/stack/data/neutron/dhcp/f7457df1-b51f-42c9-ab12-329a5e8b36f3/host
+Oct 28 12:25:36.999979 devstack-92-210 dnsmasq-dhcp[963520]: read /opt/stack/data/neutron/dhcp/f7457df1-b51f-42c9-ab12-329a5e8b36f3/opts
+Oct 28 12:25:37.074864 devstack-92-210 dnsmasq[963336]: read /opt/stack/data/neutron/dhcp/ea6c1958-f0ec-474a-806f-a00273535eb2/addn_hosts - 2 names
+Oct 28 12:25:37.074894 devstack-92-210 dnsmasq-dhcp[963336]: read /opt/stack/data/neutron/dhcp/ea6c1958-f0ec-474a-806f-a00273535eb2/host
+Oct 28 12:25:37.074911 devstack-92-210 dnsmasq-dhcp[963336]: read /opt/stack/data/neutron/dhcp/ea6c1958-f0ec-474a-806f-a00273535eb2/opts
+Oct 28 12:25:37.276197 devstack-92-210 dnsmasq[963520]: read /opt/stack/data/neutron/dhcp/f7457df1-b51f-42c9-ab12-329a5e8b36f3/addn_hosts - 2 names
+Oct 28 12:25:37.276264 devstack-92-210 dnsmasq-dhcp[963520]: read /opt/stack/data/neutron/dhcp/f7457df1-b51f-42c9-ab12-329a5e8b36f3/host
+Oct 28 12:25:37.276319 devstack-92-210 dnsmasq-dhcp[963520]: read /opt/stack/data/neutron/dhcp/f7457df1-b51f-42c9-ab12-329a5e8b36f3/opts
+Oct 28 12:25:37.431685 devstack-92-210 dnsmasq[963336]: read /opt/stack/data/neutron/dhcp/ea6c1958-f0ec-474a-806f-a00273535eb2/addn_hosts - 0 names
+Oct 28 12:25:37.431715 devstack-92-210 dnsmasq-dhcp[963336]: read /opt/stack/data/neutron/dhcp/ea6c1958-f0ec-474a-806f-a00273535eb2/host
+Oct 28 12:25:37.431736 devstack-92-210 dnsmasq-dhcp[963336]: read /opt/stack/data/neutron/dhcp/ea6c1958-f0ec-474a-806f-a00273535eb2/opts
+Oct 28 12:25:37.579769 devstack-92-210 dnsmasq[963520]: read /opt/stack/data/neutron/dhcp/f7457df1-b51f-42c9-ab12-329a5e8b36f3/addn_hosts - 2 names
+Oct 28 12:25:37.579848 devstack-92-210 dnsmasq-dhcp[963520]: read /opt/stack/data/neutron/dhcp/f7457df1-b51f-42c9-ab12-329a5e8b36f3/host
+Oct 28 12:25:37.579956 devstack-92-210 dnsmasq-dhcp[963520]: read /opt/stack/data/neutron/dhcp/f7457df1-b51f-42c9-ab12-329a5e8b36f3/opts
+Oct 28 12:25:37.791058 devstack-92-210 dnsmasq[962500]: read /opt/stack/data/neutron/dhcp/10bd863e-c6c0-42ce-ad65-ca371f50d599/addn_hosts - 2 names
+Oct 28 12:25:37.791134 devstack-92-210 dnsmasq-dhcp[962500]: read /opt/stack/data/neutron/dhcp/10bd863e-c6c0-42ce-ad65-ca371f50d599/host
+Oct 28 12:25:37.791189 devstack-92-210 dnsmasq-dhcp[962500]: read /opt/stack/data/neutron/dhcp/10bd863e-c6c0-42ce-ad65-ca371f50d599/opts
+Oct 28 12:25:37.927809 devstack-92-210 dnsmasq[963520]: read /opt/stack/data/neutron/dhcp/f7457df1-b51f-42c9-ab12-329a5e8b36f3/addn_hosts - 2 names
+Oct 28 12:25:37.927881 devstack-92-210 dnsmasq-dhcp[963520]: read /opt/stack/data/neutron/dhcp/f7457df1-b51f-42c9-ab12-329a5e8b36f3/host
+Oct 28 12:25:37.927955 devstack-92-210 dnsmasq-dhcp[963520]: read /opt/stack/data/neutron/dhcp/f7457df1-b51f-42c9-ab12-329a5e8b36f3/opts
+Oct 28 12:25:38.075611 devstack-92-210 dnsmasq[963520]: read /opt/stack/data/neutron/dhcp/f7457df1-b51f-42c9-ab12-329a5e8b36f3/addn_hosts - 0 names
+Oct 28 12:25:38.075646 devstack-92-210 dnsmasq-dhcp[963520]: read /opt/stack/data/neutron/dhcp/f7457df1-b51f-42c9-ab12-329a5e8b36f3/host
+Oct 28 12:25:38.075670 devstack-92-210 dnsmasq-dhcp[963520]: read /opt/stack/data/neutron/dhcp/f7457df1-b51f-42c9-ab12-329a5e8b36f3/opts
+Oct 28 12:25:38.191575 devstack-92-210 dnsmasq[963336]: exiting on receipt of SIGTERM
+Oct 28 12:25:38.365498 devstack-92-210 dnsmasq[963520]: exiting on receipt of SIGTERM
+Oct 28 12:25:40.777106 devstack-92-210 dnsmasq[964192]: started, version 2.91 cachesize 150
+Oct 28 12:25:40.777119 devstack-92-210 dnsmasq[964192]: DNS service limited to local subnets
+Oct 28 12:25:40.777125 devstack-92-210 dnsmasq[964192]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+Oct 28 12:25:40.777142 devstack-92-210 dnsmasq-dhcp[964192]: DHCP, static leases only on 10.1.0.0, lease time 1d
+Oct 28 12:25:40.777243 devstack-92-210 dnsmasq[964192]: reading /etc/resolv.conf
+Oct 28 12:25:40.777252 devstack-92-210 dnsmasq[964192]: using nameserver 127.0.0.53#53
+Oct 28 12:25:40.777302 devstack-92-210 dnsmasq[964192]: read /opt/stack/data/neutron/dhcp/b160fbdf-1f91-4367-966a-8e54e539ff58/addn_hosts - 0 names
+Oct 28 12:25:40.777322 devstack-92-210 dnsmasq-dhcp[964192]: read /opt/stack/data/neutron/dhcp/b160fbdf-1f91-4367-966a-8e54e539ff58/host
+Oct 28 12:25:40.777350 devstack-92-210 dnsmasq-dhcp[964192]: read /opt/stack/data/neutron/dhcp/b160fbdf-1f91-4367-966a-8e54e539ff58/opts
+Oct 28 12:25:40.926554 devstack-92-210 dnsmasq[964192]: read /opt/stack/data/neutron/dhcp/b160fbdf-1f91-4367-966a-8e54e539ff58/addn_hosts - 2 names
+Oct 28 12:25:40.926617 devstack-92-210 dnsmasq-dhcp[964192]: read /opt/stack/data/neutron/dhcp/b160fbdf-1f91-4367-966a-8e54e539ff58/host
+Oct 28 12:25:40.926676 devstack-92-210 dnsmasq-dhcp[964192]: read /opt/stack/data/neutron/dhcp/b160fbdf-1f91-4367-966a-8e54e539ff58/opts
+Oct 28 12:25:41.099979 devstack-92-210 dnsmasq[964192]: read /opt/stack/data/neutron/dhcp/b160fbdf-1f91-4367-966a-8e54e539ff58/addn_hosts - 2 names
+Oct 28 12:25:41.100108 devstack-92-210 dnsmasq-dhcp[964192]: read /opt/stack/data/neutron/dhcp/b160fbdf-1f91-4367-966a-8e54e539ff58/host
+Oct 28 12:25:41.100165 devstack-92-210 dnsmasq-dhcp[964192]: read /opt/stack/data/neutron/dhcp/b160fbdf-1f91-4367-966a-8e54e539ff58/opts
+Oct 28 12:25:41.232903 devstack-92-210 dnsmasq[964192]: read /opt/stack/data/neutron/dhcp/b160fbdf-1f91-4367-966a-8e54e539ff58/addn_hosts - 2 names
+Oct 28 12:25:41.232986 devstack-92-210 dnsmasq-dhcp[964192]: read /opt/stack/data/neutron/dhcp/b160fbdf-1f91-4367-966a-8e54e539ff58/host
+Oct 28 12:25:41.233040 devstack-92-210 dnsmasq-dhcp[964192]: read /opt/stack/data/neutron/dhcp/b160fbdf-1f91-4367-966a-8e54e539ff58/opts
+Oct 28 12:25:42.854452 devstack-92-210 dnsmasq[964192]: read /opt/stack/data/neutron/dhcp/b160fbdf-1f91-4367-966a-8e54e539ff58/addn_hosts - 4 names
+Oct 28 12:25:42.854582 devstack-92-210 dnsmasq-dhcp[964192]: read /opt/stack/data/neutron/dhcp/b160fbdf-1f91-4367-966a-8e54e539ff58/host
+Oct 28 12:25:42.854640 devstack-92-210 dnsmasq-dhcp[964192]: read /opt/stack/data/neutron/dhcp/b160fbdf-1f91-4367-966a-8e54e539ff58/opts
+Oct 28 12:25:44.955841 devstack-92-210 dnsmasq[962500]: read /opt/stack/data/neutron/dhcp/10bd863e-c6c0-42ce-ad65-ca371f50d599/addn_hosts - 0 names
+Oct 28 12:25:44.955869 devstack-92-210 dnsmasq-dhcp[962500]: read /opt/stack/data/neutron/dhcp/10bd863e-c6c0-42ce-ad65-ca371f50d599/host
+Oct 28 12:25:44.955891 devstack-92-210 dnsmasq-dhcp[962500]: read /opt/stack/data/neutron/dhcp/10bd863e-c6c0-42ce-ad65-ca371f50d599/opts
+Oct 28 12:25:46.397397 devstack-92-210 dnsmasq[964635]: started, version 2.91 cachesize 150
+Oct 28 12:25:46.397422 devstack-92-210 dnsmasq[964635]: DNS service limited to local subnets
+Oct 28 12:25:46.397434 devstack-92-210 dnsmasq[964635]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+Oct 28 12:25:46.397466 devstack-92-210 dnsmasq-dhcp[964635]: DHCP, static leases only on 10.1.0.0, lease time 1d
+Oct 28 12:25:46.397617 devstack-92-210 dnsmasq[964635]: reading /etc/resolv.conf
+Oct 28 12:25:46.397631 devstack-92-210 dnsmasq[964635]: using nameserver 127.0.0.53#53
+Oct 28 12:25:46.397702 devstack-92-210 dnsmasq[964635]: read /opt/stack/data/neutron/dhcp/88b7802a-be29-4cb2-9571-98882e77a395/addn_hosts - 0 names
+Oct 28 12:25:46.397740 devstack-92-210 dnsmasq-dhcp[964635]: read /opt/stack/data/neutron/dhcp/88b7802a-be29-4cb2-9571-98882e77a395/host
+Oct 28 12:25:46.397790 devstack-92-210 dnsmasq-dhcp[964635]: read /opt/stack/data/neutron/dhcp/88b7802a-be29-4cb2-9571-98882e77a395/opts
+Oct 28 12:25:46.586710 devstack-92-210 dnsmasq[962774]: read /opt/stack/data/neutron/dhcp/965fc9f3-23c9-4e23-8f4d-ff3b976e3832/addn_hosts - 0 names
+Oct 28 12:25:46.586768 devstack-92-210 dnsmasq-dhcp[962774]: read /opt/stack/data/neutron/dhcp/965fc9f3-23c9-4e23-8f4d-ff3b976e3832/host
+Oct 28 12:25:46.586809 devstack-92-210 dnsmasq-dhcp[962774]: read /opt/stack/data/neutron/dhcp/965fc9f3-23c9-4e23-8f4d-ff3b976e3832/opts
+Oct 28 12:25:46.811780 devstack-92-210 dnsmasq[964635]: read /opt/stack/data/neutron/dhcp/88b7802a-be29-4cb2-9571-98882e77a395/addn_hosts - 2 names
+Oct 28 12:25:46.811962 devstack-92-210 dnsmasq-dhcp[964635]: read /opt/stack/data/neutron/dhcp/88b7802a-be29-4cb2-9571-98882e77a395/host
+Oct 28 12:25:46.812024 devstack-92-210 dnsmasq-dhcp[964635]: read /opt/stack/data/neutron/dhcp/88b7802a-be29-4cb2-9571-98882e77a395/opts
+Oct 28 12:25:46.943088 devstack-92-210 dnsmasq[962500]: exiting on receipt of SIGTERM
+Oct 28 12:25:47.043804 devstack-92-210 dnsmasq[964635]: read /opt/stack/data/neutron/dhcp/88b7802a-be29-4cb2-9571-98882e77a395/addn_hosts - 2 names
+Oct 28 12:25:47.043985 devstack-92-210 dnsmasq-dhcp[964635]: read /opt/stack/data/neutron/dhcp/88b7802a-be29-4cb2-9571-98882e77a395/host
+Oct 28 12:25:47.044044 devstack-92-210 dnsmasq-dhcp[964635]: read /opt/stack/data/neutron/dhcp/88b7802a-be29-4cb2-9571-98882e77a395/opts
+Oct 28 12:25:47.181813 devstack-92-210 dnsmasq[962774]: exiting on receipt of SIGTERM
+Oct 28 12:25:48.387497 devstack-92-210 dnsmasq[964961]: started, version 2.91 cachesize 150
+Oct 28 12:25:48.387520 devstack-92-210 dnsmasq[964961]: DNS service limited to local subnets
+Oct 28 12:25:48.387532 devstack-92-210 dnsmasq[964961]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+Oct 28 12:25:48.387562 devstack-92-210 dnsmasq-dhcp[964961]: DHCP, static leases only on 10.1.0.0, lease time 1d
+Oct 28 12:25:48.387690 devstack-92-210 dnsmasq[964961]: reading /etc/resolv.conf
+Oct 28 12:25:48.387703 devstack-92-210 dnsmasq[964961]: using nameserver 127.0.0.53#53
+Oct 28 12:25:48.387771 devstack-92-210 dnsmasq[964961]: read /opt/stack/data/neutron/dhcp/955fc5fa-21f3-4f95-b559-2f934231e759/addn_hosts - 0 names
+Oct 28 12:25:48.387808 devstack-92-210 dnsmasq-dhcp[964961]: read /opt/stack/data/neutron/dhcp/955fc5fa-21f3-4f95-b559-2f934231e759/host
+Oct 28 12:25:48.387851 devstack-92-210 dnsmasq-dhcp[964961]: read /opt/stack/data/neutron/dhcp/955fc5fa-21f3-4f95-b559-2f934231e759/opts
+Oct 28 12:25:48.456754 devstack-92-210 dnsmasq[964635]: read /opt/stack/data/neutron/dhcp/88b7802a-be29-4cb2-9571-98882e77a395/addn_hosts - 2 names
+Oct 28 12:25:48.456791 devstack-92-210 dnsmasq-dhcp[964635]: read /opt/stack/data/neutron/dhcp/88b7802a-be29-4cb2-9571-98882e77a395/host
+Oct 28 12:25:48.456815 devstack-92-210 dnsmasq-dhcp[964635]: read /opt/stack/data/neutron/dhcp/88b7802a-be29-4cb2-9571-98882e77a395/opts
+Oct 28 12:25:48.697637 devstack-92-210 dnsmasq[964961]: read /opt/stack/data/neutron/dhcp/955fc5fa-21f3-4f95-b559-2f934231e759/addn_hosts - 2 names
+Oct 28 12:25:48.697679 devstack-92-210 dnsmasq-dhcp[964961]: read /opt/stack/data/neutron/dhcp/955fc5fa-21f3-4f95-b559-2f934231e759/host
+Oct 28 12:25:48.697715 devstack-92-210 dnsmasq-dhcp[964961]: read /opt/stack/data/neutron/dhcp/955fc5fa-21f3-4f95-b559-2f934231e759/opts
+Oct 28 12:25:48.838914 devstack-92-210 dnsmasq[964961]: read /opt/stack/data/neutron/dhcp/955fc5fa-21f3-4f95-b559-2f934231e759/addn_hosts - 2 names
+Oct 28 12:25:48.839004 devstack-92-210 dnsmasq-dhcp[964961]: read /opt/stack/data/neutron/dhcp/955fc5fa-21f3-4f95-b559-2f934231e759/host
+Oct 28 12:25:48.839100 devstack-92-210 dnsmasq-dhcp[964961]: read /opt/stack/data/neutron/dhcp/955fc5fa-21f3-4f95-b559-2f934231e759/opts
+Oct 28 12:25:48.993489 devstack-92-210 dnsmasq[964961]: read /opt/stack/data/neutron/dhcp/955fc5fa-21f3-4f95-b559-2f934231e759/addn_hosts - 2 names
+Oct 28 12:25:48.993559 devstack-92-210 dnsmasq-dhcp[964961]: read /opt/stack/data/neutron/dhcp/955fc5fa-21f3-4f95-b559-2f934231e759/host
+Oct 28 12:25:48.993716 devstack-92-210 dnsmasq-dhcp[964961]: read /opt/stack/data/neutron/dhcp/955fc5fa-21f3-4f95-b559-2f934231e759/opts
+Oct 28 12:25:50.077438 devstack-92-210 dnsmasq[964635]: read /opt/stack/data/neutron/dhcp/88b7802a-be29-4cb2-9571-98882e77a395/addn_hosts - 4 names
+Oct 28 12:25:50.077477 devstack-92-210 dnsmasq-dhcp[964635]: read /opt/stack/data/neutron/dhcp/88b7802a-be29-4cb2-9571-98882e77a395/host
+Oct 28 12:25:50.077498 devstack-92-210 dnsmasq-dhcp[964635]: read /opt/stack/data/neutron/dhcp/88b7802a-be29-4cb2-9571-98882e77a395/opts
+Oct 28 12:25:52.569263 devstack-92-210 dnsmasq[961764]: read /opt/stack/data/neutron/dhcp/37cf5dbd-4785-4ed3-bd80-1510d6121668/addn_hosts - 6 names
+Oct 28 12:25:52.569354 devstack-92-210 dnsmasq-dhcp[961764]: read /opt/stack/data/neutron/dhcp/37cf5dbd-4785-4ed3-bd80-1510d6121668/host
+Oct 28 12:25:52.569391 devstack-92-210 dnsmasq-dhcp[961764]: read /opt/stack/data/neutron/dhcp/37cf5dbd-4785-4ed3-bd80-1510d6121668/opts
+Oct 28 12:25:56.464417 devstack-92-210 dnsmasq-dhcp[964192]: DHCPDISCOVER(tap5b21a64e-ff) fa:16:3e:33:13:2f
+Oct 28 12:25:56.464441 devstack-92-210 dnsmasq-dhcp[964192]: DHCPOFFER(tap5b21a64e-ff) 10.1.0.13 fa:16:3e:33:13:2f
+Oct 28 12:25:56.476037 devstack-92-210 dnsmasq-dhcp[964192]: DHCPREQUEST(tap5b21a64e-ff) 10.1.0.13 fa:16:3e:33:13:2f
+Oct 28 12:25:56.476072 devstack-92-210 dnsmasq-dhcp[964192]: DHCPACK(tap5b21a64e-ff) 10.1.0.13 fa:16:3e:33:13:2f host-10-1-0-13
+Oct 28 12:26:04.567772 devstack-92-210 dnsmasq-dhcp[964635]: DHCPDISCOVER(tap4fa9b415-ad) fa:16:3e:8c:82:87
+Oct 28 12:26:04.567797 devstack-92-210 dnsmasq-dhcp[964635]: DHCPOFFER(tap4fa9b415-ad) 10.1.0.4 fa:16:3e:8c:82:87
+Oct 28 12:26:04.576818 devstack-92-210 dnsmasq-dhcp[964635]: DHCPREQUEST(tap4fa9b415-ad) 10.1.0.4 fa:16:3e:8c:82:87
+Oct 28 12:26:04.576849 devstack-92-210 dnsmasq-dhcp[964635]: DHCPACK(tap4fa9b415-ad) 10.1.0.4 fa:16:3e:8c:82:87 host-10-1-0-4
+Oct 28 12:26:07.531352 devstack-92-210 dnsmasq[965653]: started, version 2.91 cachesize 150
+Oct 28 12:26:07.531378 devstack-92-210 dnsmasq[965653]: DNS service limited to local subnets
+Oct 28 12:26:07.531390 devstack-92-210 dnsmasq[965653]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+Oct 28 12:26:07.531420 devstack-92-210 dnsmasq-dhcp[965653]: DHCP, static leases only on 10.1.0.0, lease time 1d
+Oct 28 12:26:07.531547 devstack-92-210 dnsmasq[965653]: reading /etc/resolv.conf
+Oct 28 12:26:07.531564 devstack-92-210 dnsmasq[965653]: using nameserver 127.0.0.53#53
+Oct 28 12:26:07.531633 devstack-92-210 dnsmasq[965653]: read /opt/stack/data/neutron/dhcp/a8ebdba4-15a6-4454-93b2-47618809fe72/addn_hosts - 0 names
+Oct 28 12:26:07.531670 devstack-92-210 dnsmasq-dhcp[965653]: read /opt/stack/data/neutron/dhcp/a8ebdba4-15a6-4454-93b2-47618809fe72/host
+Oct 28 12:26:07.531716 devstack-92-210 dnsmasq-dhcp[965653]: read /opt/stack/data/neutron/dhcp/a8ebdba4-15a6-4454-93b2-47618809fe72/opts
+Oct 28 12:26:07.663732 devstack-92-210 dnsmasq[965653]: read /opt/stack/data/neutron/dhcp/a8ebdba4-15a6-4454-93b2-47618809fe72/addn_hosts - 2 names
+Oct 28 12:26:07.663896 devstack-92-210 dnsmasq-dhcp[965653]: read /opt/stack/data/neutron/dhcp/a8ebdba4-15a6-4454-93b2-47618809fe72/host
+Oct 28 12:26:07.663973 devstack-92-210 dnsmasq-dhcp[965653]: read /opt/stack/data/neutron/dhcp/a8ebdba4-15a6-4454-93b2-47618809fe72/opts
+Oct 28 12:26:07.806818 devstack-92-210 dnsmasq[965653]: read /opt/stack/data/neutron/dhcp/a8ebdba4-15a6-4454-93b2-47618809fe72/addn_hosts - 2 names
+Oct 28 12:26:07.806891 devstack-92-210 dnsmasq-dhcp[965653]: read /opt/stack/data/neutron/dhcp/a8ebdba4-15a6-4454-93b2-47618809fe72/host
+Oct 28 12:26:07.806981 devstack-92-210 dnsmasq-dhcp[965653]: read /opt/stack/data/neutron/dhcp/a8ebdba4-15a6-4454-93b2-47618809fe72/opts
+Oct 28 12:26:07.999988 devstack-92-210 dnsmasq[965653]: read /opt/stack/data/neutron/dhcp/a8ebdba4-15a6-4454-93b2-47618809fe72/addn_hosts - 2 names
+Oct 28 12:26:08.000056 devstack-92-210 dnsmasq-dhcp[965653]: read /opt/stack/data/neutron/dhcp/a8ebdba4-15a6-4454-93b2-47618809fe72/host
+Oct 28 12:26:08.000112 devstack-92-210 dnsmasq-dhcp[965653]: read /opt/stack/data/neutron/dhcp/a8ebdba4-15a6-4454-93b2-47618809fe72/opts
+Oct 28 12:26:08.333962 devstack-92-210 dnsmasq-dhcp[961764]: DHCPDISCOVER(tap33f2267f-a7) fa:16:3e:70:94:c5
+Oct 28 12:26:08.333986 devstack-92-210 dnsmasq-dhcp[961764]: DHCPOFFER(tap33f2267f-a7) 10.1.0.11 fa:16:3e:70:94:c5
+Oct 28 12:26:08.342018 devstack-92-210 dnsmasq-dhcp[961764]: DHCPREQUEST(tap33f2267f-a7) 10.1.0.11 fa:16:3e:70:94:c5
+Oct 28 12:26:08.342041 devstack-92-210 dnsmasq-dhcp[961764]: DHCPACK(tap33f2267f-a7) 10.1.0.11 fa:16:3e:70:94:c5 host-10-1-0-11
+Oct 28 12:26:09.387764 devstack-92-210 dnsmasq[965844]: started, version 2.91 cachesize 150
+Oct 28 12:26:09.387787 devstack-92-210 dnsmasq[965844]: DNS service limited to local subnets
+Oct 28 12:26:09.387799 devstack-92-210 dnsmasq[965844]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+Oct 28 12:26:09.387829 devstack-92-210 dnsmasq-dhcp[965844]: DHCP, static leases only on 10.1.0.0, lease time 1d
+Oct 28 12:26:09.387979 devstack-92-210 dnsmasq[965844]: reading /etc/resolv.conf
+Oct 28 12:26:09.387993 devstack-92-210 dnsmasq[965844]: using nameserver 127.0.0.53#53
+Oct 28 12:26:09.388064 devstack-92-210 dnsmasq[965844]: read /opt/stack/data/neutron/dhcp/e460c31a-91a1-40ac-8974-e4b83f686439/addn_hosts - 0 names
+Oct 28 12:26:09.388104 devstack-92-210 dnsmasq-dhcp[965844]: read /opt/stack/data/neutron/dhcp/e460c31a-91a1-40ac-8974-e4b83f686439/host
+Oct 28 12:26:09.388148 devstack-92-210 dnsmasq-dhcp[965844]: read /opt/stack/data/neutron/dhcp/e460c31a-91a1-40ac-8974-e4b83f686439/opts
+Oct 28 12:26:09.522803 devstack-92-210 dnsmasq[965844]: read /opt/stack/data/neutron/dhcp/e460c31a-91a1-40ac-8974-e4b83f686439/addn_hosts - 2 names
+Oct 28 12:26:09.522867 devstack-92-210 dnsmasq-dhcp[965844]: read /opt/stack/data/neutron/dhcp/e460c31a-91a1-40ac-8974-e4b83f686439/host
+Oct 28 12:26:09.522920 devstack-92-210 dnsmasq-dhcp[965844]: read /opt/stack/data/neutron/dhcp/e460c31a-91a1-40ac-8974-e4b83f686439/opts
+Oct 28 12:26:09.667133 devstack-92-210 dnsmasq[965844]: read /opt/stack/data/neutron/dhcp/e460c31a-91a1-40ac-8974-e4b83f686439/addn_hosts - 2 names
+Oct 28 12:26:09.667200 devstack-92-210 dnsmasq-dhcp[965844]: read /opt/stack/data/neutron/dhcp/e460c31a-91a1-40ac-8974-e4b83f686439/host
+Oct 28 12:26:09.667252 devstack-92-210 dnsmasq-dhcp[965844]: read /opt/stack/data/neutron/dhcp/e460c31a-91a1-40ac-8974-e4b83f686439/opts
+Oct 28 12:26:09.819901 devstack-92-210 dnsmasq[965844]: read /opt/stack/data/neutron/dhcp/e460c31a-91a1-40ac-8974-e4b83f686439/addn_hosts - 2 names
+Oct 28 12:26:09.819952 devstack-92-210 dnsmasq-dhcp[965844]: read /opt/stack/data/neutron/dhcp/e460c31a-91a1-40ac-8974-e4b83f686439/host
+Oct 28 12:26:09.819978 devstack-92-210 dnsmasq-dhcp[965844]: read /opt/stack/data/neutron/dhcp/e460c31a-91a1-40ac-8974-e4b83f686439/opts
+Oct 28 12:26:12.435151 devstack-92-210 dnsmasq[965653]: read /opt/stack/data/neutron/dhcp/a8ebdba4-15a6-4454-93b2-47618809fe72/addn_hosts - 4 names
+Oct 28 12:26:12.435202 devstack-92-210 dnsmasq-dhcp[965653]: read /opt/stack/data/neutron/dhcp/a8ebdba4-15a6-4454-93b2-47618809fe72/host
+Oct 28 12:26:12.435236 devstack-92-210 dnsmasq-dhcp[965653]: read /opt/stack/data/neutron/dhcp/a8ebdba4-15a6-4454-93b2-47618809fe72/opts
+Oct 28 12:26:18.761616 devstack-92-210 dnsmasq[965653]: read /opt/stack/data/neutron/dhcp/a8ebdba4-15a6-4454-93b2-47618809fe72/addn_hosts - 2 names
+Oct 28 12:26:18.761672 devstack-92-210 dnsmasq-dhcp[965653]: read /opt/stack/data/neutron/dhcp/a8ebdba4-15a6-4454-93b2-47618809fe72/host
+Oct 28 12:26:18.761706 devstack-92-210 dnsmasq-dhcp[965653]: read /opt/stack/data/neutron/dhcp/a8ebdba4-15a6-4454-93b2-47618809fe72/opts
+Oct 28 12:26:19.956628 devstack-92-210 dnsmasq-dhcp[964192]: DHCPRELEASE(tap5b21a64e-ff) 10.1.0.13 fa:16:3e:33:13:2f
+Oct 28 12:26:19.970299 devstack-92-210 dnsmasq-dhcp[964192]: DHCPRELEASE(tap5b21a64e-ff) 10.1.0.13 fa:16:3e:33:13:2f unknown lease
+Oct 28 12:26:20.295255 devstack-92-210 dnsmasq[964192]: read /opt/stack/data/neutron/dhcp/b160fbdf-1f91-4367-966a-8e54e539ff58/addn_hosts - 2 names
+Oct 28 12:26:20.295342 devstack-92-210 dnsmasq-dhcp[964192]: read /opt/stack/data/neutron/dhcp/b160fbdf-1f91-4367-966a-8e54e539ff58/host
+Oct 28 12:26:20.295398 devstack-92-210 dnsmasq-dhcp[964192]: read /opt/stack/data/neutron/dhcp/b160fbdf-1f91-4367-966a-8e54e539ff58/opts
+Oct 28 12:26:21.543339 devstack-92-210 dnsmasq[965653]: read /opt/stack/data/neutron/dhcp/a8ebdba4-15a6-4454-93b2-47618809fe72/addn_hosts - 4 names
+Oct 28 12:26:21.543496 devstack-92-210 dnsmasq-dhcp[965653]: read /opt/stack/data/neutron/dhcp/a8ebdba4-15a6-4454-93b2-47618809fe72/host
+Oct 28 12:26:21.543578 devstack-92-210 dnsmasq-dhcp[965653]: read /opt/stack/data/neutron/dhcp/a8ebdba4-15a6-4454-93b2-47618809fe72/opts
+Oct 28 12:26:22.106380 devstack-92-210 dnsmasq-dhcp[964635]: DHCPRELEASE(tap4fa9b415-ad) 10.1.0.4 fa:16:3e:8c:82:87
+Oct 28 12:26:22.120324 devstack-92-210 dnsmasq-dhcp[964635]: DHCPRELEASE(tap4fa9b415-ad) 10.1.0.4 fa:16:3e:8c:82:87 unknown lease
+Oct 28 12:26:22.446815 devstack-92-210 dnsmasq[964635]: read /opt/stack/data/neutron/dhcp/88b7802a-be29-4cb2-9571-98882e77a395/addn_hosts - 2 names
+Oct 28 12:26:22.446858 devstack-92-210 dnsmasq-dhcp[964635]: read /opt/stack/data/neutron/dhcp/88b7802a-be29-4cb2-9571-98882e77a395/host
+Oct 28 12:26:22.446883 devstack-92-210 dnsmasq-dhcp[964635]: read /opt/stack/data/neutron/dhcp/88b7802a-be29-4cb2-9571-98882e77a395/opts
+Oct 28 12:26:23.171510 devstack-92-210 dnsmasq[964192]: read /opt/stack/data/neutron/dhcp/b160fbdf-1f91-4367-966a-8e54e539ff58/addn_hosts - 4 names
+Oct 28 12:26:23.171620 devstack-92-210 dnsmasq-dhcp[964192]: read /opt/stack/data/neutron/dhcp/b160fbdf-1f91-4367-966a-8e54e539ff58/host
+Oct 28 12:26:23.171719 devstack-92-210 dnsmasq-dhcp[964192]: read /opt/stack/data/neutron/dhcp/b160fbdf-1f91-4367-966a-8e54e539ff58/opts
+Oct 28 12:26:23.343439 devstack-92-210 dnsmasq[964635]: read /opt/stack/data/neutron/dhcp/88b7802a-be29-4cb2-9571-98882e77a395/addn_hosts - 0 names
+Oct 28 12:26:23.343478 devstack-92-210 dnsmasq-dhcp[964635]: read /opt/stack/data/neutron/dhcp/88b7802a-be29-4cb2-9571-98882e77a395/host
+Oct 28 12:26:23.343500 devstack-92-210 dnsmasq-dhcp[964635]: read /opt/stack/data/neutron/dhcp/88b7802a-be29-4cb2-9571-98882e77a395/opts
+Oct 28 12:26:23.862850 devstack-92-210 dnsmasq[964635]: exiting on receipt of SIGTERM
+Oct 28 12:26:24.344853 devstack-92-210 dnsmasq[964961]: read /opt/stack/data/neutron/dhcp/955fc5fa-21f3-4f95-b559-2f934231e759/addn_hosts - 0 names
+Oct 28 12:26:24.344906 devstack-92-210 dnsmasq-dhcp[964961]: read /opt/stack/data/neutron/dhcp/955fc5fa-21f3-4f95-b559-2f934231e759/host
+Oct 28 12:26:24.344978 devstack-92-210 dnsmasq-dhcp[964961]: read /opt/stack/data/neutron/dhcp/955fc5fa-21f3-4f95-b559-2f934231e759/opts
+Oct 28 12:26:24.921790 devstack-92-210 dnsmasq[964961]: exiting on receipt of SIGTERM
+Oct 28 12:26:25.059965 devstack-92-210 dnsmasq-dhcp[961764]: DHCPRELEASE(tap33f2267f-a7) 10.1.0.11 fa:16:3e:70:94:c5
+Oct 28 12:26:25.072731 devstack-92-210 dnsmasq-dhcp[961764]: DHCPRELEASE(tap33f2267f-a7) 10.1.0.11 fa:16:3e:70:94:c5 unknown lease
+Oct 28 12:26:25.400870 devstack-92-210 dnsmasq[961764]: read /opt/stack/data/neutron/dhcp/37cf5dbd-4785-4ed3-bd80-1510d6121668/addn_hosts - 4 names
+Oct 28 12:26:25.400906 devstack-92-210 dnsmasq-dhcp[961764]: read /opt/stack/data/neutron/dhcp/37cf5dbd-4785-4ed3-bd80-1510d6121668/host
+Oct 28 12:26:25.400939 devstack-92-210 dnsmasq-dhcp[961764]: read /opt/stack/data/neutron/dhcp/37cf5dbd-4785-4ed3-bd80-1510d6121668/opts
+Oct 28 12:26:26.232909 devstack-92-210 dnsmasq[965653]: read /opt/stack/data/neutron/dhcp/a8ebdba4-15a6-4454-93b2-47618809fe72/addn_hosts - 2 names
+Oct 28 12:26:26.233083 devstack-92-210 dnsmasq-dhcp[965653]: read /opt/stack/data/neutron/dhcp/a8ebdba4-15a6-4454-93b2-47618809fe72/host
+Oct 28 12:26:26.233138 devstack-92-210 dnsmasq-dhcp[965653]: read /opt/stack/data/neutron/dhcp/a8ebdba4-15a6-4454-93b2-47618809fe72/opts
+Oct 28 12:26:27.222656 devstack-92-210 dnsmasq[966924]: started, version 2.91 cachesize 150
+Oct 28 12:26:27.222679 devstack-92-210 dnsmasq[966924]: DNS service limited to local subnets
+Oct 28 12:26:27.222690 devstack-92-210 dnsmasq[966924]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+Oct 28 12:26:27.222726 devstack-92-210 dnsmasq-dhcp[966924]: DHCP, static leases only on 10.1.0.0, lease time 1d
+Oct 28 12:26:27.222860 devstack-92-210 dnsmasq[966924]: reading /etc/resolv.conf
+Oct 28 12:26:27.222874 devstack-92-210 dnsmasq[966924]: using nameserver 127.0.0.53#53
+Oct 28 12:26:27.222970 devstack-92-210 dnsmasq[966924]: read /opt/stack/data/neutron/dhcp/41c68f08-d0de-45dc-975f-a6eae644465d/addn_hosts - 0 names
+Oct 28 12:26:27.223003 devstack-92-210 dnsmasq-dhcp[966924]: read /opt/stack/data/neutron/dhcp/41c68f08-d0de-45dc-975f-a6eae644465d/host
+Oct 28 12:26:27.223052 devstack-92-210 dnsmasq-dhcp[966924]: read /opt/stack/data/neutron/dhcp/41c68f08-d0de-45dc-975f-a6eae644465d/opts
+Oct 28 12:26:27.319435 devstack-92-210 dnsmasq[965653]: read /opt/stack/data/neutron/dhcp/a8ebdba4-15a6-4454-93b2-47618809fe72/addn_hosts - 0 names
+Oct 28 12:26:27.319493 devstack-92-210 dnsmasq-dhcp[965653]: read /opt/stack/data/neutron/dhcp/a8ebdba4-15a6-4454-93b2-47618809fe72/host
+Oct 28 12:26:27.319537 devstack-92-210 dnsmasq-dhcp[965653]: read /opt/stack/data/neutron/dhcp/a8ebdba4-15a6-4454-93b2-47618809fe72/opts
+Oct 28 12:26:27.514679 devstack-92-210 dnsmasq[966924]: read /opt/stack/data/neutron/dhcp/41c68f08-d0de-45dc-975f-a6eae644465d/addn_hosts - 2 names
+Oct 28 12:26:27.514757 devstack-92-210 dnsmasq-dhcp[966924]: read /opt/stack/data/neutron/dhcp/41c68f08-d0de-45dc-975f-a6eae644465d/host
+Oct 28 12:26:27.514956 devstack-92-210 dnsmasq-dhcp[966924]: read /opt/stack/data/neutron/dhcp/41c68f08-d0de-45dc-975f-a6eae644465d/opts
+Oct 28 12:26:27.709057 devstack-92-210 dnsmasq[966924]: read /opt/stack/data/neutron/dhcp/41c68f08-d0de-45dc-975f-a6eae644465d/addn_hosts - 2 names
+Oct 28 12:26:27.709089 devstack-92-210 dnsmasq-dhcp[966924]: read /opt/stack/data/neutron/dhcp/41c68f08-d0de-45dc-975f-a6eae644465d/host
+Oct 28 12:26:27.709109 devstack-92-210 dnsmasq-dhcp[966924]: read /opt/stack/data/neutron/dhcp/41c68f08-d0de-45dc-975f-a6eae644465d/opts
+Oct 28 12:26:27.875131 devstack-92-210 dnsmasq[966924]: read /opt/stack/data/neutron/dhcp/41c68f08-d0de-45dc-975f-a6eae644465d/addn_hosts - 2 names
+Oct 28 12:26:27.875167 devstack-92-210 dnsmasq-dhcp[966924]: read /opt/stack/data/neutron/dhcp/41c68f08-d0de-45dc-975f-a6eae644465d/host
+Oct 28 12:26:27.875245 devstack-92-210 dnsmasq-dhcp[966924]: read /opt/stack/data/neutron/dhcp/41c68f08-d0de-45dc-975f-a6eae644465d/opts
+Oct 28 12:26:28.022291 devstack-92-210 dnsmasq[965653]: exiting on receipt of SIGTERM
+Oct 28 12:26:29.482024 devstack-92-210 dnsmasq[967295]: started, version 2.91 cachesize 150
+Oct 28 12:26:29.482049 devstack-92-210 dnsmasq[967295]: DNS service limited to local subnets
+Oct 28 12:26:29.482060 devstack-92-210 dnsmasq[967295]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+Oct 28 12:26:29.482098 devstack-92-210 dnsmasq-dhcp[967295]: DHCP, static leases only on 10.1.0.0, lease time 1d
+Oct 28 12:26:29.482243 devstack-92-210 dnsmasq[967295]: reading /etc/resolv.conf
+Oct 28 12:26:29.482257 devstack-92-210 dnsmasq[967295]: using nameserver 127.0.0.53#53
+Oct 28 12:26:29.482337 devstack-92-210 dnsmasq[967295]: read /opt/stack/data/neutron/dhcp/d7e24b12-94a1-40d3-8a0d-aadfd2422115/addn_hosts - 0 names
+Oct 28 12:26:29.482376 devstack-92-210 dnsmasq-dhcp[967295]: read /opt/stack/data/neutron/dhcp/d7e24b12-94a1-40d3-8a0d-aadfd2422115/host
+Oct 28 12:26:29.482398 devstack-92-210 dnsmasq-dhcp[967295]: read /opt/stack/data/neutron/dhcp/d7e24b12-94a1-40d3-8a0d-aadfd2422115/opts
+Oct 28 12:26:29.589154 devstack-92-210 dnsmasq[965844]: read /opt/stack/data/neutron/dhcp/e460c31a-91a1-40ac-8974-e4b83f686439/addn_hosts - 0 names
+Oct 28 12:26:29.589263 devstack-92-210 dnsmasq-dhcp[965844]: read /opt/stack/data/neutron/dhcp/e460c31a-91a1-40ac-8974-e4b83f686439/host
+Oct 28 12:26:29.589341 devstack-92-210 dnsmasq-dhcp[965844]: read /opt/stack/data/neutron/dhcp/e460c31a-91a1-40ac-8974-e4b83f686439/opts
+Oct 28 12:26:29.724326 devstack-92-210 dnsmasq-dhcp[961764]: DHCPRELEASE(tap33f2267f-a7) 10.1.0.5 fa:16:3e:e6:14:61
+Oct 28 12:26:29.734558 devstack-92-210 dnsmasq-dhcp[961764]: DHCPRELEASE(tap33f2267f-a7) 10.1.0.5 fa:16:3e:e6:14:61 unknown lease
+Oct 28 12:26:30.059506 devstack-92-210 dnsmasq[961764]: read /opt/stack/data/neutron/dhcp/37cf5dbd-4785-4ed3-bd80-1510d6121668/addn_hosts - 2 names
+Oct 28 12:26:30.059551 devstack-92-210 dnsmasq-dhcp[961764]: read /opt/stack/data/neutron/dhcp/37cf5dbd-4785-4ed3-bd80-1510d6121668/host
+Oct 28 12:26:30.059597 devstack-92-210 dnsmasq-dhcp[961764]: read /opt/stack/data/neutron/dhcp/37cf5dbd-4785-4ed3-bd80-1510d6121668/opts
+Oct 28 12:26:30.247568 devstack-92-210 dnsmasq[967295]: read /opt/stack/data/neutron/dhcp/d7e24b12-94a1-40d3-8a0d-aadfd2422115/addn_hosts - 2 names
+Oct 28 12:26:30.247675 devstack-92-210 dnsmasq-dhcp[967295]: read /opt/stack/data/neutron/dhcp/d7e24b12-94a1-40d3-8a0d-aadfd2422115/host
+Oct 28 12:26:30.247765 devstack-92-210 dnsmasq-dhcp[967295]: read /opt/stack/data/neutron/dhcp/d7e24b12-94a1-40d3-8a0d-aadfd2422115/opts
+Oct 28 12:26:31.840830 devstack-92-210 dnsmasq[967620]: started, version 2.91 cachesize 150
+Oct 28 12:26:31.840855 devstack-92-210 dnsmasq[967620]: DNS service limited to local subnets
+Oct 28 12:26:31.840868 devstack-92-210 dnsmasq[967620]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+Oct 28 12:26:31.840899 devstack-92-210 dnsmasq-dhcp[967620]: DHCP, static leases only on 10.1.0.0, lease time 1d
+Oct 28 12:26:31.841061 devstack-92-210 dnsmasq[967620]: reading /etc/resolv.conf
+Oct 28 12:26:31.841075 devstack-92-210 dnsmasq[967620]: using nameserver 127.0.0.53#53
+Oct 28 12:26:31.841145 devstack-92-210 dnsmasq[967620]: read /opt/stack/data/neutron/dhcp/47d07e68-7654-4528-8535-da48460b9fe0/addn_hosts - 0 names
+Oct 28 12:26:31.841178 devstack-92-210 dnsmasq-dhcp[967620]: read /opt/stack/data/neutron/dhcp/47d07e68-7654-4528-8535-da48460b9fe0/host
+Oct 28 12:26:31.841200 devstack-92-210 dnsmasq-dhcp[967620]: read /opt/stack/data/neutron/dhcp/47d07e68-7654-4528-8535-da48460b9fe0/opts
+Oct 28 12:26:31.926019 devstack-92-210 dnsmasq[967295]: read /opt/stack/data/neutron/dhcp/d7e24b12-94a1-40d3-8a0d-aadfd2422115/addn_hosts - 2 names
+Oct 28 12:26:31.926164 devstack-92-210 dnsmasq-dhcp[967295]: read /opt/stack/data/neutron/dhcp/d7e24b12-94a1-40d3-8a0d-aadfd2422115/host
+Oct 28 12:26:31.926220 devstack-92-210 dnsmasq-dhcp[967295]: read /opt/stack/data/neutron/dhcp/d7e24b12-94a1-40d3-8a0d-aadfd2422115/opts
+Oct 28 12:26:32.062124 devstack-92-210 dnsmasq[965844]: exiting on receipt of SIGTERM
+Oct 28 12:26:32.149541 devstack-92-210 dnsmasq-dhcp[961764]: DHCPRELEASE(tap33f2267f-a7) 10.1.0.1 fa:16:3e:2b:3b:37
+Oct 28 12:26:32.479760 devstack-92-210 dnsmasq[961764]: read /opt/stack/data/neutron/dhcp/37cf5dbd-4785-4ed3-bd80-1510d6121668/addn_hosts - 0 names
+Oct 28 12:26:32.479811 devstack-92-210 dnsmasq-dhcp[961764]: read /opt/stack/data/neutron/dhcp/37cf5dbd-4785-4ed3-bd80-1510d6121668/host
+Oct 28 12:26:32.479854 devstack-92-210 dnsmasq-dhcp[961764]: read /opt/stack/data/neutron/dhcp/37cf5dbd-4785-4ed3-bd80-1510d6121668/opts
+Oct 28 12:26:33.589232 devstack-92-210 dnsmasq[967909]: started, version 2.91 cachesize 150
+Oct 28 12:26:33.589254 devstack-92-210 dnsmasq[967909]: DNS service limited to local subnets
+Oct 28 12:26:33.589265 devstack-92-210 dnsmasq[967909]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+Oct 28 12:26:33.589302 devstack-92-210 dnsmasq-dhcp[967909]: DHCP, static leases only on 10.1.0.0, lease time 1d
+Oct 28 12:26:33.589438 devstack-92-210 dnsmasq[967909]: reading /etc/resolv.conf
+Oct 28 12:26:33.589452 devstack-92-210 dnsmasq[967909]: using nameserver 127.0.0.53#53
+Oct 28 12:26:33.589554 devstack-92-210 dnsmasq[967909]: read /opt/stack/data/neutron/dhcp/e89629a7-a4fb-42d0-8d29-a45e1eb4b702/addn_hosts - 2 names
+Oct 28 12:26:33.589602 devstack-92-210 dnsmasq-dhcp[967909]: read /opt/stack/data/neutron/dhcp/e89629a7-a4fb-42d0-8d29-a45e1eb4b702/host
+Oct 28 12:26:33.589654 devstack-92-210 dnsmasq-dhcp[967909]: read /opt/stack/data/neutron/dhcp/e89629a7-a4fb-42d0-8d29-a45e1eb4b702/opts
+Oct 28 12:26:33.717629 devstack-92-210 dnsmasq[967620]: read /opt/stack/data/neutron/dhcp/47d07e68-7654-4528-8535-da48460b9fe0/addn_hosts - 2 names
+Oct 28 12:26:33.717707 devstack-92-210 dnsmasq-dhcp[967620]: read /opt/stack/data/neutron/dhcp/47d07e68-7654-4528-8535-da48460b9fe0/host
+Oct 28 12:26:33.717798 devstack-92-210 dnsmasq-dhcp[967620]: read /opt/stack/data/neutron/dhcp/47d07e68-7654-4528-8535-da48460b9fe0/opts
+Oct 28 12:26:33.881424 devstack-92-210 dnsmasq[967295]: read /opt/stack/data/neutron/dhcp/d7e24b12-94a1-40d3-8a0d-aadfd2422115/addn_hosts - 2 names
+Oct 28 12:26:33.881606 devstack-92-210 dnsmasq-dhcp[967295]: read /opt/stack/data/neutron/dhcp/d7e24b12-94a1-40d3-8a0d-aadfd2422115/host
+Oct 28 12:26:33.881663 devstack-92-210 dnsmasq-dhcp[967295]: read /opt/stack/data/neutron/dhcp/d7e24b12-94a1-40d3-8a0d-aadfd2422115/opts
+Oct 28 12:26:34.972095 devstack-92-210 dnsmasq[968152]: started, version 2.91 cachesize 150
+Oct 28 12:26:34.972105 devstack-92-210 dnsmasq[968152]: DNS service limited to local subnets
+Oct 28 12:26:34.972108 devstack-92-210 dnsmasq[968152]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+Oct 28 12:26:34.972119 devstack-92-210 dnsmasq-dhcp[968152]: DHCP, static leases only on 10.1.0.0, lease time 1d
+Oct 28 12:26:34.972162 devstack-92-210 dnsmasq[968152]: reading /etc/resolv.conf
+Oct 28 12:26:34.972166 devstack-92-210 dnsmasq[968152]: using nameserver 127.0.0.53#53
+Oct 28 12:26:34.972201 devstack-92-210 dnsmasq[968152]: read /opt/stack/data/neutron/dhcp/991cf8bc-fc5b-4dbd-9251-da4c1824c5f3/addn_hosts - 2 names
+Oct 28 12:26:34.972216 devstack-92-210 dnsmasq-dhcp[968152]: read /opt/stack/data/neutron/dhcp/991cf8bc-fc5b-4dbd-9251-da4c1824c5f3/host
+Oct 28 12:26:34.972232 devstack-92-210 dnsmasq-dhcp[968152]: read /opt/stack/data/neutron/dhcp/991cf8bc-fc5b-4dbd-9251-da4c1824c5f3/opts
+Oct 28 12:26:35.028723 devstack-92-210 dnsmasq[961764]: exiting on receipt of SIGTERM
+Oct 28 12:26:35.141802 devstack-92-210 dnsmasq[967909]: read /opt/stack/data/neutron/dhcp/e89629a7-a4fb-42d0-8d29-a45e1eb4b702/addn_hosts - 2 names
+Oct 28 12:26:35.141837 devstack-92-210 dnsmasq-dhcp[967909]: read /opt/stack/data/neutron/dhcp/e89629a7-a4fb-42d0-8d29-a45e1eb4b702/host
+Oct 28 12:26:35.141862 devstack-92-210 dnsmasq-dhcp[967909]: read /opt/stack/data/neutron/dhcp/e89629a7-a4fb-42d0-8d29-a45e1eb4b702/opts
+Oct 28 12:26:35.318569 devstack-92-210 dnsmasq[967620]: read /opt/stack/data/neutron/dhcp/47d07e68-7654-4528-8535-da48460b9fe0/addn_hosts - 2 names
+Oct 28 12:26:35.318598 devstack-92-210 dnsmasq-dhcp[967620]: read /opt/stack/data/neutron/dhcp/47d07e68-7654-4528-8535-da48460b9fe0/host
+Oct 28 12:26:35.318616 devstack-92-210 dnsmasq-dhcp[967620]: read /opt/stack/data/neutron/dhcp/47d07e68-7654-4528-8535-da48460b9fe0/opts
+Oct 28 12:26:35.500705 devstack-92-210 dnsmasq[966924]: read /opt/stack/data/neutron/dhcp/41c68f08-d0de-45dc-975f-a6eae644465d/addn_hosts - 0 names
+Oct 28 12:26:35.500816 devstack-92-210 dnsmasq-dhcp[966924]: read /opt/stack/data/neutron/dhcp/41c68f08-d0de-45dc-975f-a6eae644465d/host
+Oct 28 12:26:35.500859 devstack-92-210 dnsmasq-dhcp[966924]: read /opt/stack/data/neutron/dhcp/41c68f08-d0de-45dc-975f-a6eae644465d/opts
+Oct 28 12:26:35.711604 devstack-92-210 dnsmasq[968152]: read /opt/stack/data/neutron/dhcp/991cf8bc-fc5b-4dbd-9251-da4c1824c5f3/addn_hosts - 4 names
+Oct 28 12:26:35.711766 devstack-92-210 dnsmasq-dhcp[968152]: read /opt/stack/data/neutron/dhcp/991cf8bc-fc5b-4dbd-9251-da4c1824c5f3/host
+Oct 28 12:26:35.711821 devstack-92-210 dnsmasq-dhcp[968152]: read /opt/stack/data/neutron/dhcp/991cf8bc-fc5b-4dbd-9251-da4c1824c5f3/opts
+Oct 28 12:26:35.873487 devstack-92-210 dnsmasq[967909]: read /opt/stack/data/neutron/dhcp/e89629a7-a4fb-42d0-8d29-a45e1eb4b702/addn_hosts - 2 names
+Oct 28 12:26:35.873556 devstack-92-210 dnsmasq-dhcp[967909]: read /opt/stack/data/neutron/dhcp/e89629a7-a4fb-42d0-8d29-a45e1eb4b702/host
+Oct 28 12:26:35.873649 devstack-92-210 dnsmasq-dhcp[967909]: read /opt/stack/data/neutron/dhcp/e89629a7-a4fb-42d0-8d29-a45e1eb4b702/opts
+Oct 28 12:26:36.013816 devstack-92-210 dnsmasq[967620]: read /opt/stack/data/neutron/dhcp/47d07e68-7654-4528-8535-da48460b9fe0/addn_hosts - 2 names
+Oct 28 12:26:36.013893 devstack-92-210 dnsmasq-dhcp[967620]: read /opt/stack/data/neutron/dhcp/47d07e68-7654-4528-8535-da48460b9fe0/host
+Oct 28 12:26:36.014003 devstack-92-210 dnsmasq-dhcp[967620]: read /opt/stack/data/neutron/dhcp/47d07e68-7654-4528-8535-da48460b9fe0/opts
+Oct 28 12:26:36.197043 devstack-92-210 dnsmasq[968152]: read /opt/stack/data/neutron/dhcp/991cf8bc-fc5b-4dbd-9251-da4c1824c5f3/addn_hosts - 4 names
+Oct 28 12:26:36.197141 devstack-92-210 dnsmasq-dhcp[968152]: read /opt/stack/data/neutron/dhcp/991cf8bc-fc5b-4dbd-9251-da4c1824c5f3/host
+Oct 28 12:26:36.197197 devstack-92-210 dnsmasq-dhcp[968152]: read /opt/stack/data/neutron/dhcp/991cf8bc-fc5b-4dbd-9251-da4c1824c5f3/opts
+Oct 28 12:26:36.350813 devstack-92-210 dnsmasq[967295]: read /opt/stack/data/neutron/dhcp/d7e24b12-94a1-40d3-8a0d-aadfd2422115/addn_hosts - 0 names
+Oct 28 12:26:36.350886 devstack-92-210 dnsmasq-dhcp[967295]: read /opt/stack/data/neutron/dhcp/d7e24b12-94a1-40d3-8a0d-aadfd2422115/host
+Oct 28 12:26:36.350954 devstack-92-210 dnsmasq-dhcp[967295]: read /opt/stack/data/neutron/dhcp/d7e24b12-94a1-40d3-8a0d-aadfd2422115/opts
+Oct 28 12:26:36.513212 devstack-92-210 dnsmasq[967909]: read /opt/stack/data/neutron/dhcp/e89629a7-a4fb-42d0-8d29-a45e1eb4b702/addn_hosts - 2 names
+Oct 28 12:26:36.513241 devstack-92-210 dnsmasq-dhcp[967909]: read /opt/stack/data/neutron/dhcp/e89629a7-a4fb-42d0-8d29-a45e1eb4b702/host
+Oct 28 12:26:36.513258 devstack-92-210 dnsmasq-dhcp[967909]: read /opt/stack/data/neutron/dhcp/e89629a7-a4fb-42d0-8d29-a45e1eb4b702/opts
+Oct 28 12:26:36.656114 devstack-92-210 dnsmasq[967620]: read /opt/stack/data/neutron/dhcp/47d07e68-7654-4528-8535-da48460b9fe0/addn_hosts - 4 names
+Oct 28 12:26:36.656207 devstack-92-210 dnsmasq-dhcp[967620]: read /opt/stack/data/neutron/dhcp/47d07e68-7654-4528-8535-da48460b9fe0/host
+Oct 28 12:26:36.656261 devstack-92-210 dnsmasq-dhcp[967620]: read /opt/stack/data/neutron/dhcp/47d07e68-7654-4528-8535-da48460b9fe0/opts
+Oct 28 12:26:36.797151 devstack-92-210 dnsmasq[966924]: exiting on receipt of SIGTERM
+Oct 28 12:26:36.858586 devstack-92-210 dnsmasq[968152]: read /opt/stack/data/neutron/dhcp/991cf8bc-fc5b-4dbd-9251-da4c1824c5f3/addn_hosts - 4 names
+Oct 28 12:26:36.858684 devstack-92-210 dnsmasq-dhcp[968152]: read /opt/stack/data/neutron/dhcp/991cf8bc-fc5b-4dbd-9251-da4c1824c5f3/host
+Oct 28 12:26:36.858796 devstack-92-210 dnsmasq-dhcp[968152]: read /opt/stack/data/neutron/dhcp/991cf8bc-fc5b-4dbd-9251-da4c1824c5f3/opts
+Oct 28 12:26:37.047090 devstack-92-210 dnsmasq[968152]: read /opt/stack/data/neutron/dhcp/991cf8bc-fc5b-4dbd-9251-da4c1824c5f3/addn_hosts - 4 names
+Oct 28 12:26:37.047227 devstack-92-210 dnsmasq-dhcp[968152]: read /opt/stack/data/neutron/dhcp/991cf8bc-fc5b-4dbd-9251-da4c1824c5f3/host
+Oct 28 12:26:37.047283 devstack-92-210 dnsmasq-dhcp[968152]: read /opt/stack/data/neutron/dhcp/991cf8bc-fc5b-4dbd-9251-da4c1824c5f3/opts
+Oct 28 12:26:37.171998 devstack-92-210 dnsmasq[967295]: exiting on receipt of SIGTERM
+Oct 28 12:26:37.513106 devstack-92-210 dnsmasq-dhcp[964192]: DHCPDISCOVER(tap5b21a64e-ff) fa:16:3e:2c:e3:17
+Oct 28 12:26:37.513114 devstack-92-210 dnsmasq-dhcp[964192]: DHCPOFFER(tap5b21a64e-ff) 10.1.0.4 fa:16:3e:2c:e3:17
+Oct 28 12:26:37.521493 devstack-92-210 dnsmasq-dhcp[964192]: DHCPREQUEST(tap5b21a64e-ff) 10.1.0.4 fa:16:3e:2c:e3:17
+Oct 28 12:26:37.521509 devstack-92-210 dnsmasq-dhcp[964192]: DHCPACK(tap5b21a64e-ff) 10.1.0.4 fa:16:3e:2c:e3:17 host-10-1-0-4
+Oct 28 12:26:40.913661 devstack-92-210 dnsmasq[968152]: read /opt/stack/data/neutron/dhcp/991cf8bc-fc5b-4dbd-9251-da4c1824c5f3/addn_hosts - 6 names
+Oct 28 12:26:40.913741 devstack-92-210 dnsmasq-dhcp[968152]: read /opt/stack/data/neutron/dhcp/991cf8bc-fc5b-4dbd-9251-da4c1824c5f3/host
+Oct 28 12:26:40.914315 devstack-92-210 dnsmasq-dhcp[968152]: read /opt/stack/data/neutron/dhcp/991cf8bc-fc5b-4dbd-9251-da4c1824c5f3/opts
+Oct 28 12:26:44.254894 devstack-92-210 dnsmasq[968152]: read /opt/stack/data/neutron/dhcp/991cf8bc-fc5b-4dbd-9251-da4c1824c5f3/addn_hosts - 4 names
+Oct 28 12:26:44.255035 devstack-92-210 dnsmasq-dhcp[968152]: read /opt/stack/data/neutron/dhcp/991cf8bc-fc5b-4dbd-9251-da4c1824c5f3/host
+Oct 28 12:26:44.255092 devstack-92-210 dnsmasq-dhcp[968152]: read /opt/stack/data/neutron/dhcp/991cf8bc-fc5b-4dbd-9251-da4c1824c5f3/opts
+Oct 28 12:26:48.435405 devstack-92-210 dnsmasq[968152]: read /opt/stack/data/neutron/dhcp/991cf8bc-fc5b-4dbd-9251-da4c1824c5f3/addn_hosts - 2 names
+Oct 28 12:26:48.435565 devstack-92-210 dnsmasq-dhcp[968152]: read /opt/stack/data/neutron/dhcp/991cf8bc-fc5b-4dbd-9251-da4c1824c5f3/host
+Oct 28 12:26:48.435620 devstack-92-210 dnsmasq-dhcp[968152]: read /opt/stack/data/neutron/dhcp/991cf8bc-fc5b-4dbd-9251-da4c1824c5f3/opts
+Oct 28 12:26:48.568733 devstack-92-210 dnsmasq-dhcp[967620]: DHCPDISCOVER(tapd36bf807-4a) fa:16:3e:9a:c1:3c
+Oct 28 12:26:48.568766 devstack-92-210 dnsmasq-dhcp[967620]: DHCPOFFER(tapd36bf807-4a) 10.1.0.11 fa:16:3e:9a:c1:3c
+Oct 28 12:26:48.579353 devstack-92-210 dnsmasq-dhcp[967620]: DHCPREQUEST(tapd36bf807-4a) 10.1.0.11 fa:16:3e:9a:c1:3c
+Oct 28 12:26:48.579393 devstack-92-210 dnsmasq-dhcp[967620]: DHCPACK(tapd36bf807-4a) 10.1.0.11 fa:16:3e:9a:c1:3c host-10-1-0-11
+Oct 28 12:26:49.855484 devstack-92-210 dnsmasq-dhcp[968152]: DHCPRELEASE(tapf163ec17-cb) 10.1.0.1 fa:16:3e:b5:bc:d1
+Oct 28 12:26:50.183623 devstack-92-210 dnsmasq[968152]: read /opt/stack/data/neutron/dhcp/991cf8bc-fc5b-4dbd-9251-da4c1824c5f3/addn_hosts - 0 names
+Oct 28 12:26:50.183675 devstack-92-210 dnsmasq-dhcp[968152]: read /opt/stack/data/neutron/dhcp/991cf8bc-fc5b-4dbd-9251-da4c1824c5f3/host
+Oct 28 12:26:50.183720 devstack-92-210 dnsmasq-dhcp[968152]: read /opt/stack/data/neutron/dhcp/991cf8bc-fc5b-4dbd-9251-da4c1824c5f3/opts
+Oct 28 12:26:50.433629 devstack-92-210 dnsmasq[968152]: exiting on receipt of SIGTERM
+Oct 28 12:26:52.559847 devstack-92-210 dnsmasq[969364]: started, version 2.91 cachesize 150
+Oct 28 12:26:52.559870 devstack-92-210 dnsmasq[969364]: DNS service limited to local subnets
+Oct 28 12:26:52.559881 devstack-92-210 dnsmasq[969364]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+Oct 28 12:26:52.559912 devstack-92-210 dnsmasq-dhcp[969364]: DHCP, static leases only on 10.1.0.0, lease time 1d
+Oct 28 12:26:52.560085 devstack-92-210 dnsmasq[969364]: reading /etc/resolv.conf
+Oct 28 12:26:52.560099 devstack-92-210 dnsmasq[969364]: using nameserver 127.0.0.53#53
+Oct 28 12:26:52.560176 devstack-92-210 dnsmasq[969364]: read /opt/stack/data/neutron/dhcp/a1cd5c36-cef9-4f0b-b6ba-ab583151a2e8/addn_hosts - 0 names
+Oct 28 12:26:52.560216 devstack-92-210 dnsmasq-dhcp[969364]: read /opt/stack/data/neutron/dhcp/a1cd5c36-cef9-4f0b-b6ba-ab583151a2e8/host
+Oct 28 12:26:52.560267 devstack-92-210 dnsmasq-dhcp[969364]: read /opt/stack/data/neutron/dhcp/a1cd5c36-cef9-4f0b-b6ba-ab583151a2e8/opts
+Oct 28 12:26:52.996815 devstack-92-210 dnsmasq[969364]: read /opt/stack/data/neutron/dhcp/a1cd5c36-cef9-4f0b-b6ba-ab583151a2e8/addn_hosts - 2 names
+Oct 28 12:26:52.996884 devstack-92-210 dnsmasq-dhcp[969364]: read /opt/stack/data/neutron/dhcp/a1cd5c36-cef9-4f0b-b6ba-ab583151a2e8/host
+Oct 28 12:26:52.996978 devstack-92-210 dnsmasq-dhcp[969364]: read /opt/stack/data/neutron/dhcp/a1cd5c36-cef9-4f0b-b6ba-ab583151a2e8/opts
+Oct 28 12:26:53.131868 devstack-92-210 dnsmasq[969364]: read /opt/stack/data/neutron/dhcp/a1cd5c36-cef9-4f0b-b6ba-ab583151a2e8/addn_hosts - 2 names
+Oct 28 12:26:53.131946 devstack-92-210 dnsmasq-dhcp[969364]: read /opt/stack/data/neutron/dhcp/a1cd5c36-cef9-4f0b-b6ba-ab583151a2e8/host
+Oct 28 12:26:53.132037 devstack-92-210 dnsmasq-dhcp[969364]: read /opt/stack/data/neutron/dhcp/a1cd5c36-cef9-4f0b-b6ba-ab583151a2e8/opts
+Oct 28 12:26:53.581881 devstack-92-210 dnsmasq[969364]: read /opt/stack/data/neutron/dhcp/a1cd5c36-cef9-4f0b-b6ba-ab583151a2e8/addn_hosts - 2 names
+Oct 28 12:26:53.581969 devstack-92-210 dnsmasq-dhcp[969364]: read /opt/stack/data/neutron/dhcp/a1cd5c36-cef9-4f0b-b6ba-ab583151a2e8/host
+Oct 28 12:26:53.582047 devstack-92-210 dnsmasq-dhcp[969364]: read /opt/stack/data/neutron/dhcp/a1cd5c36-cef9-4f0b-b6ba-ab583151a2e8/opts
+Oct 28 12:26:54.083224 devstack-92-210 dnsmasq-dhcp[964192]: DHCPRELEASE(tap5b21a64e-ff) 10.1.0.4 fa:16:3e:2c:e3:17
+Oct 28 12:26:54.096310 devstack-92-210 dnsmasq-dhcp[964192]: DHCPRELEASE(tap5b21a64e-ff) 10.1.0.4 fa:16:3e:2c:e3:17 unknown lease
+Oct 28 12:26:54.424016 devstack-92-210 dnsmasq[964192]: read /opt/stack/data/neutron/dhcp/b160fbdf-1f91-4367-966a-8e54e539ff58/addn_hosts - 2 names
+Oct 28 12:26:54.424065 devstack-92-210 dnsmasq-dhcp[964192]: read /opt/stack/data/neutron/dhcp/b160fbdf-1f91-4367-966a-8e54e539ff58/host
+Oct 28 12:26:54.424099 devstack-92-210 dnsmasq-dhcp[964192]: read /opt/stack/data/neutron/dhcp/b160fbdf-1f91-4367-966a-8e54e539ff58/opts
+Oct 28 12:26:54.765420 devstack-92-210 dnsmasq[969364]: read /opt/stack/data/neutron/dhcp/a1cd5c36-cef9-4f0b-b6ba-ab583151a2e8/addn_hosts - 4 names
+Oct 28 12:26:54.765461 devstack-92-210 dnsmasq-dhcp[969364]: read /opt/stack/data/neutron/dhcp/a1cd5c36-cef9-4f0b-b6ba-ab583151a2e8/host
+Oct 28 12:26:54.765480 devstack-92-210 dnsmasq-dhcp[969364]: read /opt/stack/data/neutron/dhcp/a1cd5c36-cef9-4f0b-b6ba-ab583151a2e8/opts
+Oct 28 12:26:56.036953 devstack-92-210 dnsmasq[964192]: read /opt/stack/data/neutron/dhcp/b160fbdf-1f91-4367-966a-8e54e539ff58/addn_hosts - 0 names
+Oct 28 12:26:56.037009 devstack-92-210 dnsmasq-dhcp[964192]: read /opt/stack/data/neutron/dhcp/b160fbdf-1f91-4367-966a-8e54e539ff58/host
+Oct 28 12:26:56.037153 devstack-92-210 dnsmasq-dhcp[964192]: read /opt/stack/data/neutron/dhcp/b160fbdf-1f91-4367-966a-8e54e539ff58/opts
+Oct 28 12:26:56.613171 devstack-92-210 dnsmasq[964192]: exiting on receipt of SIGTERM
+Oct 28 12:26:58.703723 devstack-92-210 dnsmasq[969864]: started, version 2.91 cachesize 150
+Oct 28 12:26:58.703749 devstack-92-210 dnsmasq[969864]: DNS service limited to local subnets
+Oct 28 12:26:58.703761 devstack-92-210 dnsmasq[969864]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+Oct 28 12:26:58.703790 devstack-92-210 dnsmasq-dhcp[969864]: DHCP, static leases only on 10.1.0.0, lease time 1d
+Oct 28 12:26:58.703969 devstack-92-210 dnsmasq[969864]: reading /etc/resolv.conf
+Oct 28 12:26:58.703984 devstack-92-210 dnsmasq[969864]: using nameserver 127.0.0.53#53
+Oct 28 12:26:58.704062 devstack-92-210 dnsmasq[969864]: read /opt/stack/data/neutron/dhcp/73a554c1-6a30-4017-845d-9a59e338ff36/addn_hosts - 0 names
+Oct 28 12:26:58.704103 devstack-92-210 dnsmasq-dhcp[969864]: read /opt/stack/data/neutron/dhcp/73a554c1-6a30-4017-845d-9a59e338ff36/host
+Oct 28 12:26:58.704150 devstack-92-210 dnsmasq-dhcp[969864]: read /opt/stack/data/neutron/dhcp/73a554c1-6a30-4017-845d-9a59e338ff36/opts
+Oct 28 12:26:58.837370 devstack-92-210 dnsmasq[969864]: read /opt/stack/data/neutron/dhcp/73a554c1-6a30-4017-845d-9a59e338ff36/addn_hosts - 2 names
+Oct 28 12:26:58.837435 devstack-92-210 dnsmasq-dhcp[969864]: read /opt/stack/data/neutron/dhcp/73a554c1-6a30-4017-845d-9a59e338ff36/host
+Oct 28 12:26:58.837488 devstack-92-210 dnsmasq-dhcp[969864]: read /opt/stack/data/neutron/dhcp/73a554c1-6a30-4017-845d-9a59e338ff36/opts
+Oct 28 12:26:59.046773 devstack-92-210 dnsmasq[969864]: read /opt/stack/data/neutron/dhcp/73a554c1-6a30-4017-845d-9a59e338ff36/addn_hosts - 2 names
+Oct 28 12:26:59.046961 devstack-92-210 dnsmasq-dhcp[969864]: read /opt/stack/data/neutron/dhcp/73a554c1-6a30-4017-845d-9a59e338ff36/host
+Oct 28 12:26:59.047036 devstack-92-210 dnsmasq-dhcp[969864]: read /opt/stack/data/neutron/dhcp/73a554c1-6a30-4017-845d-9a59e338ff36/opts
+Oct 28 12:26:59.181803 devstack-92-210 dnsmasq[969864]: read /opt/stack/data/neutron/dhcp/73a554c1-6a30-4017-845d-9a59e338ff36/addn_hosts - 2 names
+Oct 28 12:26:59.181881 devstack-92-210 dnsmasq-dhcp[969864]: read /opt/stack/data/neutron/dhcp/73a554c1-6a30-4017-845d-9a59e338ff36/host
+Oct 28 12:26:59.181957 devstack-92-210 dnsmasq-dhcp[969864]: read /opt/stack/data/neutron/dhcp/73a554c1-6a30-4017-845d-9a59e338ff36/opts
+Oct 28 12:27:00.990798 devstack-92-210 dnsmasq[969864]: read /opt/stack/data/neutron/dhcp/73a554c1-6a30-4017-845d-9a59e338ff36/addn_hosts - 4 names
+Oct 28 12:27:00.990893 devstack-92-210 dnsmasq-dhcp[969864]: read /opt/stack/data/neutron/dhcp/73a554c1-6a30-4017-845d-9a59e338ff36/host
+Oct 28 12:27:00.990965 devstack-92-210 dnsmasq-dhcp[969864]: read /opt/stack/data/neutron/dhcp/73a554c1-6a30-4017-845d-9a59e338ff36/opts
+Oct 28 12:27:06.062400 devstack-92-210 dnsmasq-dhcp[967620]: DHCPRELEASE(tapd36bf807-4a) 10.1.0.11 fa:16:3e:9a:c1:3c
+Oct 28 12:27:06.074705 devstack-92-210 dnsmasq-dhcp[967620]: DHCPRELEASE(tapd36bf807-4a) 10.1.0.11 fa:16:3e:9a:c1:3c unknown lease
+Oct 28 12:27:06.398797 devstack-92-210 dnsmasq[967620]: read /opt/stack/data/neutron/dhcp/47d07e68-7654-4528-8535-da48460b9fe0/addn_hosts - 2 names
+Oct 28 12:27:06.398827 devstack-92-210 dnsmasq-dhcp[967620]: read /opt/stack/data/neutron/dhcp/47d07e68-7654-4528-8535-da48460b9fe0/host
+Oct 28 12:27:06.398845 devstack-92-210 dnsmasq-dhcp[967620]: read /opt/stack/data/neutron/dhcp/47d07e68-7654-4528-8535-da48460b9fe0/opts
+Oct 28 12:27:07.892801 devstack-92-210 dnsmasq[967620]: read /opt/stack/data/neutron/dhcp/47d07e68-7654-4528-8535-da48460b9fe0/addn_hosts - 0 names
+Oct 28 12:27:07.892853 devstack-92-210 dnsmasq-dhcp[967620]: read /opt/stack/data/neutron/dhcp/47d07e68-7654-4528-8535-da48460b9fe0/host
+Oct 28 12:27:07.892989 devstack-92-210 dnsmasq-dhcp[967620]: read /opt/stack/data/neutron/dhcp/47d07e68-7654-4528-8535-da48460b9fe0/opts
+Oct 28 12:27:08.443062 devstack-92-210 dnsmasq[967620]: exiting on receipt of SIGTERM
+Oct 28 12:27:08.941664 devstack-92-210 dnsmasq-dhcp[967909]: DHCPRELEASE(tap7e954236-1b) 10.1.0.1 fa:16:3e:a9:2d:f4
+Oct 28 12:27:09.267914 devstack-92-210 dnsmasq[967909]: read /opt/stack/data/neutron/dhcp/e89629a7-a4fb-42d0-8d29-a45e1eb4b702/addn_hosts - 0 names
+Oct 28 12:27:09.267964 devstack-92-210 dnsmasq-dhcp[967909]: read /opt/stack/data/neutron/dhcp/e89629a7-a4fb-42d0-8d29-a45e1eb4b702/host
+Oct 28 12:27:09.267985 devstack-92-210 dnsmasq-dhcp[967909]: read /opt/stack/data/neutron/dhcp/e89629a7-a4fb-42d0-8d29-a45e1eb4b702/opts
+Oct 28 12:27:09.319358 devstack-92-210 dnsmasq-dhcp[969364]: DHCPDISCOVER(tap553711ef-2f) fa:16:3e:d1:db:6a
+Oct 28 12:27:09.319380 devstack-92-210 dnsmasq-dhcp[969364]: DHCPOFFER(tap553711ef-2f) 10.1.0.13 fa:16:3e:d1:db:6a
+Oct 28 12:27:09.328285 devstack-92-210 dnsmasq-dhcp[969364]: DHCPREQUEST(tap553711ef-2f) 10.1.0.13 fa:16:3e:d1:db:6a
+Oct 28 12:27:09.328310 devstack-92-210 dnsmasq-dhcp[969364]: DHCPACK(tap553711ef-2f) 10.1.0.13 fa:16:3e:d1:db:6a host-10-1-0-13
+Oct 28 12:27:09.504841 devstack-92-210 dnsmasq[967909]: exiting on receipt of SIGTERM
+Oct 28 12:27:11.866848 devstack-92-210 dnsmasq[970510]: started, version 2.91 cachesize 150
+Oct 28 12:27:11.866873 devstack-92-210 dnsmasq[970510]: DNS service limited to local subnets
+Oct 28 12:27:11.866885 devstack-92-210 dnsmasq[970510]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+Oct 28 12:27:11.866922 devstack-92-210 dnsmasq-dhcp[970510]: DHCP, static leases only on 10.1.0.0, lease time 1d
+Oct 28 12:27:11.867081 devstack-92-210 dnsmasq[970510]: reading /etc/resolv.conf
+Oct 28 12:27:11.867095 devstack-92-210 dnsmasq[970510]: using nameserver 127.0.0.53#53
+Oct 28 12:27:11.867162 devstack-92-210 dnsmasq[970510]: read /opt/stack/data/neutron/dhcp/a0addc28-f128-458f-9395-5d72e4488d99/addn_hosts - 0 names
+Oct 28 12:27:11.867183 devstack-92-210 dnsmasq-dhcp[970510]: read /opt/stack/data/neutron/dhcp/a0addc28-f128-458f-9395-5d72e4488d99/host
+Oct 28 12:27:11.867209 devstack-92-210 dnsmasq-dhcp[970510]: read /opt/stack/data/neutron/dhcp/a0addc28-f128-458f-9395-5d72e4488d99/opts
+Oct 28 12:27:11.992655 devstack-92-210 dnsmasq[970510]: exiting on receipt of SIGTERM
+Oct 28 12:27:12.368536 devstack-92-210 dnsmasq[970571]: started, version 2.91 cachesize 150
+Oct 28 12:27:12.368562 devstack-92-210 dnsmasq[970571]: DNS service limited to local subnets
+Oct 28 12:27:12.368574 devstack-92-210 dnsmasq[970571]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+Oct 28 12:27:12.368605 devstack-92-210 dnsmasq-dhcp[970571]: DHCP, static leases only on 10.1.0.0, lease time 1d
+Oct 28 12:27:12.368733 devstack-92-210 dnsmasq[970571]: reading /etc/resolv.conf
+Oct 28 12:27:12.368746 devstack-92-210 dnsmasq[970571]: using nameserver 127.0.0.53#53
+Oct 28 12:27:12.368849 devstack-92-210 dnsmasq[970571]: read /opt/stack/data/neutron/dhcp/a0addc28-f128-458f-9395-5d72e4488d99/addn_hosts - 2 names
+Oct 28 12:27:12.368894 devstack-92-210 dnsmasq-dhcp[970571]: read /opt/stack/data/neutron/dhcp/a0addc28-f128-458f-9395-5d72e4488d99/host
+Oct 28 12:27:12.368954 devstack-92-210 dnsmasq-dhcp[970571]: read /opt/stack/data/neutron/dhcp/a0addc28-f128-458f-9395-5d72e4488d99/opts
+Oct 28 12:27:12.457226 devstack-92-210 dnsmasq[970571]: read /opt/stack/data/neutron/dhcp/a0addc28-f128-458f-9395-5d72e4488d99/addn_hosts - 2 names
+Oct 28 12:27:12.457293 devstack-92-210 dnsmasq-dhcp[970571]: read /opt/stack/data/neutron/dhcp/a0addc28-f128-458f-9395-5d72e4488d99/host
+Oct 28 12:27:12.457436 devstack-92-210 dnsmasq-dhcp[970571]: read /opt/stack/data/neutron/dhcp/a0addc28-f128-458f-9395-5d72e4488d99/opts
+Oct 28 12:27:12.595616 devstack-92-210 dnsmasq[970571]: read /opt/stack/data/neutron/dhcp/a0addc28-f128-458f-9395-5d72e4488d99/addn_hosts - 2 names
+Oct 28 12:27:12.595666 devstack-92-210 dnsmasq-dhcp[970571]: read /opt/stack/data/neutron/dhcp/a0addc28-f128-458f-9395-5d72e4488d99/host
+Oct 28 12:27:12.595706 devstack-92-210 dnsmasq-dhcp[970571]: read /opt/stack/data/neutron/dhcp/a0addc28-f128-458f-9395-5d72e4488d99/opts
+Oct 28 12:27:14.325915 devstack-92-210 dnsmasq[970789]: started, version 2.91 cachesize 150
+Oct 28 12:27:14.325960 devstack-92-210 dnsmasq[970789]: DNS service limited to local subnets
+Oct 28 12:27:14.325972 devstack-92-210 dnsmasq[970789]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+Oct 28 12:27:14.326004 devstack-92-210 dnsmasq-dhcp[970789]: DHCP, static leases only on 10.1.0.0, lease time 1d
+Oct 28 12:27:14.326116 devstack-92-210 dnsmasq[970789]: reading /etc/resolv.conf
+Oct 28 12:27:14.326124 devstack-92-210 dnsmasq[970789]: using nameserver 127.0.0.53#53
+Oct 28 12:27:14.326164 devstack-92-210 dnsmasq[970789]: read /opt/stack/data/neutron/dhcp/18401dd1-621e-4e30-b5f1-6c7dc142ef41/addn_hosts - 0 names
+Oct 28 12:27:14.326184 devstack-92-210 dnsmasq-dhcp[970789]: read /opt/stack/data/neutron/dhcp/18401dd1-621e-4e30-b5f1-6c7dc142ef41/host
+Oct 28 12:27:14.326207 devstack-92-210 dnsmasq-dhcp[970789]: read /opt/stack/data/neutron/dhcp/18401dd1-621e-4e30-b5f1-6c7dc142ef41/opts
+Oct 28 12:27:14.456902 devstack-92-210 dnsmasq[970789]: read /opt/stack/data/neutron/dhcp/18401dd1-621e-4e30-b5f1-6c7dc142ef41/addn_hosts - 2 names
+Oct 28 12:27:14.456953 devstack-92-210 dnsmasq-dhcp[970789]: read /opt/stack/data/neutron/dhcp/18401dd1-621e-4e30-b5f1-6c7dc142ef41/host
+Oct 28 12:27:14.456978 devstack-92-210 dnsmasq-dhcp[970789]: read /opt/stack/data/neutron/dhcp/18401dd1-621e-4e30-b5f1-6c7dc142ef41/opts
+Oct 28 12:27:14.609867 devstack-92-210 dnsmasq[970789]: read /opt/stack/data/neutron/dhcp/18401dd1-621e-4e30-b5f1-6c7dc142ef41/addn_hosts - 2 names
+Oct 28 12:27:14.609956 devstack-92-210 dnsmasq-dhcp[970789]: read /opt/stack/data/neutron/dhcp/18401dd1-621e-4e30-b5f1-6c7dc142ef41/host
+Oct 28 12:27:14.610080 devstack-92-210 dnsmasq-dhcp[970789]: read /opt/stack/data/neutron/dhcp/18401dd1-621e-4e30-b5f1-6c7dc142ef41/opts
+Oct 28 12:27:14.773108 devstack-92-210 dnsmasq[970789]: read /opt/stack/data/neutron/dhcp/18401dd1-621e-4e30-b5f1-6c7dc142ef41/addn_hosts - 2 names
+Oct 28 12:27:14.773179 devstack-92-210 dnsmasq-dhcp[970789]: read /opt/stack/data/neutron/dhcp/18401dd1-621e-4e30-b5f1-6c7dc142ef41/host
+Oct 28 12:27:14.773236 devstack-92-210 dnsmasq-dhcp[970789]: read /opt/stack/data/neutron/dhcp/18401dd1-621e-4e30-b5f1-6c7dc142ef41/opts
+Oct 28 12:27:15.296570 devstack-92-210 dnsmasq-dhcp[969864]: DHCPDISCOVER(tap94d3d505-d8) fa:16:3e:1a:97:7f
+Oct 28 12:27:15.296599 devstack-92-210 dnsmasq-dhcp[969864]: DHCPOFFER(tap94d3d505-d8) 10.1.0.4 fa:16:3e:1a:97:7f
+Oct 28 12:27:15.304894 devstack-92-210 dnsmasq-dhcp[969864]: DHCPREQUEST(tap94d3d505-d8) 10.1.0.4 fa:16:3e:1a:97:7f
+Oct 28 12:27:15.304949 devstack-92-210 dnsmasq-dhcp[969864]: DHCPACK(tap94d3d505-d8) 10.1.0.4 fa:16:3e:1a:97:7f host-10-1-0-4
+Oct 28 12:27:15.570355 devstack-92-210 dnsmasq-dhcp[970571]: DHCPRELEASE(tapf62f62c5-dd) 10.1.0.1 fa:16:3e:79:37:28
+Oct 28 12:27:15.897804 devstack-92-210 dnsmasq[970571]: read /opt/stack/data/neutron/dhcp/a0addc28-f128-458f-9395-5d72e4488d99/addn_hosts - 0 names
+Oct 28 12:27:15.897861 devstack-92-210 dnsmasq-dhcp[970571]: read /opt/stack/data/neutron/dhcp/a0addc28-f128-458f-9395-5d72e4488d99/host
+Oct 28 12:27:15.897905 devstack-92-210 dnsmasq-dhcp[970571]: read /opt/stack/data/neutron/dhcp/a0addc28-f128-458f-9395-5d72e4488d99/opts
+Oct 28 12:27:16.142735 devstack-92-210 dnsmasq[970571]: exiting on receipt of SIGTERM
+Oct 28 12:27:16.651023 devstack-92-210 dnsmasq[970789]: read /opt/stack/data/neutron/dhcp/18401dd1-621e-4e30-b5f1-6c7dc142ef41/addn_hosts - 0 names
+Oct 28 12:27:16.651080 devstack-92-210 dnsmasq-dhcp[970789]: read /opt/stack/data/neutron/dhcp/18401dd1-621e-4e30-b5f1-6c7dc142ef41/host
+Oct 28 12:27:16.651134 devstack-92-210 dnsmasq-dhcp[970789]: read /opt/stack/data/neutron/dhcp/18401dd1-621e-4e30-b5f1-6c7dc142ef41/opts
+Oct 28 12:27:17.656128 devstack-92-210 dnsmasq[970789]: exiting on receipt of SIGTERM
+Oct 28 12:27:24.201422 devstack-92-210 dnsmasq[971256]: started, version 2.91 cachesize 150
+Oct 28 12:27:24.201446 devstack-92-210 dnsmasq[971256]: DNS service limited to local subnets
+Oct 28 12:27:24.201458 devstack-92-210 dnsmasq[971256]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+Oct 28 12:27:24.201489 devstack-92-210 dnsmasq-dhcp[971256]: DHCP, static leases only on 10.1.0.0, lease time 1d
+Oct 28 12:27:24.201634 devstack-92-210 dnsmasq[971256]: reading /etc/resolv.conf
+Oct 28 12:27:24.201647 devstack-92-210 dnsmasq[971256]: using nameserver 127.0.0.53#53
+Oct 28 12:27:24.201723 devstack-92-210 dnsmasq[971256]: read /opt/stack/data/neutron/dhcp/171048c5-7b94-434f-a2d6-89ea5621735e/addn_hosts - 0 names
+Oct 28 12:27:24.201760 devstack-92-210 dnsmasq-dhcp[971256]: read /opt/stack/data/neutron/dhcp/171048c5-7b94-434f-a2d6-89ea5621735e/host
+Oct 28 12:27:24.201804 devstack-92-210 dnsmasq-dhcp[971256]: read /opt/stack/data/neutron/dhcp/171048c5-7b94-434f-a2d6-89ea5621735e/opts
+Oct 28 12:27:24.341873 devstack-92-210 dnsmasq[971256]: read /opt/stack/data/neutron/dhcp/171048c5-7b94-434f-a2d6-89ea5621735e/addn_hosts - 2 names
+Oct 28 12:27:24.341954 devstack-92-210 dnsmasq-dhcp[971256]: read /opt/stack/data/neutron/dhcp/171048c5-7b94-434f-a2d6-89ea5621735e/host
+Oct 28 12:27:24.342001 devstack-92-210 dnsmasq-dhcp[971256]: read /opt/stack/data/neutron/dhcp/171048c5-7b94-434f-a2d6-89ea5621735e/opts
+Oct 28 12:27:24.515084 devstack-92-210 dnsmasq[971256]: read /opt/stack/data/neutron/dhcp/171048c5-7b94-434f-a2d6-89ea5621735e/addn_hosts - 2 names
+Oct 28 12:27:24.515156 devstack-92-210 dnsmasq-dhcp[971256]: read /opt/stack/data/neutron/dhcp/171048c5-7b94-434f-a2d6-89ea5621735e/host
+Oct 28 12:27:24.515242 devstack-92-210 dnsmasq-dhcp[971256]: read /opt/stack/data/neutron/dhcp/171048c5-7b94-434f-a2d6-89ea5621735e/opts
+Oct 28 12:27:24.666711 devstack-92-210 dnsmasq[971256]: read /opt/stack/data/neutron/dhcp/171048c5-7b94-434f-a2d6-89ea5621735e/addn_hosts - 2 names
+Oct 28 12:27:24.666741 devstack-92-210 dnsmasq-dhcp[971256]: read /opt/stack/data/neutron/dhcp/171048c5-7b94-434f-a2d6-89ea5621735e/host
+Oct 28 12:27:24.666762 devstack-92-210 dnsmasq-dhcp[971256]: read /opt/stack/data/neutron/dhcp/171048c5-7b94-434f-a2d6-89ea5621735e/opts
+Oct 28 12:27:25.818517 devstack-92-210 dnsmasq[971458]: started, version 2.91 cachesize 150
+Oct 28 12:27:25.818539 devstack-92-210 dnsmasq[971458]: DNS service limited to local subnets
+Oct 28 12:27:25.818551 devstack-92-210 dnsmasq[971458]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+Oct 28 12:27:25.818587 devstack-92-210 dnsmasq-dhcp[971458]: DHCP, static leases only on 10.1.0.0, lease time 1d
+Oct 28 12:27:25.818716 devstack-92-210 dnsmasq[971458]: reading /etc/resolv.conf
+Oct 28 12:27:25.818729 devstack-92-210 dnsmasq[971458]: using nameserver 127.0.0.53#53
+Oct 28 12:27:25.818800 devstack-92-210 dnsmasq[971458]: read /opt/stack/data/neutron/dhcp/b004c348-11f4-4faa-8b4d-7517493801c2/addn_hosts - 0 names
+Oct 28 12:27:25.818838 devstack-92-210 dnsmasq-dhcp[971458]: read /opt/stack/data/neutron/dhcp/b004c348-11f4-4faa-8b4d-7517493801c2/host
+Oct 28 12:27:25.818883 devstack-92-210 dnsmasq-dhcp[971458]: read /opt/stack/data/neutron/dhcp/b004c348-11f4-4faa-8b4d-7517493801c2/opts
+Oct 28 12:27:25.953025 devstack-92-210 dnsmasq[971458]: read /opt/stack/data/neutron/dhcp/b004c348-11f4-4faa-8b4d-7517493801c2/addn_hosts - 2 names
+Oct 28 12:27:25.953093 devstack-92-210 dnsmasq-dhcp[971458]: read /opt/stack/data/neutron/dhcp/b004c348-11f4-4faa-8b4d-7517493801c2/host
+Oct 28 12:27:25.953173 devstack-92-210 dnsmasq-dhcp[971458]: read /opt/stack/data/neutron/dhcp/b004c348-11f4-4faa-8b4d-7517493801c2/opts
+Oct 28 12:27:26.131686 devstack-92-210 dnsmasq[971458]: read /opt/stack/data/neutron/dhcp/b004c348-11f4-4faa-8b4d-7517493801c2/addn_hosts - 2 names
+Oct 28 12:27:26.131754 devstack-92-210 dnsmasq-dhcp[971458]: read /opt/stack/data/neutron/dhcp/b004c348-11f4-4faa-8b4d-7517493801c2/host
+Oct 28 12:27:26.131808 devstack-92-210 dnsmasq-dhcp[971458]: read /opt/stack/data/neutron/dhcp/b004c348-11f4-4faa-8b4d-7517493801c2/opts
+Oct 28 12:27:26.261880 devstack-92-210 dnsmasq[971458]: read /opt/stack/data/neutron/dhcp/b004c348-11f4-4faa-8b4d-7517493801c2/addn_hosts - 2 names
+Oct 28 12:27:26.261983 devstack-92-210 dnsmasq-dhcp[971458]: read /opt/stack/data/neutron/dhcp/b004c348-11f4-4faa-8b4d-7517493801c2/host
+Oct 28 12:27:26.262103 devstack-92-210 dnsmasq-dhcp[971458]: read /opt/stack/data/neutron/dhcp/b004c348-11f4-4faa-8b4d-7517493801c2/opts
+Oct 28 12:27:27.807530 devstack-92-210 dnsmasq[971256]: read /opt/stack/data/neutron/dhcp/171048c5-7b94-434f-a2d6-89ea5621735e/addn_hosts - 0 names
+Oct 28 12:27:27.807583 devstack-92-210 dnsmasq-dhcp[971256]: read /opt/stack/data/neutron/dhcp/171048c5-7b94-434f-a2d6-89ea5621735e/host
+Oct 28 12:27:27.807686 devstack-92-210 dnsmasq-dhcp[971256]: read /opt/stack/data/neutron/dhcp/171048c5-7b94-434f-a2d6-89ea5621735e/opts
+Oct 28 12:27:28.366155 devstack-92-210 dnsmasq[971256]: exiting on receipt of SIGTERM
+Oct 28 12:27:28.784749 devstack-92-210 dnsmasq[971458]: read /opt/stack/data/neutron/dhcp/b004c348-11f4-4faa-8b4d-7517493801c2/addn_hosts - 0 names
+Oct 28 12:27:28.784823 devstack-92-210 dnsmasq-dhcp[971458]: read /opt/stack/data/neutron/dhcp/b004c348-11f4-4faa-8b4d-7517493801c2/host
+Oct 28 12:27:28.784861 devstack-92-210 dnsmasq-dhcp[971458]: read /opt/stack/data/neutron/dhcp/b004c348-11f4-4faa-8b4d-7517493801c2/opts
+Oct 28 12:27:29.377829 devstack-92-210 dnsmasq[971458]: exiting on receipt of SIGTERM
+Oct 28 12:27:30.186294 devstack-92-210 dnsmasq-dhcp[969364]: DHCPRELEASE(tap553711ef-2f) 10.1.0.13 fa:16:3e:d1:db:6a
+Oct 28 12:27:30.199205 devstack-92-210 dnsmasq-dhcp[969364]: DHCPRELEASE(tap553711ef-2f) 10.1.0.13 fa:16:3e:d1:db:6a unknown lease
+Oct 28 12:27:30.527676 devstack-92-210 dnsmasq[969364]: read /opt/stack/data/neutron/dhcp/a1cd5c36-cef9-4f0b-b6ba-ab583151a2e8/addn_hosts - 2 names
+Oct 28 12:27:30.527749 devstack-92-210 dnsmasq-dhcp[969364]: read /opt/stack/data/neutron/dhcp/a1cd5c36-cef9-4f0b-b6ba-ab583151a2e8/host
+Oct 28 12:27:30.527790 devstack-92-210 dnsmasq-dhcp[969364]: read /opt/stack/data/neutron/dhcp/a1cd5c36-cef9-4f0b-b6ba-ab583151a2e8/opts
+Oct 28 12:27:31.718387 devstack-92-210 dnsmasq-dhcp[969864]: DHCPRELEASE(tap94d3d505-d8) 10.1.0.4 fa:16:3e:1a:97:7f
+Oct 28 12:27:31.728502 devstack-92-210 dnsmasq-dhcp[969864]: DHCPRELEASE(tap94d3d505-d8) 10.1.0.4 fa:16:3e:1a:97:7f unknown lease
+Oct 28 12:27:32.054129 devstack-92-210 dnsmasq[969864]: read /opt/stack/data/neutron/dhcp/73a554c1-6a30-4017-845d-9a59e338ff36/addn_hosts - 2 names
+Oct 28 12:27:32.054258 devstack-92-210 dnsmasq-dhcp[969864]: read /opt/stack/data/neutron/dhcp/73a554c1-6a30-4017-845d-9a59e338ff36/host
+Oct 28 12:27:32.054361 devstack-92-210 dnsmasq-dhcp[969864]: read /opt/stack/data/neutron/dhcp/73a554c1-6a30-4017-845d-9a59e338ff36/opts
+Oct 28 12:27:32.584176 devstack-92-210 dnsmasq[969364]: read /opt/stack/data/neutron/dhcp/a1cd5c36-cef9-4f0b-b6ba-ab583151a2e8/addn_hosts - 4 names
+Oct 28 12:27:32.584249 devstack-92-210 dnsmasq-dhcp[969364]: read /opt/stack/data/neutron/dhcp/a1cd5c36-cef9-4f0b-b6ba-ab583151a2e8/host
+Oct 28 12:27:32.584294 devstack-92-210 dnsmasq-dhcp[969364]: read /opt/stack/data/neutron/dhcp/a1cd5c36-cef9-4f0b-b6ba-ab583151a2e8/opts
+Oct 28 12:27:34.608292 devstack-92-210 dnsmasq[969864]: read /opt/stack/data/neutron/dhcp/73a554c1-6a30-4017-845d-9a59e338ff36/addn_hosts - 4 names
+Oct 28 12:27:34.608372 devstack-92-210 dnsmasq-dhcp[969864]: read /opt/stack/data/neutron/dhcp/73a554c1-6a30-4017-845d-9a59e338ff36/host
+Oct 28 12:27:34.608506 devstack-92-210 dnsmasq-dhcp[969864]: read /opt/stack/data/neutron/dhcp/73a554c1-6a30-4017-845d-9a59e338ff36/opts
+Oct 28 12:27:46.750001 devstack-92-210 dnsmasq-dhcp[969364]: DHCPDISCOVER(tap553711ef-2f) fa:16:3e:0d:53:03
+Oct 28 12:27:46.750030 devstack-92-210 dnsmasq-dhcp[969364]: DHCPOFFER(tap553711ef-2f) 10.1.0.3 fa:16:3e:0d:53:03
+Oct 28 12:27:46.758923 devstack-92-210 dnsmasq-dhcp[969364]: DHCPREQUEST(tap553711ef-2f) 10.1.0.3 fa:16:3e:0d:53:03
+Oct 28 12:27:46.758971 devstack-92-210 dnsmasq-dhcp[969364]: DHCPACK(tap553711ef-2f) 10.1.0.3 fa:16:3e:0d:53:03 host-10-1-0-3
+Oct 28 12:27:49.874069 devstack-92-210 dnsmasq-dhcp[969864]: DHCPDISCOVER(tap94d3d505-d8) fa:16:3e:9b:ce:59
+Oct 28 12:27:49.874094 devstack-92-210 dnsmasq-dhcp[969864]: DHCPOFFER(tap94d3d505-d8) 10.1.0.7 fa:16:3e:9b:ce:59
+Oct 28 12:27:49.882346 devstack-92-210 dnsmasq-dhcp[969864]: DHCPREQUEST(tap94d3d505-d8) 10.1.0.7 fa:16:3e:9b:ce:59
+Oct 28 12:27:49.882377 devstack-92-210 dnsmasq-dhcp[969864]: DHCPACK(tap94d3d505-d8) 10.1.0.7 fa:16:3e:9b:ce:59 host-10-1-0-7
+Oct 28 12:28:03.673595 devstack-92-210 dnsmasq-dhcp[969364]: DHCPRELEASE(tap553711ef-2f) 10.1.0.3 fa:16:3e:0d:53:03
+Oct 28 12:28:03.688627 devstack-92-210 dnsmasq-dhcp[969364]: DHCPRELEASE(tap553711ef-2f) 10.1.0.3 fa:16:3e:0d:53:03 unknown lease
+Oct 28 12:28:04.016558 devstack-92-210 dnsmasq[969364]: read /opt/stack/data/neutron/dhcp/a1cd5c36-cef9-4f0b-b6ba-ab583151a2e8/addn_hosts - 2 names
+Oct 28 12:28:04.016629 devstack-92-210 dnsmasq-dhcp[969364]: read /opt/stack/data/neutron/dhcp/a1cd5c36-cef9-4f0b-b6ba-ab583151a2e8/host
+Oct 28 12:28:04.016685 devstack-92-210 dnsmasq-dhcp[969364]: read /opt/stack/data/neutron/dhcp/a1cd5c36-cef9-4f0b-b6ba-ab583151a2e8/opts
+Oct 28 12:28:06.271311 devstack-92-210 dnsmasq[969364]: read /opt/stack/data/neutron/dhcp/a1cd5c36-cef9-4f0b-b6ba-ab583151a2e8/addn_hosts - 0 names
+Oct 28 12:28:06.271360 devstack-92-210 dnsmasq-dhcp[969364]: read /opt/stack/data/neutron/dhcp/a1cd5c36-cef9-4f0b-b6ba-ab583151a2e8/host
+Oct 28 12:28:06.271423 devstack-92-210 dnsmasq-dhcp[969364]: read /opt/stack/data/neutron/dhcp/a1cd5c36-cef9-4f0b-b6ba-ab583151a2e8/opts
+Oct 28 12:28:06.484821 devstack-92-210 dnsmasq-dhcp[969864]: DHCPRELEASE(tap94d3d505-d8) 10.1.0.7 fa:16:3e:9b:ce:59
+Oct 28 12:28:06.497917 devstack-92-210 dnsmasq-dhcp[969864]: DHCPRELEASE(tap94d3d505-d8) 10.1.0.7 fa:16:3e:9b:ce:59 unknown lease
+Oct 28 12:28:06.823685 devstack-92-210 dnsmasq[969864]: read /opt/stack/data/neutron/dhcp/73a554c1-6a30-4017-845d-9a59e338ff36/addn_hosts - 2 names
+Oct 28 12:28:06.823769 devstack-92-210 dnsmasq-dhcp[969864]: read /opt/stack/data/neutron/dhcp/73a554c1-6a30-4017-845d-9a59e338ff36/host
+Oct 28 12:28:06.823805 devstack-92-210 dnsmasq-dhcp[969864]: read /opt/stack/data/neutron/dhcp/73a554c1-6a30-4017-845d-9a59e338ff36/opts
+Oct 28 12:28:06.985345 devstack-92-210 dnsmasq[969364]: exiting on receipt of SIGTERM
+Oct 28 12:28:08.911303 devstack-92-210 dnsmasq[969864]: read /opt/stack/data/neutron/dhcp/73a554c1-6a30-4017-845d-9a59e338ff36/addn_hosts - 4 names
+Oct 28 12:28:08.911369 devstack-92-210 dnsmasq-dhcp[969864]: read /opt/stack/data/neutron/dhcp/73a554c1-6a30-4017-845d-9a59e338ff36/host
+Oct 28 12:28:08.911419 devstack-92-210 dnsmasq-dhcp[969864]: read /opt/stack/data/neutron/dhcp/73a554c1-6a30-4017-845d-9a59e338ff36/opts
+Oct 28 12:28:23.401204 devstack-92-210 dnsmasq-dhcp[969864]: DHCPDISCOVER(tap94d3d505-d8) fa:16:3e:4b:b5:b2
+Oct 28 12:28:23.401231 devstack-92-210 dnsmasq-dhcp[969864]: DHCPOFFER(tap94d3d505-d8) 10.1.0.10 fa:16:3e:4b:b5:b2
+Oct 28 12:28:23.409606 devstack-92-210 dnsmasq-dhcp[969864]: DHCPREQUEST(tap94d3d505-d8) 10.1.0.10 fa:16:3e:4b:b5:b2
+Oct 28 12:28:23.409638 devstack-92-210 dnsmasq-dhcp[969864]: DHCPACK(tap94d3d505-d8) 10.1.0.10 fa:16:3e:4b:b5:b2 host-10-1-0-10
+Oct 28 12:28:40.156189 devstack-92-210 dnsmasq[973095]: started, version 2.91 cachesize 150
+Oct 28 12:28:40.156213 devstack-92-210 dnsmasq[973095]: DNS service limited to local subnets
+Oct 28 12:28:40.156225 devstack-92-210 dnsmasq[973095]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+Oct 28 12:28:40.156256 devstack-92-210 dnsmasq-dhcp[973095]: DHCP, static leases only on 10.1.0.0, lease time 1d
+Oct 28 12:28:40.156397 devstack-92-210 dnsmasq[973095]: reading /etc/resolv.conf
+Oct 28 12:28:40.156410 devstack-92-210 dnsmasq[973095]: using nameserver 127.0.0.53#53
+Oct 28 12:28:40.156486 devstack-92-210 dnsmasq[973095]: read /opt/stack/data/neutron/dhcp/9a07b0f2-95ce-4d6e-bcf7-32412c55c971/addn_hosts - 0 names
+Oct 28 12:28:40.156527 devstack-92-210 dnsmasq-dhcp[973095]: read /opt/stack/data/neutron/dhcp/9a07b0f2-95ce-4d6e-bcf7-32412c55c971/host
+Oct 28 12:28:40.156576 devstack-92-210 dnsmasq-dhcp[973095]: read /opt/stack/data/neutron/dhcp/9a07b0f2-95ce-4d6e-bcf7-32412c55c971/opts
+Oct 28 12:28:40.246136 devstack-92-210 dnsmasq-dhcp[969864]: DHCPRELEASE(tap94d3d505-d8) 10.1.0.10 fa:16:3e:4b:b5:b2
+Oct 28 12:28:40.258137 devstack-92-210 dnsmasq-dhcp[969864]: DHCPRELEASE(tap94d3d505-d8) 10.1.0.10 fa:16:3e:4b:b5:b2 unknown lease
+Oct 28 12:28:40.586848 devstack-92-210 dnsmasq[969864]: read /opt/stack/data/neutron/dhcp/73a554c1-6a30-4017-845d-9a59e338ff36/addn_hosts - 2 names
+Oct 28 12:28:40.586897 devstack-92-210 dnsmasq-dhcp[969864]: read /opt/stack/data/neutron/dhcp/73a554c1-6a30-4017-845d-9a59e338ff36/host
+Oct 28 12:28:40.586922 devstack-92-210 dnsmasq-dhcp[969864]: read /opt/stack/data/neutron/dhcp/73a554c1-6a30-4017-845d-9a59e338ff36/opts
+Oct 28 12:28:40.791727 devstack-92-210 dnsmasq[973095]: read /opt/stack/data/neutron/dhcp/9a07b0f2-95ce-4d6e-bcf7-32412c55c971/addn_hosts - 2 names
+Oct 28 12:28:40.791785 devstack-92-210 dnsmasq-dhcp[973095]: read /opt/stack/data/neutron/dhcp/9a07b0f2-95ce-4d6e-bcf7-32412c55c971/host
+Oct 28 12:28:40.791836 devstack-92-210 dnsmasq-dhcp[973095]: read /opt/stack/data/neutron/dhcp/9a07b0f2-95ce-4d6e-bcf7-32412c55c971/opts
+Oct 28 12:28:40.956907 devstack-92-210 dnsmasq[973095]: read /opt/stack/data/neutron/dhcp/9a07b0f2-95ce-4d6e-bcf7-32412c55c971/addn_hosts - 2 names
+Oct 28 12:28:40.957001 devstack-92-210 dnsmasq-dhcp[973095]: read /opt/stack/data/neutron/dhcp/9a07b0f2-95ce-4d6e-bcf7-32412c55c971/host
+Oct 28 12:28:40.957056 devstack-92-210 dnsmasq-dhcp[973095]: read /opt/stack/data/neutron/dhcp/9a07b0f2-95ce-4d6e-bcf7-32412c55c971/opts
+Oct 28 12:28:41.127055 devstack-92-210 dnsmasq[973095]: read /opt/stack/data/neutron/dhcp/9a07b0f2-95ce-4d6e-bcf7-32412c55c971/addn_hosts - 2 names
+Oct 28 12:28:41.127088 devstack-92-210 dnsmasq-dhcp[973095]: read /opt/stack/data/neutron/dhcp/9a07b0f2-95ce-4d6e-bcf7-32412c55c971/host
+Oct 28 12:28:41.127105 devstack-92-210 dnsmasq-dhcp[973095]: read /opt/stack/data/neutron/dhcp/9a07b0f2-95ce-4d6e-bcf7-32412c55c971/opts
+Oct 28 12:28:42.391070 devstack-92-210 dnsmasq[973596]: started, version 2.91 cachesize 150
+Oct 28 12:28:42.391083 devstack-92-210 dnsmasq[973596]: DNS service limited to local subnets
+Oct 28 12:28:42.391090 devstack-92-210 dnsmasq[973596]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+Oct 28 12:28:42.391109 devstack-92-210 dnsmasq-dhcp[973596]: DHCP, static leases only on 10.1.0.0, lease time 1d
+Oct 28 12:28:42.391180 devstack-92-210 dnsmasq[973596]: reading /etc/resolv.conf
+Oct 28 12:28:42.391184 devstack-92-210 dnsmasq[973596]: using nameserver 127.0.0.53#53
+Oct 28 12:28:42.391225 devstack-92-210 dnsmasq[973596]: read /opt/stack/data/neutron/dhcp/c179899f-8320-4652-80e3-8789c9bea878/addn_hosts - 0 names
+Oct 28 12:28:42.391240 devstack-92-210 dnsmasq-dhcp[973596]: read /opt/stack/data/neutron/dhcp/c179899f-8320-4652-80e3-8789c9bea878/host
+Oct 28 12:28:42.391260 devstack-92-210 dnsmasq-dhcp[973596]: read /opt/stack/data/neutron/dhcp/c179899f-8320-4652-80e3-8789c9bea878/opts
+Oct 28 12:28:42.472038 devstack-92-210 dnsmasq[969864]: read /opt/stack/data/neutron/dhcp/73a554c1-6a30-4017-845d-9a59e338ff36/addn_hosts - 0 names
+Oct 28 12:28:42.472070 devstack-92-210 dnsmasq-dhcp[969864]: read /opt/stack/data/neutron/dhcp/73a554c1-6a30-4017-845d-9a59e338ff36/host
+Oct 28 12:28:42.472092 devstack-92-210 dnsmasq-dhcp[969864]: read /opt/stack/data/neutron/dhcp/73a554c1-6a30-4017-845d-9a59e338ff36/opts
+Oct 28 12:28:42.684979 devstack-92-210 dnsmasq[973596]: read /opt/stack/data/neutron/dhcp/c179899f-8320-4652-80e3-8789c9bea878/addn_hosts - 2 names
+Oct 28 12:28:42.685054 devstack-92-210 dnsmasq-dhcp[973596]: read /opt/stack/data/neutron/dhcp/c179899f-8320-4652-80e3-8789c9bea878/host
+Oct 28 12:28:42.685109 devstack-92-210 dnsmasq-dhcp[973596]: read /opt/stack/data/neutron/dhcp/c179899f-8320-4652-80e3-8789c9bea878/opts
+Oct 28 12:28:42.826807 devstack-92-210 dnsmasq[969864]: exiting on receipt of SIGTERM
+Oct 28 12:28:42.911700 devstack-92-210 dnsmasq[973596]: read /opt/stack/data/neutron/dhcp/c179899f-8320-4652-80e3-8789c9bea878/addn_hosts - 2 names
+Oct 28 12:28:42.911728 devstack-92-210 dnsmasq-dhcp[973596]: read /opt/stack/data/neutron/dhcp/c179899f-8320-4652-80e3-8789c9bea878/host
+Oct 28 12:28:42.911745 devstack-92-210 dnsmasq-dhcp[973596]: read /opt/stack/data/neutron/dhcp/c179899f-8320-4652-80e3-8789c9bea878/opts
+Oct 28 12:28:43.096175 devstack-92-210 dnsmasq[973596]: read /opt/stack/data/neutron/dhcp/c179899f-8320-4652-80e3-8789c9bea878/addn_hosts - 2 names
+Oct 28 12:28:43.096238 devstack-92-210 dnsmasq-dhcp[973596]: read /opt/stack/data/neutron/dhcp/c179899f-8320-4652-80e3-8789c9bea878/host
+Oct 28 12:28:43.096344 devstack-92-210 dnsmasq-dhcp[973596]: read /opt/stack/data/neutron/dhcp/c179899f-8320-4652-80e3-8789c9bea878/opts
+Oct 28 12:28:44.585444 devstack-92-210 dnsmasq[973095]: read /opt/stack/data/neutron/dhcp/9a07b0f2-95ce-4d6e-bcf7-32412c55c971/addn_hosts - 0 names
+Oct 28 12:28:44.585474 devstack-92-210 dnsmasq-dhcp[973095]: read /opt/stack/data/neutron/dhcp/9a07b0f2-95ce-4d6e-bcf7-32412c55c971/host
+Oct 28 12:28:44.585494 devstack-92-210 dnsmasq-dhcp[973095]: read /opt/stack/data/neutron/dhcp/9a07b0f2-95ce-4d6e-bcf7-32412c55c971/opts
+Oct 28 12:28:45.136204 devstack-92-210 dnsmasq[973095]: exiting on receipt of SIGTERM
+Oct 28 12:28:45.792541 devstack-92-210 dnsmasq[973596]: read /opt/stack/data/neutron/dhcp/c179899f-8320-4652-80e3-8789c9bea878/addn_hosts - 0 names
+Oct 28 12:28:45.792666 devstack-92-210 dnsmasq-dhcp[973596]: read /opt/stack/data/neutron/dhcp/c179899f-8320-4652-80e3-8789c9bea878/host
+Oct 28 12:28:45.792709 devstack-92-210 dnsmasq-dhcp[973596]: read /opt/stack/data/neutron/dhcp/c179899f-8320-4652-80e3-8789c9bea878/opts
+Oct 28 12:28:46.153178 devstack-92-210 dnsmasq[973596]: exiting on receipt of SIGTERM
+Oct 28 12:28:56.455278 devstack-92-210 dnsmasq[974084]: started, version 2.91 cachesize 150
+Oct 28 12:28:56.455306 devstack-92-210 dnsmasq[974084]: DNS service limited to local subnets
+Oct 28 12:28:56.455319 devstack-92-210 dnsmasq[974084]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+Oct 28 12:28:56.455349 devstack-92-210 dnsmasq-dhcp[974084]: DHCP, static leases only on 10.1.0.0, lease time 1d
+Oct 28 12:28:56.455483 devstack-92-210 dnsmasq[974084]: reading /etc/resolv.conf
+Oct 28 12:28:56.455497 devstack-92-210 dnsmasq[974084]: using nameserver 127.0.0.53#53
+Oct 28 12:28:56.455558 devstack-92-210 dnsmasq[974084]: read /opt/stack/data/neutron/dhcp/2355277f-2cfc-424d-8e52-dc9f0f1e3971/addn_hosts - 0 names
+Oct 28 12:28:56.455594 devstack-92-210 dnsmasq-dhcp[974084]: read /opt/stack/data/neutron/dhcp/2355277f-2cfc-424d-8e52-dc9f0f1e3971/host
+Oct 28 12:28:56.455638 devstack-92-210 dnsmasq-dhcp[974084]: read /opt/stack/data/neutron/dhcp/2355277f-2cfc-424d-8e52-dc9f0f1e3971/opts
+Oct 28 12:28:56.576969 devstack-92-210 dnsmasq[974084]: read /opt/stack/data/neutron/dhcp/2355277f-2cfc-424d-8e52-dc9f0f1e3971/addn_hosts - 2 names
+Oct 28 12:28:56.576998 devstack-92-210 dnsmasq-dhcp[974084]: read /opt/stack/data/neutron/dhcp/2355277f-2cfc-424d-8e52-dc9f0f1e3971/host
+Oct 28 12:28:56.577014 devstack-92-210 dnsmasq-dhcp[974084]: read /opt/stack/data/neutron/dhcp/2355277f-2cfc-424d-8e52-dc9f0f1e3971/opts
+Oct 28 12:28:56.768095 devstack-92-210 dnsmasq[974084]: read /opt/stack/data/neutron/dhcp/2355277f-2cfc-424d-8e52-dc9f0f1e3971/addn_hosts - 2 names
+Oct 28 12:28:56.768178 devstack-92-210 dnsmasq-dhcp[974084]: read /opt/stack/data/neutron/dhcp/2355277f-2cfc-424d-8e52-dc9f0f1e3971/host
+Oct 28 12:28:56.768285 devstack-92-210 dnsmasq-dhcp[974084]: read /opt/stack/data/neutron/dhcp/2355277f-2cfc-424d-8e52-dc9f0f1e3971/opts
+Oct 28 12:28:56.921484 devstack-92-210 dnsmasq[974084]: read /opt/stack/data/neutron/dhcp/2355277f-2cfc-424d-8e52-dc9f0f1e3971/addn_hosts - 2 names
+Oct 28 12:28:56.921556 devstack-92-210 dnsmasq-dhcp[974084]: read /opt/stack/data/neutron/dhcp/2355277f-2cfc-424d-8e52-dc9f0f1e3971/host
+Oct 28 12:28:56.921686 devstack-92-210 dnsmasq-dhcp[974084]: read /opt/stack/data/neutron/dhcp/2355277f-2cfc-424d-8e52-dc9f0f1e3971/opts
+Oct 28 12:28:58.579562 devstack-92-210 dnsmasq[974084]: read /opt/stack/data/neutron/dhcp/2355277f-2cfc-424d-8e52-dc9f0f1e3971/addn_hosts - 0 names
+Oct 28 12:28:58.579598 devstack-92-210 dnsmasq-dhcp[974084]: read /opt/stack/data/neutron/dhcp/2355277f-2cfc-424d-8e52-dc9f0f1e3971/host
+Oct 28 12:28:58.579626 devstack-92-210 dnsmasq-dhcp[974084]: read /opt/stack/data/neutron/dhcp/2355277f-2cfc-424d-8e52-dc9f0f1e3971/opts
+Oct 28 12:28:59.127766 devstack-92-210 dnsmasq[974084]: exiting on receipt of SIGTERM
+Oct 28 12:29:01.328893 devstack-92-210 dnsmasq[974359]: started, version 2.91 cachesize 150
+Oct 28 12:29:01.328918 devstack-92-210 dnsmasq[974359]: DNS service limited to local subnets
+Oct 28 12:29:01.328964 devstack-92-210 dnsmasq[974359]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+Oct 28 12:29:01.328994 devstack-92-210 dnsmasq-dhcp[974359]: DHCP, static leases only on 10.1.0.0, lease time 1d
+Oct 28 12:29:01.329141 devstack-92-210 dnsmasq[974359]: reading /etc/resolv.conf
+Oct 28 12:29:01.329155 devstack-92-210 dnsmasq[974359]: using nameserver 127.0.0.53#53
+Oct 28 12:29:01.329221 devstack-92-210 dnsmasq[974359]: read /opt/stack/data/neutron/dhcp/1366b70c-97c7-4811-a984-ff53693e22a9/addn_hosts - 0 names
+Oct 28 12:29:01.329259 devstack-92-210 dnsmasq-dhcp[974359]: read /opt/stack/data/neutron/dhcp/1366b70c-97c7-4811-a984-ff53693e22a9/host
+Oct 28 12:29:01.329305 devstack-92-210 dnsmasq-dhcp[974359]: read /opt/stack/data/neutron/dhcp/1366b70c-97c7-4811-a984-ff53693e22a9/opts
+Oct 28 12:29:01.458892 devstack-92-210 dnsmasq[974359]: read /opt/stack/data/neutron/dhcp/1366b70c-97c7-4811-a984-ff53693e22a9/addn_hosts - 2 names
+Oct 28 12:29:01.458999 devstack-92-210 dnsmasq-dhcp[974359]: read /opt/stack/data/neutron/dhcp/1366b70c-97c7-4811-a984-ff53693e22a9/host
+Oct 28 12:29:01.459052 devstack-92-210 dnsmasq-dhcp[974359]: read /opt/stack/data/neutron/dhcp/1366b70c-97c7-4811-a984-ff53693e22a9/opts
+Oct 28 12:29:01.615286 devstack-92-210 dnsmasq[974359]: read /opt/stack/data/neutron/dhcp/1366b70c-97c7-4811-a984-ff53693e22a9/addn_hosts - 2 names
+Oct 28 12:29:01.615363 devstack-92-210 dnsmasq-dhcp[974359]: read /opt/stack/data/neutron/dhcp/1366b70c-97c7-4811-a984-ff53693e22a9/host
+Oct 28 12:29:01.615476 devstack-92-210 dnsmasq-dhcp[974359]: read /opt/stack/data/neutron/dhcp/1366b70c-97c7-4811-a984-ff53693e22a9/opts
+Oct 28 12:29:01.782981 devstack-92-210 dnsmasq[974359]: read /opt/stack/data/neutron/dhcp/1366b70c-97c7-4811-a984-ff53693e22a9/addn_hosts - 2 names
+Oct 28 12:29:01.783053 devstack-92-210 dnsmasq-dhcp[974359]: read /opt/stack/data/neutron/dhcp/1366b70c-97c7-4811-a984-ff53693e22a9/host
+Oct 28 12:29:01.783157 devstack-92-210 dnsmasq-dhcp[974359]: read /opt/stack/data/neutron/dhcp/1366b70c-97c7-4811-a984-ff53693e22a9/opts
+Oct 28 12:29:03.103915 devstack-92-210 dnsmasq[974560]: started, version 2.91 cachesize 150
+Oct 28 12:29:03.103960 devstack-92-210 dnsmasq[974560]: DNS service limited to local subnets
+Oct 28 12:29:03.103973 devstack-92-210 dnsmasq[974560]: compile time options: IPv6 GNU-getopt DBus no-UBus i18n IDN2 DHCP DHCPv6 no-Lua TFTP conntrack ipset nftset auth DNSSEC loop-detect inotify dumpfile
+Oct 28 12:29:03.104003 devstack-92-210 dnsmasq-dhcp[974560]: DHCP, static leases only on 10.1.0.0, lease time 1d
+Oct 28 12:29:03.104141 devstack-92-210 dnsmasq[974560]: reading /etc/resolv.conf
+Oct 28 12:29:03.104154 devstack-92-210 dnsmasq[974560]: using nameserver 127.0.0.53#53
+Oct 28 12:29:03.104217 devstack-92-210 dnsmasq[974560]: read /opt/stack/data/neutron/dhcp/88a690db-5e17-4525-bd92-232439bb72cb/addn_hosts - 0 names
+Oct 28 12:29:03.104252 devstack-92-210 dnsmasq-dhcp[974560]: read /opt/stack/data/neutron/dhcp/88a690db-5e17-4525-bd92-232439bb72cb/host
+Oct 28 12:29:03.104298 devstack-92-210 dnsmasq-dhcp[974560]: read /opt/stack/data/neutron/dhcp/88a690db-5e17-4525-bd92-232439bb72cb/opts
+Oct 28 12:29:03.236361 devstack-92-210 dnsmasq[974560]: read /opt/stack/data/neutron/dhcp/88a690db-5e17-4525-bd92-232439bb72cb/addn_hosts - 2 names
+Oct 28 12:29:03.236436 devstack-92-210 dnsmasq-dhcp[974560]: read /opt/stack/data/neutron/dhcp/88a690db-5e17-4525-bd92-232439bb72cb/host
+Oct 28 12:29:03.236508 devstack-92-210 dnsmasq-dhcp[974560]: read /opt/stack/data/neutron/dhcp/88a690db-5e17-4525-bd92-232439bb72cb/opts
+Oct 28 12:29:03.389058 devstack-92-210 dnsmasq[974560]: read /opt/stack/data/neutron/dhcp/88a690db-5e17-4525-bd92-232439bb72cb/addn_hosts - 2 names
+Oct 28 12:29:03.389132 devstack-92-210 dnsmasq-dhcp[974560]: read /opt/stack/data/neutron/dhcp/88a690db-5e17-4525-bd92-232439bb72cb/host
+Oct 28 12:29:03.389178 devstack-92-210 dnsmasq-dhcp[974560]: read /opt/stack/data/neutron/dhcp/88a690db-5e17-4525-bd92-232439bb72cb/opts
+Oct 28 12:29:03.574361 devstack-92-210 dnsmasq[974560]: read /opt/stack/data/neutron/dhcp/88a690db-5e17-4525-bd92-232439bb72cb/addn_hosts - 2 names
+Oct 28 12:29:03.574457 devstack-92-210 dnsmasq-dhcp[974560]: read /opt/stack/data/neutron/dhcp/88a690db-5e17-4525-bd92-232439bb72cb/host
+Oct 28 12:29:03.574545 devstack-92-210 dnsmasq-dhcp[974560]: read /opt/stack/data/neutron/dhcp/88a690db-5e17-4525-bd92-232439bb72cb/opts
+Oct 28 12:29:06.177440 devstack-92-210 dnsmasq[974359]: read /opt/stack/data/neutron/dhcp/1366b70c-97c7-4811-a984-ff53693e22a9/addn_hosts - 0 names
+Oct 28 12:29:06.177506 devstack-92-210 dnsmasq-dhcp[974359]: read /opt/stack/data/neutron/dhcp/1366b70c-97c7-4811-a984-ff53693e22a9/host
+Oct 28 12:29:06.177548 devstack-92-210 dnsmasq-dhcp[974359]: read /opt/stack/data/neutron/dhcp/1366b70c-97c7-4811-a984-ff53693e22a9/opts
+Oct 28 12:29:06.736480 devstack-92-210 dnsmasq[974359]: exiting on receipt of SIGTERM
+Oct 28 12:29:07.212734 devstack-92-210 dnsmasq[974560]: read /opt/stack/data/neutron/dhcp/88a690db-5e17-4525-bd92-232439bb72cb/addn_hosts - 0 names
+Oct 28 12:29:07.212787 devstack-92-210 dnsmasq-dhcp[974560]: read /opt/stack/data/neutron/dhcp/88a690db-5e17-4525-bd92-232439bb72cb/host
+Oct 28 12:29:07.212890 devstack-92-210 dnsmasq-dhcp[974560]: read /opt/stack/data/neutron/dhcp/88a690db-5e17-4525-bd92-232439bb72cb/opts
+Oct 28 12:29:07.784760 devstack-92-210 dnsmasq[974560]: exiting on receipt of SIGTERM
